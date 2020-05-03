@@ -906,6 +906,7 @@
         display: block;
         position: relative;
         margin-left: 45%;
+        color: blue;
     }
 
     img#logicPic {
