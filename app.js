@@ -36,6 +36,7 @@ function init() {
         scene.add(gltf.scene);
         renderer.render(scene, camera);
     });
+    //test
 }
 
 init();
