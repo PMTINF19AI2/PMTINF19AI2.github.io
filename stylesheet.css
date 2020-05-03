@@ -901,12 +901,12 @@
         }
 
     div#logicInvis {
-        width: 45%;
+        width: 90%;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 45%;
-        float: left;
+        margin-left: 5%;
+        float: right;
     }
 
     img#logicPic {
