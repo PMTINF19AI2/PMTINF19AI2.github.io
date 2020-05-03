@@ -756,6 +756,7 @@
 @media all and (max-width: 850px) {
     body {
         overflow-x: hidden;
+        color: red;
     }
 
     div.header {
