@@ -855,6 +855,7 @@
     p.seitenüberschrift {
         font-size: 30px;
         margin-bottom: 10px;
+        color: red;
     }
 
     p.unterüberschrift {
