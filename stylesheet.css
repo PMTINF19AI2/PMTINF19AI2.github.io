@@ -906,6 +906,7 @@
         display: block;
         position: relative;
         margin-left: 45%;
+        float: left;
     }
 
     img#logicPic {
@@ -1072,6 +1073,12 @@
 
     div.footer div {
         border: none;
+    }
+}
+
+@media handheld {
+    div#logicInvis {
+        float: left;
     }
 }
 
