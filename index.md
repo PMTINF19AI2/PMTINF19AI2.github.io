@@ -28,10 +28,6 @@
                                 <input type="submit" value="Search" class="mcButton" />
                             </form>
                         </div>
-                        <div id="output">
-                            <?php include("wdw_suche/search.php");?>
-                        </div>
-
                     </td>
                 </tr>
             </table>
@@ -134,6 +130,3 @@
 
     <script src="app.js"></script>
 </body>
-
-
-
