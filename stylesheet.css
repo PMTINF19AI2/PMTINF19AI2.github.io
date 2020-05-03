@@ -346,8 +346,6 @@
         padding: 20px 100px;
     }
 
-
-
     /*Logik-Gatter-Hub*/
 
     div#logicGate {
@@ -901,13 +899,11 @@
         }
 
     div#logicInvis {
-            width: 90%;
-            padding-left: 0px;
-            display: block;
-            position: relative;
-            margin-left: 5%;
-            float: left;
-            color: red;
+        width: 65%;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 45%;
     }
 
     img#logicPic {
@@ -938,7 +934,7 @@
         }
 
     div#tableInvis {
-        width: 45%;
+        width: 65%;
         padding-left: 0px;
         display: block;
         position: relative;
@@ -973,7 +969,7 @@
         }
 
     div#tutorialInvis {
-        width: 45%;;
+        width: 65%;;
         padding-left: 0px;
         display: block;
         position: relative;
@@ -1008,7 +1004,7 @@
         }
 
     div#testInvis {
-        width: 45%;
+        width: 65%;
         padding-left: 0px;
         display: block;
         position: relative;
@@ -1077,14 +1073,79 @@
     }
 }
 
-@media handheld {
+@media (max-width: 600px) {
     div#logicInvis {
-        width: 90%;
+        width: 100%;
         padding-left: 0px;
         display: block;
         position: relative;
         margin-left: 5%;
+        float: left;
     }
-}
 
+    div#tableInvis {
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 5%;
+        float: left;
+    }
+
+    div#tutorialInvis {
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 5%;
+        float: left;
+    }
+
+    div#testInvis {
+        width: 100%;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 5%;
+        float: left;
+    }
+
+    div.preview {
+        background-image: none;
+        background-color: black;
+    }
+
+    div.footer div {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-content: center;
+        padding: 15px 0 0 0;
+    }
+
+    img.logoFooter {
+        margin-left: 0;
+        width: 25%;
+    }
+
+    img.footer {
+        display: flex;
+        align-content: center;
+        width: 25px;
+        margin-right: 5px;
+    }
+    
+    ul.footer {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    a.mcButton {
+        padding: 0;
+        padding-top: 5px;
+        margin: 0;
+    }
+
+}    
 
