@@ -901,11 +901,11 @@
         }
 
     div#logicInvis {
-        width: 90%;
+        width: 45%;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 5%;
+        margin-left: 45%;
     }
 
     img#logicPic {
@@ -1077,7 +1077,11 @@
 
 @media handheld {
     div#logicInvis {
-        float: left;
+        width: 90%;
+        padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 5%;
     }
 }
 
