@@ -1125,7 +1125,7 @@
     }
 
     div.fotter div:last-of-type {
-        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
 
     img.logoFooter {
