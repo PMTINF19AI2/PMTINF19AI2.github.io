@@ -1121,12 +1121,9 @@
         justify-content: space-around;
         width: 100%;
         align-content: center;
-        padding: 15px 0 0 0;
+        padding: 8px 0 7px 0;
     }
 
-    div.fotter div:last-child {
-        margin-bottom: 15px;
-    }
 
     img.logoFooter {
         margin-left: 0;
