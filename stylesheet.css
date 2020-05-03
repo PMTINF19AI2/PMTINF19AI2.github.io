@@ -754,6 +754,30 @@
     }
 }
 
+@media all and (viewpoint: 1000px) and (max-width: 1400px) {
+    .nav-links {
+        width: 100%;
+    }
+
+    .savespace {
+        width: 50px;
+    }
+
+    .nav-links li {
+        width: 0%;
+    }
+
+    div.preview {
+        background-image: none;
+        background-color: black;
+    }
+
+    p#beschreibung {
+        font-size: 15px;
+        width: 120%;
+    }
+}
+
 @media all and (max-width: 850px) {
     body {
         overflow-x: hidden;
@@ -1052,26 +1076,4 @@
     }
 }
 
-@media all and (viewpoint: 1000px) and (max-width: 1400px) {
-    .nav-links {
-        width: 100%;
-    }
 
-    .savespace {
-        width: 50px;
-    }
-
-    .nav-links li {
-        width: 0%;
-    }
-
-    div.preview {
-        background-image: none;
-        background-color: black;
-    }
-
-    p#beschreibung {
-        font-size: 15px;
-        width: 120%;
-    }
-}
