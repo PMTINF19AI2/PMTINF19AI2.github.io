@@ -756,7 +756,6 @@
 @media all and (max-width: 850px) {
     body {
         overflow-x: hidden;
-        color: red;
     }
 
     div.header {
@@ -876,11 +875,11 @@
         }
 
     div#logicInvis {
-        width: 290px;
+        width: 45%;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 200px;
+        margin-left: 45%;
     }
 
     img#logicPic {
@@ -893,11 +892,6 @@
         }
 
     div#logicGate:hover ~ div#logicInvis {
-        display: block;
-        position: relative;
-        backface-visibility: hidden;
-        perspective: 0px;
-        font-size: 10px;
         animation: none;
     }
 
@@ -916,11 +910,11 @@
         }
 
     div#tableInvis {
-        width: 290px;
+        width: 45%;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 200px;
+        margin-left: 45%;
     }
 
     img#tablePic {
@@ -933,10 +927,6 @@
         }
 
     div#table:hover ~ div#tableInvis {
-        position: relative;
-        backface-visibility: hidden;
-        perspective: 0px;
-        font-size: 10px;
         animation: none;
     }
 
@@ -955,11 +945,11 @@
         }
 
     div#tutorialInvis {
-        width: 290px;
+        width: 45%;;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 200px;
+        margin-left: 45%;
     }
 
     img#tutorialPic {
@@ -972,10 +962,6 @@
         }
 
     div#tutorial:hover ~ div#tutorialInvis {
-        position: relative;
-        backface-visibility: hidden;
-        perspective: 0px;
-        font-size: 10px;
         animation: none;
     }
 
@@ -994,11 +980,11 @@
         }
 
     div#testInvis {
-        width: 290px;
+        width: 45%;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 200px;
+        margin-left: 45%;
     }
 
     img#testPic {
@@ -1011,10 +997,6 @@
         }
 
     div#test:hover ~ div#testInvis {
-        position: relative;
-        backface-visibility: hidden;
-        perspective: 0px;
-        font-size: 10px;
         animation: none;
     }
 
