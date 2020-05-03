@@ -904,7 +904,7 @@
             width: 90%;
             padding-left: 0px;
             display: block;
-            position: relative;
+            position: absolute;
             margin-left: 5%;
             float: left;
     }
