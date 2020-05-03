@@ -907,6 +907,7 @@
             position: absolute;
             margin-left: 5%;
             float: left;
+            color: red;
     }
 
     img#logicPic {
