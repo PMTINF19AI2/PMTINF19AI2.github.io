@@ -877,11 +877,11 @@
         }
 
     div#logicInvis {
-        width: 20%;
+        width: 200px;
         padding-left: 0px;
         display: block;
         position: relative;
-        margin-left: 30%;
+        margin-left: 100px;
     }
 
     img#logicPic {
