@@ -17,7 +17,7 @@
     body {
         margin: 0% 0% 0% 0%;
         width: 100%;
-        color: white;
+        color: red;
     }
 
     img.animationRestone {
@@ -855,7 +855,6 @@
     p.seitenüberschrift {
         font-size: 30px;
         margin-bottom: 10px;
-        color: red;
     }
 
     p.unterüberschrift {
