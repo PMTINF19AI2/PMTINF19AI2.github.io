@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
 <body>
     <div class="header">
         <nav>
