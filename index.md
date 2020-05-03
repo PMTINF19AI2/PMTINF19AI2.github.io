@@ -54,7 +54,8 @@
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate">
-                    <img src="images/logicBlock-Logo.png" alt="Logik-Gatter" id="logicPic" />
+                        <div class="scene"></div>
+                        <!--<img src="images/logicBlock-Logo.png" alt="Logik-Gatter" id="logicPic" />-->
                 </div>
                 <div id="logicInvis">
                      <h2 style="font-family: 'Cabin Sketch', cursive;">Das Logik-Gatter</h2>
@@ -129,4 +130,7 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="./three.min.js"></script>
+    <script src="./GLTFLoader.js"></script>
+    <script src="./app2.js"></script>
 </body>
