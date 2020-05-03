@@ -1074,7 +1074,7 @@
     }
 }
 
-@media handheld and (max-width: 1000px) {
+@media not screen and (max-width: 1000px) {
     div#logicInvis {
         display: block;
         position: relative;
