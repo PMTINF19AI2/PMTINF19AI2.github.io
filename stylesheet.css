@@ -1124,6 +1124,10 @@
         padding: 15px 0 0 0;
     }
 
+    div.fotter div:last-of-type {
+        padding-bottom: 15px;
+    }
+
     img.logoFooter {
         margin-left: 0;
         width: 120px;
