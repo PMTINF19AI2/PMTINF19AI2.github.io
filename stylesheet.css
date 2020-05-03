@@ -1124,7 +1124,7 @@
         padding: 15px 0 0 0;
     }
 
-    div.fotter div:last-of-type {
+    div.fotter div:last-child {
         margin-bottom: 15px;
     }
 
