@@ -1,37 +1,41 @@
-// JavaScript source code
-const navSlide = () => {
-    const dropdown = document.querySelector('.dropdown');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    const suchButton = document.querySelector('#searchIcon');
-    const suchFeld = document.querySelector('#searchDiv');
-    const logoTop = document.querySelector('img.logo');
+//Variables for setup
 
-    dropdown.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
+let container;
+let camera;
+let renderer;
+let scene;
+let model;
 
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-            }
-        });
+function init() {
+    container = document.querySelector('.scene');
+   
+    //Create scene
 
-        dropdown.classList.toggle('toggle');
+    scene = new THREE.Scene();
+    
+    const fov = 35;
+    const aspect = container.clientWidth / container.clientHeight;
+    const near = 0.1;
+    const far = 500;
+    
 
+    //Camera Setup
+    camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+    camera.position.set(100, 100, 100);
+
+    //Renderer
+    renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    container.appendChild(renderer.domElement);
+
+    //Load Model
+    let loader = new THREE.GLTFLoader();
+    loader.load("./xbox_controller/scene.gltf", function(gltf) {
+        scene.add(gltf.scene);
+        renderer.render(scene, camera);
     });
-
-    suchButton.addEventListener('click', () => {
-        nav.classList.toggle('navLinks-active');
-        suchFeld.style.display = 'block';
-        suchFeld.style.width = '100%';
-        logoTop.style.marginTop = '0px';
-    })
-
-
-
-
 }
 
-navSlide();
+init();
