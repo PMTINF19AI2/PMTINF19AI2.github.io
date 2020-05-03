@@ -341,6 +341,10 @@
         font-size: 25px;
     }
 
+    p.unterüberschrift {
+        font-size: 30px;
+    }
+
 
 
     /*Logik-Gatter-Hub*/
@@ -824,8 +828,12 @@
     }
 
     p.seitenüberschrift {
-        font-size: 50px;
+        font-size: 30px;
         margin-bottom: 10px;
+    }
+
+    p.unterüberschrift {
+        font-size: 15px;
     }
 
     @keyframes navLinkFade {
@@ -868,8 +876,10 @@
 
     div#logicInvis {
         width: 290px;
-        margin-left: 150px;
         padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 200px;
     }
 
     img#logicPic {
@@ -887,6 +897,7 @@
         backface-visibility: hidden;
         perspective: 0px;
         font-size: 10px;
+        animation: none;
     }
 
     /*Tisch*/
@@ -905,8 +916,10 @@
 
     div#tableInvis {
         width: 290px;
-        margin-left: 150px;
         padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 200px;
     }
 
     img#tablePic {
@@ -923,6 +936,7 @@
         backface-visibility: hidden;
         perspective: 0px;
         font-size: 10px;
+        animation: none;
     }
 
     /*Tutorial*/
@@ -941,8 +955,10 @@
 
     div#tutorialInvis {
         width: 290px;
-        margin-left: 150px;
         padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 200px;
     }
 
     img#tutorialPic {
@@ -959,6 +975,7 @@
         backface-visibility: hidden;
         perspective: 0px;
         font-size: 10px;
+        animation: none;
     }
 
     /*Test*/
@@ -977,8 +994,10 @@
 
     div#testInvis {
         width: 290px;
-        margin-left: 150px;
         padding-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 200px;
     }
 
     img#testPic {
@@ -995,6 +1014,7 @@
         backface-visibility: hidden;
         perspective: 0px;
         font-size: 10px;
+        animation: none;
     }
 
     p#beschreibung {
@@ -1067,60 +1087,5 @@
     p#beschreibung {
         font-size: 15px;
         width: 120%;
-    }
-}
-
-@media not screen and (max-width: 1000px) {
-    div#logicInvis {
-        display: block;
-        position: relative;
-        width: 70%;
-        margin-left: 200px;
-        transition: none;
-    }
-
-    div#logicGate:hover ~ div#logicInvis {
-        animation: none;
-    }
-
-    div#tableInvis {
-        display: block;
-        position: relative;
-        width: 70%;
-        margin-left: 200px;
-    }
-
-    div#table:hover ~ div#tableInvis {
-        animation: none;
-    }
-
-    div#tutorialInvis {
-        display: block;
-        position: relative;
-        width: 70%;
-        margin-left: 200px;
-    }
-
-    div#tutorial:hover ~ div#tutorialInvis {
-        animation: none;
-    }
-
-    div#testInvis {
-        display: block;
-        position: relative;
-        width: 70%;
-        margin-left: 200px;
-    }
-
-    div#test:hover ~ div#testInvis {
-        animation: none;
-    }
-
-    h2 {
-        font-size: 17px;
-    }
-    
-    p.seitenüberschrift {
-        font-size: 20px;
     }
 }
