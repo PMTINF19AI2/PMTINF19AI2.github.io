@@ -5,6 +5,7 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     const suchButton = document.querySelector('#searchIcon');
     const suchFeld = document.querySelector('#searchDiv');
+    const logoTop = document.querySelector('img.logo');
 
     dropdown.addEventListener('click',()=>{
         nav.classList.toggle('nav-active');
@@ -25,7 +26,9 @@ const navSlide = () => {
         nav.classList.toggle('navLinks-active');
         suchFeld.style.display = 'block';
         suchFeld.style.width = '100%';
+        logoTop.style.marginTop = '0px';
     })
+
 
 
 
