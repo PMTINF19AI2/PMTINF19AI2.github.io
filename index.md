@@ -54,14 +54,10 @@
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate">
-                        <div class="sketchfab-embed-wrapper">
-                            <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/1c283073f3bb414d883383867577522c/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                            <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-                            <a href="https://sketchfab.com/3d-models/model-logicblock-no-wi-si-ei-1c283073f3bb414d883383867577522c?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">model_logicBlock_NO_WI_SI_EI</a>
-                            by <a href="https://sketchfab.com/Flubbelbums?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Flubbelbums</a>
-                            on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-                            </p>
-                        </div>
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="A 3D model" width="200" height="200" src="https://sketchfab.com/models/1c283073f3bb414d883383867577522c/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+
                         <!--<img src="images/logicBlock-Logo.png" alt="Logik-Gatter" id="logicPic" />-->
                 </div>
                 <div id="logicInvis">
