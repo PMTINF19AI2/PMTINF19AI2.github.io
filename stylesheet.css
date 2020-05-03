@@ -1,0 +1,1105 @@
+﻿@font-face {
+    /*font-family: 'Minecraft';
+    src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
+    src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.woff') format('woff'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.ttf') format('truetype'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.svg#svgFontName') format('svg');*/
+    font-family: 'MCButton';
+    src: url('F77MinecraftRegular-0VYv.ttf');
+}
+
+@media all {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        color: white;
+    }
+
+    img.animationRestone {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: redstone;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        float: left;
+        margin: 10% 100% 0 0;
+    }
+
+
+    @keyframes redstone {
+        0% {
+            left: 0%;
+            width: 10%;
+            height: 10%;
+            transform: rotate(0deg);
+        }
+
+        /*50% {
+            width: 5%;
+            height: 5%;
+        }*/
+
+        100% {
+            left: 90%;
+            width: 10%;
+            height: 10%;
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate3d(60px, 60px, 0);
+        }
+
+        100% {
+            transform: translate3d(-10px, 0px, 0);
+        }
+    }
+   
+    @keyframes suchleiste{
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes navbar {
+        from { 
+            width: 107%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+
+    /*Header*/
+
+    ul.nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        font-family: MCButton;
+    }
+
+    .navLinks-active {
+        animation-name: navbar;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+    }
+
+    li.header {
+        float: left;
+        width: 10%;
+        border-right: 1px solid #bbb
+    }
+
+        li.header:last-child {
+            border-right: none;
+            float: right;
+        }
+
+        li.header a {
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+        }
+
+            li.header a:hover:not(#active) {
+                background-color: #111;
+            }
+
+    li#active {
+        width: 15%;
+    }
+
+    li.suchfeld {
+        float: right;
+    }
+
+    div#searchDiv {
+        display: none;
+        position: relative;
+        animation-name: suchleiste;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+    }
+
+    img#searchIcon {
+        margin-top: 7%;
+        cursor: pointer;
+    }
+
+    input#suchbegriff {
+        width: 160px;
+    }
+
+        input#suchbegriff::placeholder {
+            color: rgba(255,255,255,0.3);
+            text-shadow: none;
+        }
+
+    input.mcButton {
+        height: 30px;
+        width: 100px;
+        outline: 2px solid black;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+        background-repeat: repeat;
+        padding: 0;
+        font-family: Minecraft;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px #4C4C4C;
+        border-bottom: 4px solid #565656;
+        border-right: 2px solid #565656;
+        border-left: 2px solid #AAA;
+        border-top: 2px solid #AAA;
+        box-sizing: border-box;
+        font-size: 13px;
+        font-family: MCButton;
+        margin-bottom: 5px;
+    }
+
+        input.mcButton span {
+            position: relative;
+            line-height: 40px;
+            bottom: 3px;
+        }
+
+        input.mcButton:hover {
+            border-bottom: 4px solid #59639A;
+            border-right: 2px solid #59639A;
+            border-left: 2px solid #BDC6FF;
+            border-top: 2px solid #BDC6FF;
+            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+            color: #FFFFA0;
+        }
+
+    #active {
+        background-color: #4CAF50;
+    }
+
+    div.header {
+        background-image: url(images/headerHintergrund.png);
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        min-height: 17vh;
+    }
+
+    .savespace {
+        width: 3.75%;
+    }
+
+    table.header {
+        margin: 1% 0 0 0.75%;
+        width: 99%;
+    }
+
+    td:last-child {
+        width: 5%;
+    }
+
+    td.logo {
+        width: 100px;
+    }
+
+    img.logo {
+        width: 150%;
+    }
+
+    li#dropdown {
+        align-items: center;
+        padding: 7px 40px;
+        border-right: none;
+    }
+
+    .dropdown {
+        display: none;
+        cursor: pointer;
+    }
+
+    div.line1, div.line2, div.line3 {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+
+    /*Sidebar*/
+
+    div.sidebar {
+        float: left;
+        width: 5%;
+        position: fixed;
+        background: rgba(131, 167, 71, 0.5);
+        margin: 7% 0 0 2.5%;
+        padding-top: 1%;
+        border-radius: 0px 0px 15px 15px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    img.sidebar {
+        width: 70%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+        img.sidebar:hover {
+            opacity: 0.5;
+        }
+
+
+
+    /*Content-Größe*/
+
+    article {
+        float: left;
+        height: 100%;
+        width: 100%;
+        /*padding: 0 0 0 0%;*/
+        background-image: url(images/dirtHintergrund.png);
+        box-shadow: rgba(0,0,0,0.3) 10px 10px 10px 10px;
+    }
+
+    div.preview {
+        width: 80%;
+        height: 100%;
+        float: left;
+        background-image: url("images/previewBackground.jpg");
+        margin: 10% 0 0 10%;
+        padding-top: 5%;
+        box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 20px;
+    }
+
+    div.seitenbreite {
+        width: 70%;
+        margin-left: 15%;
+        /*border-bottom: solid 3px rgb(51,51,51);*/
+        float: left;
+    }
+
+    div.seitenbreite2 {
+        width: 70%;
+        margin-left: 15%;
+        float: left;
+    }
+
+    div.previewWindow {
+        float: left;
+        width: 25%;
+        height: 50%;
+        margin-top: 5%;
+        /*background-color: rgba(255, 0, 0, 0.5);*/
+        /*border: solid 1px black;*/
+        border-radius: 10px 10px 10px 10px;
+        padding: 5% 0;
+        text-align: center;
+        box-shadow: 2px 5px 10px rgba(39, 39, 39,0.7);
+        background-image: url(images/grasshintergrundklein.png);
+    }
+
+    div.hr {
+        margin: 50px auto;
+        width: 90%;
+        border: solid 2px slategray;
+    }
+
+    p.invis {
+        font-family: 'Cabin Sketch', cursive;
+    }
+
+    p#beschreibung {
+        font-size: 25px;
+    }
+
+
+
+    /*Logik-Gatter-Hub*/
+
+    div#logicGate {
+        margin: 5% 5% 5% 10%;
+        transition: width 1.5s, height 1.5s;
+    }
+
+    div#logicInvis {
+        display: none;
+        margin: 6% 5% 5% 66%;
+        padding-top: 0.25%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        padding: 0% 2%;
+        border-radius: 5%;
+        width: 40%;
+    }
+
+    img#logicPic {
+        width: 50%;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    div#logicGate:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+        div#logicGate:hover ~ div#logicInvis {
+            display: block;
+            position: relative;
+            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+    img#logicPic:hover {
+        opacity: 0.5;
+        filter: alpha(opactiy=100);
+    }
+
+
+
+    /*Tisch*/
+
+    div#table {
+        margin: 5% 5% 5% 10%;
+        transition: width 1.5s, height 1.5s;
+    }
+
+    div#tableInvis {
+        display: none;
+        margin: 6% 10% 5% 66%;
+        padding-top: 0.25%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        padding: 0% 2%;
+        border-radius: 5%;
+        width: 40%;
+    }
+
+    img#tablePic {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    div#table:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+        div#table:hover ~ div#tableInvis {
+            display: block;
+            position: relative;
+            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+    img#tablePic:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=100);
+    }
+
+
+
+    /*Tutorial-Buch*/
+
+    div#tutorial {
+        margin: 5% 5% 5% 10%;
+        transition: width 1.5s, height 1.5s;
+    }
+
+    div#tutorialInvis {
+        display: none;
+        margin: 6% 10% 5% 66%;
+        padding-top: 0.25%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        padding: 0% 2%;
+        border-radius: 5%;
+        width: 40%;
+    }
+
+    img#tutorialPic {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    div#tutorial:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+        div#tutorial:hover ~ div#tutorialInvis {
+            display: block;
+            position: relative;
+            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+    img#tutorialPic:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+
+
+    /*Test*/
+
+    div#test {
+        margin: 5% 5% 5% 10%;
+        transition: width 1.5s, height 1.5s;
+    }
+
+    div#testInvis {
+        display: none;
+        margin: 5% 10% 5% 66%;
+        padding-top: 0.25%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        padding: 0% 2%;
+        border-radius: 5%;
+        width: 40%;
+    }
+
+    img#testPic {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    div#test:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+        div#test:hover ~ div#testInvis {
+            display: block;
+            position: relative;
+            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+    img#testPic:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=100);
+    }
+
+
+
+    /*Allgemein*/
+
+    h1 {
+        margin-bottom: 0.5rem;
+        font-family: MCButton; /*"Cabin Sketch", cursive;*/
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Cabin Sketch', cursive;
+    }
+
+    p.seitenüberschrift {
+        font-size: 70px;
+        font-weight: bold;
+        font-family: 'Comic Sans MS';
+        text-align: center;
+    }
+
+
+
+    /*Footer*/
+
+    div.footer {
+        width: 100%;
+        background-color: rgb(116, 136, 62);
+        position: page;
+        float: left;
+    }
+
+    div.impressum {
+        float: left;
+        width: 20%;
+        border-top: solid 3px rgba(0,0,0,0.8);
+        padding: 2% 0 0 2%;
+    }
+
+    div.footerMitte {
+        float: left;
+        width: 56%;
+        border-top: solid 3px rgba(0,0,0,0.8);
+        padding-top: 20px;
+    }
+
+    div.icons {
+        float: right;
+        width: 24%;
+        border-top: solid 3px rgba(0,0,0,0.8);
+        padding: 2% 2% 0 0;
+    }
+
+    img.logoFooter {
+        margin-left: 45%;
+        width: 25%;
+    }
+
+    img.footer {
+        width: 15%;
+        float: right;
+        margin-right: 5px;
+    }
+
+        img.footer:hover {
+            opacity: 0.5;
+        }
+
+    ul.footer {
+        padding-left: 0%;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    a.mcButton {
+        height: 50px;
+        width: 150px;
+        outline: 2px solid black;
+        position: relative;
+        margin: 0;
+        display: inline-block;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+        background-repeat: repeat;
+        padding: 0;
+        font-family: Minecraft;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px #4C4C4C;
+        border-bottom: 4px solid #565656;
+        border-right: 2px solid #565656;
+        border-left: 2px solid #AAA;
+        border-top: 2px solid #AAA;
+        box-sizing: border-box;
+        font-size: 15px;
+        font-family: MCButton;
+        text-decoration: none;
+        padding-top: 5%;
+    }
+
+        a.mcButton span {
+            position: relative;
+            line-height: 40px;
+            bottom: 3px;
+        }
+
+        a.mcButton:hover {
+            border-bottom: 4px solid #59639A;
+            border-right: 2px solid #59639A;
+            border-left: 2px solid #BDC6FF;
+            border-top: 2px solid #BDC6FF;
+            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+            color: #FFFFA0;
+        }
+
+    div.forumHeader {
+        margin: 1% 2%;
+        width: 96%;
+        border-top: groove 1px black;
+        border-left: groove 1px black;
+        border-right: groove 1px black;
+        border-bottom: dashed 1px black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgb(116, 136, 62);
+        float: left;
+        padding-bottom: 2%;
+    }
+
+    .forumHeader > h1 {
+        font-family: 'Comic Sans MS';
+    }
+
+    div.table {
+        float: left;
+        margin: 2% 0 0 3%;
+        width: 94%;
+    }
+
+    table.uebersichtforum {
+        text-align: left;
+        float: left;
+        font-family: 'Comic Sans MS';
+    }
+
+    td.typeForum {
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        border-left: solid 1px black;
+        border-right: dashed 1px black;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 4%;
+    }
+
+        td.typeForum:hover {
+            background-color: rgba(95, 95, 95, 0.3);
+        }
+
+    td.nameForum {
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        width: 100%;
+    }
+
+    td.usernameForum {
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        border-right: solid 1px black;
+        border-left: dashed 1px black;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 18%;
+    }
+}
+
+@media all and (max-width: 1400px) and (min-width: 850px) {
+    .nav-links {
+        width: 100%;
+    }
+
+    .savespace {
+        width: 50px;
+    }
+
+    .nav-links li {
+        width: 21%;
+    }
+
+    div.sidebar {
+        margin-top: 100px;
+    }
+
+    img.sidebar {
+        width: 40px;
+        margin-top: 5px;
+    }
+
+    div.preview {
+        background-image:none;
+        background-color: black;
+    }
+
+    div.footer div {
+        border:none;
+    }
+
+    p#beschreibung {
+        font-size: 13px;
+    }
+
+    a.mcButton {
+        height: 35px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    div.header {
+        min-height: 10vh;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+        .nav-links li {
+            opacity: 0;
+            border-right: none;
+        }
+
+    li#active {
+        width: 100%;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    .navLinks-active {
+        animation-name: none;
+    }
+
+    .dropdown {
+        display: block;
+        float: right;
+    }
+
+    img.logo {
+        margin-top: 5px;
+        width: 120px;
+    }
+
+    td.savespace {
+        display: none;
+    }
+
+    div.sidebar {
+        margin-top: 65px;
+        width: 40px;
+    }
+
+    img.sidebar {
+        width: 35px;
+        margin-top: 5px;
+    }
+
+    div.preview {
+        margin-left: 60px;
+        padding-top: 7%;
+        background-color: black;
+    }
+
+    div.seitenbreite, div.seitenbreite2 {
+        margin-left: 5%;
+    }
+
+    p.seitenüberschrift {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    /*Logik-Gatter*/
+
+    div#logicGate {
+        width: 100px;
+        height: 100px;
+        background-image: url('images/grasshintergrundklein_700px.png');
+        transition: none;
+    }
+
+        div#logicGate:hover {
+            width: 100px;
+            height: 100px;
+        }
+
+    div#logicInvis {
+        animation: none;
+        width: 290px;
+        margin-left: 150px;
+        padding-left: 0px;
+    }
+
+    img#logicPic {
+        width: 70px;
+        height: 70px;
+    }
+
+        img#logicPic:hover {
+            opacity: 1;
+        }
+
+    div#logicGate:hover ~ div#logicInvis {
+        display: block;
+        position: relative;
+        backface-visibility: hidden;
+        perspective: 0px;
+        font-size: 10px;
+    }
+
+    /*Tisch*/
+
+    div#table {
+        width: 100px;
+        height: 100px;
+        background-image: url('images/grasshintergrundklein_700px.png');
+        transition: none;
+    }
+
+        div#table:hover {
+            width: 100px;
+            height: 100px;
+        }
+
+    div#tableInvis {
+        animation: none;
+        width: 290px;
+        margin-left: 150px;
+        padding-left: 0px;
+    }
+
+    img#tablePic {
+        width: 70px;
+        height: 70px;
+    }
+
+        img#tablePic:hover {
+            opacity: 1;
+        }
+
+    div#table:hover ~ div#tableInvis {
+        position: relative;
+        backface-visibility: hidden;
+        perspective: 0px;
+        font-size: 10px;
+    }
+
+    /*Tutorial*/
+
+    div#tutorial {
+        width: 100px;
+        height: 100px;
+        background-image: url('images/grasshintergrundklein_700px.png');
+        transition: none;
+    }
+
+        div#tutorial:hover {
+            width: 100px;
+            height: 100px;
+        }
+
+    div#tutorialInvis {
+        animation: none;
+        width: 290px;
+        margin-left: 150px;
+        padding-left: 0px;
+    }
+
+    img#tutorialPic {
+        width: 70px;
+        height: 70px;
+    }
+
+        img#tutorialPic:hover {
+            opacity: 1;
+        }
+
+    div#tutorial:hover ~ div#tutorialInvis {
+        position: relative;
+        backface-visibility: hidden;
+        perspective: 0px;
+        font-size: 10px;
+    }
+
+    /*Test*/
+
+    div#test {
+        width: 100px;
+        height: 100px;
+        background-image: url('images/grasshintergrundklein_700px.png');
+        transition: none;
+    }
+
+        div#test:hover {
+            width: 100px;
+            height: 100px;
+        }
+
+    div#testInvis {
+        animation: none;
+        width: 290px;
+        margin-left: 150px;
+        padding-left: 0px;
+    }
+
+    img#testPic {
+        width: 70px;
+        height: 70px;
+    }
+
+        img#testPic:hover {
+            opacity: 1;
+        }
+
+    div#test:hover ~ div#testInvis {
+        position: relative;
+        backface-visibility: hidden;
+        perspective: 0px;
+        font-size: 10px;
+    }
+
+    p#beschreibung {
+        font-size: 13px;
+    }
+
+    a.mcButton {
+        height: 30px;
+        width: 120px;
+        outline: 2px solid black;
+        position: relative;
+        margin: 0 0 0 10px;
+        display: inline-block;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_center.png');
+        background-repeat: repeat;
+        padding: 0;
+        font-family: Minecraft;
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px #4C4C4C;
+        border-bottom: 4px solid #565656;
+        border-right: 2px solid #565656;
+        border-left: 2px solid #AAA;
+        border-top: 2px solid #AAA;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-family: MCButton;
+        text-decoration: none;
+        padding-top: 5%;
+    }
+
+        a.mcButton span {
+            position: relative;
+            line-height: 40px;
+            bottom: 3px;
+        }
+
+        a.mcButton:hover {
+            border-bottom: 4px solid #59639A;
+            border-right: 2px solid #59639A;
+            border-left: 2px solid #BDC6FF;
+            border-top: 2px solid #BDC6FF;
+            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+            color: #FFFFA0;
+        }
+
+    div.footer div {
+        border: none;
+    }
+}
+
+@media all and (viewpoint: 1000px) and (max-width: 1400px) {
+    .nav-links {
+        width: 100%;
+    }
+
+    .savespace {
+        width: 50px;
+    }
+
+    .nav-links li {
+        width: 0%;
+    }
+
+    div.preview {
+        background-image: none;
+        background-color: black;
+    }
+
+    p#beschreibung {
+        font-size: 15px;
+        width: 120%;
+    }
+}
+
+@media handheld and (max-width: 1000px) {
+    div#logicInvis {
+        display: block;
+        position: relative;
+        width: 70%;
+    }
+
+    div#tableInvis {
+        display: block;
+        position: relative;
+        width: 70%;
+    }
+
+    div#tutorialInvis {
+        display: block;
+        position: relative;
+        width: 70%;
+    }
+
+    div#testInvis {
+        display: block;
+        position: relative;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+}
