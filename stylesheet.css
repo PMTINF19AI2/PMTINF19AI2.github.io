@@ -1070,7 +1070,7 @@
     }
 }
 
-@media handheld and (max-width: 1000px) {
+@media not screen and (max-width: 1000px) {
     div#logicInvis {
         display: block;
         position: relative;
@@ -1087,6 +1087,7 @@
         display: block;
         position: relative;
         width: 70%;
+        margin-left: 200px;
     }
 
     div#table:hover ~ div#tableInvis {
@@ -1097,6 +1098,7 @@
         display: block;
         position: relative;
         width: 70%;
+        margin-left: 200px;
     }
 
     div#tutorial:hover ~ div#tutorialInvis {
@@ -1107,6 +1109,7 @@
         display: block;
         position: relative;
         width: 70%;
+        margin-left: 200px;
     }
 
     div#test:hover ~ div#testInvis {
