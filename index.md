@@ -1,3 +1,5 @@
+<head>    <script src="scripts/model3d.js"></script></head>
+
 <body>
     <div class="header">
         <nav>
@@ -54,10 +56,10 @@
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate">
-                <div class="sketchfab-embed-wrapper">
+                <!--<div class="sketchfab-embed-wrapper">
                     <iframe title="A 3D model" width="200" height="200" src="https://sketchfab.com/models/1c283073f3bb414d883383867577522c/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                </div>
-
+                </div>-->
+                <model-3d background-color="none" src="/models/scene.gltf"></model-3d>
                         <!--<img src="images/logicBlock-Logo.png" alt="Logik-Gatter" id="logicPic" />-->
                 </div>
                 <div id="logicInvis">
