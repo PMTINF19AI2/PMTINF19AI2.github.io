@@ -343,6 +343,7 @@
 
     p.unterüberschrift {
         font-size: 30px;
+        padding: 20px 100px;
     }
 
 
@@ -834,6 +835,7 @@
 
     p.unterüberschrift {
         font-size: 15px;
+        padding: 20px 30px;
     }
 
     @keyframes navLinkFade {

@@ -49,7 +49,7 @@
         </div>
         <div class="preview">
             <p class="seitenüberschrift" style="font-family: MCButton;">MeinKraft-Logik-Gatter</p>
-            <p class="unterüberschrift" style="font-family: MCButton; text-align: center; color: slategray; padding: 20px 100px;"><i>hilft dir komplexe Logik-Gatter einfach und kompakt in Minecraft zu bauen</i></p>
+            <p class="unterüberschrift" style="font-family: MCButton; text-align: center; color: slategray;"><i>hilft dir komplexe Logik-Gatter einfach und kompakt in Minecraft zu bauen</i></p>
             <div class="hr">
             </div>
             <div class="seitenbreite">
