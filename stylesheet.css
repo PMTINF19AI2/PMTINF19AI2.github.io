@@ -867,7 +867,6 @@
         }
 
     div#logicInvis {
-        animation: none;
         width: 290px;
         margin-left: 150px;
         padding-left: 0px;
@@ -905,7 +904,6 @@
         }
 
     div#tableInvis {
-        animation: none;
         width: 290px;
         margin-left: 150px;
         padding-left: 0px;
@@ -942,7 +940,6 @@
         }
 
     div#tutorialInvis {
-        animation: none;
         width: 290px;
         margin-left: 150px;
         padding-left: 0px;
@@ -979,7 +976,6 @@
         }
 
     div#testInvis {
-        animation: none;
         width: 290px;
         margin-left: 150px;
         padding-left: 0px;
@@ -1074,11 +1070,17 @@
     }
 }
 
-@media not screen and (max-width: 1000px) {
+@media handheld and (max-width: 1000px) {
     div#logicInvis {
         display: block;
         position: relative;
         width: 70%;
+        margin-left: 200px;
+        transition: none;
+    }
+
+    div#logicGate:hover ~ div#logicInvis {
+        animation: none;
     }
 
     div#tableInvis {
@@ -1087,16 +1089,28 @@
         width: 70%;
     }
 
+    div#table:hover ~ div#tableInvis {
+        animation: none;
+    }
+
     div#tutorialInvis {
         display: block;
         position: relative;
         width: 70%;
     }
 
+    div#tutorial:hover ~ div#tutorialInvis {
+        animation: none;
+    }
+
     div#testInvis {
         display: block;
         position: relative;
         width: 70%;
+    }
+
+    div#test:hover ~ div#testInvis {
+        animation: none;
     }
 
     h2 {
