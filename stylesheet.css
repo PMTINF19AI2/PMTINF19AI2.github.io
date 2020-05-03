@@ -1113,6 +1113,7 @@
     div.preview {
         background-image: none;
         background-color: black;
+        padding-top: 15px;
     }
 
     div.footer div {
