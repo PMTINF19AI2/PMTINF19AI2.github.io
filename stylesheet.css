@@ -360,6 +360,8 @@
         transition: width 1.5s, height 1.5s;
     }
 
+
+
     div#logicInvis {
         display: none;
         margin: 6% 5% 5% 66%;
@@ -372,7 +374,11 @@
         width: 40%;
     }
 
-    
+    video#logicVideo {
+        border-radius: 10px;
+        display: none;
+    }
+
     @keyframes bilddrehen {
         
         0%, 50%, 100% {
@@ -404,11 +410,17 @@
         width: 90%;
         border-radius: 10px;
         opacity: 1; 
+        display: block;
     }
 
-    img#logicAn {
-        display: none;
+    .logicOpac {
+        animation: swapOpac 0.1s forwards linear; 
     }
+
+    .logicVOpac {
+        animation: swapOpac 0.1s backwards linear;
+    }
+
 
     img#logicPic:hover {
         /*animation: bilddrehen 6s forwards ease;

@@ -1,4 +1,5 @@
 // JavaScript source code
+
 const navSlide = () => {
     const dropdown = document.querySelector('.dropdown');
     const nav = document.querySelector('.nav-links');
@@ -35,20 +36,27 @@ const navSlide = () => {
 navSlide();
 
 
-
 function glowingOn() {
     setTimeout(function() {
-        const logicPic = document.querySelector('#logicPic');
-        logicPic.setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
-    }, 1800);
+        $( '#logicPic' ).fadeTo("400", 0);
+        $('#logicPic').css('display','none');
+        $( '#logicVideo' ).fadeTo("400", 1);
+        $('#logicVideo').css('display', 'inline');
+        $('#logicGate').css('padding', '0');
+        
+    }, 1500);
 }
 
 function glowingOff() {
     setTimeout(function() {
-        const logicPic = document.querySelector('#logicPic');
-        logicPic.setAttribute("src", "images/logicBlock-Logo3d2.png");
-    }, 3000);
+        $( '#logicVideo' ).fadeTo("400", 0);
+        $('#logicVideo').css("display",'none');
+        $( '#logicPic' ).fadeTo("400", 1);
+        $('#logicPic').css("display", 'inline');
+        $('#logicGate').css('padding', '5% 0');
+    }, 2000);
 }
+
 
 
 
