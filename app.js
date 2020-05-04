@@ -29,9 +29,10 @@ const navSlide = () => {
         logoTop.style.marginTop = '0px';
     })
 
+}
 
-
-
+function changeImage(a) {
+    document.getElementById("img").src=a;
 }
 
 navSlide();

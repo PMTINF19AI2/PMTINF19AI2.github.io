@@ -943,10 +943,10 @@
     img#logicPic {
         width: 70px;
         height: 70px;
+        transform: rotateY(40deg);
     }
 
         img#logicPic:hover {
-            opacity: 0.7;
             animation: none;
         }
 
