@@ -36,3 +36,12 @@ function changeImage(a) {
 }
 
 navSlide();
+
+
+function glowingOn() {
+    document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
+}
+
+function glowingOff() {
+    document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d2.png");
+}
