@@ -1,5 +1,4 @@
 // JavaScript source code
-
 const navSlide = () => {
     const dropdown = document.querySelector('.dropdown');
     const nav = document.querySelector('.nav-links');
@@ -33,7 +32,7 @@ const navSlide = () => {
 
 }
 
-navSlide();
+
 
 
 function glowingOn() {
@@ -61,3 +60,4 @@ function glowingOff() {
 
 
 
+navSlide();
