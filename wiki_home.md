@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet_wiki.css" type="text/css">
+    <script src="https://kit.fontawesome.com/bf141cf2a1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>MineKraft-Logik-Gatter</title>
+  </head>
+<body>
+    <div class="header">
+        <nav>
+            <table class="header" style="font-family: 'Cabin Sketch', cursive;">
+                <tr>
+                    <td class="logo"><a href="index.html"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></a></td>
+                    <td class="savespace"></td>
+                    <td>
+                        <ul class="nav-links">
+                            <li class="header"><a class="active" href="index.html">Home</a></li>
+                            <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
+                            <li class="header"><a href="">Download</a></li>
+                            <li class="header" id="active"><a href="wiki_home.html">Wiki</a></li>
+                            <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="searchDiv">
+                            <form id="search" method="get" action="ForumHub.html" >
+                                <input type="search" name="q" id="suchbegriff" placeholder="Suchbegriff" class="mcButton" style="text-shadow: none;" />
+                                <input type="submit" Value="Search" class="mcButton" />
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    <article>
+        <div class="sidebar">
+            <a href="" target="_blank"><img src="images/instagram-logo.png" class="sidebar" alt="instagram" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 1px; width: 80%; margin-left:10%" />
+            <a href="" target="_blank"><img src="images/twitter-logo.png" class="sidebar" alt="twitter" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="sidebar" alt="github" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="mailto:silas.wessely@gmx.de"><img src="images/email-logo.png" class="sidebar" alt="email" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href=""><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
+            <br /><br />
+        </div>
+        <div class="preview_wiki">
+            <div class="pagename">
+                <p class="pagename">Itemname</p>
+                <hr />
+            </div>
+            <div class="basicInformation">
+                <div class="tableOfInformation">
+                    <div class="tableOfInformation_header">Itemname</div>
+                    <div class="tableOfInformation_pictures">
+                        <div><img src="images/logicBlock-Logo3d_glowing.png" width="200px"></div>
+                        <div class="tableOfInformation_itemSlots">
+                            <span class="tableOfInformation_itemSlot">
+                                <span class="tableOfInformation_itemSlot_item">
+                                    <span class="sprite inv-sprite"><img src="images/logicBlock-Logo3d_glowing_klein.png"></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="tableOfInformation_rows" cellspacing="1" cellpadding="4">    
+                        <tbody>
+                            <tr class="tableOfInformation_information">     <th>Kategorie:</th>         <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Transparenz</th>        <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>Value</p></td>      </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="description">
+                    <p class="description">List here information about the page / about the item
+                    Give some basic information about the look and the usage of the item.</p>
+                </div>
+                <div id="content" class="content">
+                    <div class="contentTitle">
+                        <h2>Inhaltsverzeichnis</h2>
+                    </div>
+                    <ol>
+                        <li><a href="#Herstellung">Herstellung</a></li>
+                        <li><a href="#Verwendung">Verwendung</a></li>
+                        <li><a href="#Geschichte">Geschichte</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="pagename">
+                <h2 id="Herstellung">Herstellung</h2>
+                <hr />
+            </div>
+            <div class="craftingInformation">
+                <table class="wikitable">
+                    <tbody>
+                        <tr>    <th>Name</th>       <th>Zutaten</th>                            <th>Eingabe&nbsp;» Ausgabe</th>     </tr>
+                        <tr>    <th>Itemname</th>   <td align="center">Liste der Zutaten</td>   
+                                <td>
+                                    <div class="mcUI_crafting">
+                                        <span class="mcUI mcUI_crafting_table">
+                                            <span class="mcUI_input">
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                </span>
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item">Link</span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                </span>
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                </span>
+                                            </span>
+                                            <span class="mcUI_arrow">
+                                                <img src="images/arrow.png" width="32px" height="32px">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-10-10v7h-14v6h14v7z"/></svg> -->
+                                            </span>
+                                            <span class="mcUI_output">
+                                                <span class="mcUI_invSlot_large mcUI_invSlot">
+                                                    <span class="mcUI_invSlot_item">
+                                                        <span style="background-image: url('test1.png'); background-position: -992px -1664px;"></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                    </div>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagename">
+                <h2 id="Verwendung">Verwendung</h2>
+                <hr />
+            </div>
+            <div class="usageInformation">
+                <p>Give somemore Information about the usability of the item</p>
+                <p>Include more Crafting-GUIs for presenting what can be made with this item</p>
+                <p>If there are specials about this item, they can also be included in this section. Just give it a heading smaller than h2 and another paragraph.</p>
+            </div>
+            <div class="pagename">
+                <h2 id="Geschichte">Geschichte</h2>
+                <hr />
+            </div>
+            <table class="historybox">
+                <tbody>
+                    <tr>    
+                        <th class="historybox_top">
+                            <span class="historybox_title">
+                                <a href="#">Versionsgeschichte der Java-Edition</a>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="historybox_body" style="max-height: 300px; overflow-y: auto;">
+                                <table class="historyInformation historybox_history">
+                                    <tbody>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.15</a></th>
+                                            <td class="historybox_list">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion1</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1. Änderung</li>
+                                                                    <li>2. Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion2</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion3</a></th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                    <li>3.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.14 (Unterversion)</a></th>
+                                            <td class="historybox_list">
+                                                <ul>
+                                                    <li>1.Änderung</li>
+                                                    <li>2.Änderung</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 05.Mai.2020 um 01.23Uhr bearbeitet.</p></span>
+        </div>
+    </article>
+    <div class="footer">
+        <div class="impressum">
+            <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
+        </div>
+        <div class="footerMitte">
+            <img src="images/logo.png" class="logoFooter" alt="logo" />
+        </div>
+        <div class="icons">
+            <ul class="footer">
+                <li class="footer"><a href="" target="_blank"><img src="images/instagram-logo.png" class="footer" alt="instagram" /></a></li>
+                <li class="footer"><a href="" target="_blank"><img src="images/twitter-logo.png" class="footer" alt="twitter" /></a></li>
+                <li class="footer"><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="footer" alt="github" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</body>
+</html>
