@@ -30,19 +30,6 @@ const navSlide = () => {
     });
 
 
-    $('#logicPic').on({
-        'mouseover': function () {
-            timer = setTimeout(function () {
-                logicPic.setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
-            }, 1000);
-        },
-        'mouseout' : function () {
-            clearTimeout(timer);
-            logicPic.setAttribute("src", "images/logicBlock-Logo3d2.png");
-        }
-    });
-
-
 }
 
 navSlide();
