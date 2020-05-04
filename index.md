@@ -56,7 +56,7 @@
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate">
                 <!--<div class="sketchfab-embed-wrapper">
-                    <iframe title="A 3D model" width="200" height="200" src="https://sketchfab.com/models/1c283073f3bb414d883383867577522c/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <iframe title="A 3D model" width="200" height="200" src="https://sketchfab.com/models/  1c283073f3bb414d883383867577522c/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>-->
                 <!--<model-3d background-color="rgba(0,0,0,0)" src="/models/scene.gltf"></model-3d>-->
                          <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover='glowingOn();' onmouseout='glowingOff();' />
