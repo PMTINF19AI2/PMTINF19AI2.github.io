@@ -70,7 +70,6 @@
                 </div>
                 <br />
             </div>
-
             <div class="seitenbreite">
                 <div class="previewWindow" id="table">
                     <img src="images/logic-gate.jpg" alt="Tisch" id="tablePic" />
@@ -83,10 +82,8 @@
                     </p>
                 </div>
             </div>
-
             <div class="seitenbreite">
                 <div class="previewWindow" id="tutorial">
-
                     <img src="images/logic-gate.jpg" alt="Tutorial" id="tutorialPic" />
                 </div>
                 <div id="tutorialInvis">
@@ -97,10 +94,8 @@
                     </p>
                 </div>
             </div>
-
             <div class="seitenbreite2">
                 <div class="previewWindow" id="test">
-
                     <img src="images/logic-gate.jpg" alt="Test" id="testPic" />
                 </div>
                 <div id="testInvis">
@@ -116,7 +111,6 @@
             </div>
         </div>
     </article>
-
     <div class="footer">
         <div class="impressum">
             <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
@@ -132,6 +126,5 @@
             </ul>
         </div>
     </div>
-
     <script src="./app.js"></script>
 </body>
