@@ -6,7 +6,7 @@ const navSlide = () => {
     const suchButton = document.querySelector('#searchIcon');
     const suchFeld = document.querySelector('#searchDiv');
     const logoTop = document.querySelector('img.logo');
-    const logicPic = doucment.querySelector('#logicPic');
+    const logicPic = document.querySelector('#logicPic');
 
     dropdown.addEventListener('click',()=>{
         nav.classList.toggle('nav-active');
@@ -30,15 +30,18 @@ const navSlide = () => {
         logoTop.style.marginTop = '0px';
     });
 
-    logicPic.addEventListener('mouseover', ()=> {
-        document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
-    });
 
+    logicPic.addEventListener('mouseover', ()=> {
+        logicPic.setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
+    });
+    
     logicPic.addEventListener('mouseout', ()=> {
-        document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d2.png");
+        logicPic.setAttribute("src", "images/logicBlock-Logo3d2.png");
     });
 
 }
+
+
 
 navSlide();
 
