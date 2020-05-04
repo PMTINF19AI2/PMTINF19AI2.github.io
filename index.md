@@ -3,14 +3,14 @@
         <nav>
             <table class="header" style="font-family: 'Cabin Sketch', cursive;">
                 <tr>
-                    <td class="logo"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></td>
+                    <td class="logo"><a href="index.html"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></a></td>
                     <td class="savespace"></td>
                     <td>
                         <ul class="nav-links">
                             <li class="header" id="active"><a class="active" href="">Home</a></li>
                             <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
                             <li class="header"><a href="">Download</a></li>
-                            <li class="header"><a href="">Wiki</a></li>
+                            <li class="header"><a href="wiki_home.html">Wiki</a></li>
                             <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
                         </ul>
                     </td>
@@ -49,14 +49,15 @@
         <div class="preview">
             <p class="seitenüberschrift" style="font-family: MCButton;">MeinKraft-Logik-Gatter</p>
             <p class="unterüberschrift" style="font-family: MCButton; text-align: center; color: slategray;"><i>hilft dir komplexe Logik-Gatter einfach und kompakt in Minecraft zu bauen</i></p>
-            <div class="hr"></div>
+            <div class="hr">
+            </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate" >
-                    <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOn();"/>
-                    <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOff();">
-                        <source src="videos/animated_glowing_logicBlock2.mp4" type="video/mp4">
-                    </video>         
-                </div>
+                <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOn();"/>
+                <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOff();">
+                    <source src="videos/animated_glowing_logicBlock2.mp4" type="video/mp4">
+                </video>         
+                    </div>
                 <div id="logicInvis">
                      <h2 style="font-family: 'Cabin Sketch', cursive;">Das Logik-Gatter</h2>
                      <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
@@ -64,6 +65,7 @@
                         Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe. Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe.
                      </p>
                 </div>
+                <br />
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="table">
@@ -100,6 +102,7 @@
                     </p>
                 </div>
             </div>
+            <br />
             <div>
                 <img src="images/redstone.png" class="animationRestone" />
             </div>
@@ -123,3 +126,4 @@
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
+</html>
