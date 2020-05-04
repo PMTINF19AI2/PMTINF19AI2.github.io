@@ -391,16 +391,30 @@
         } 
     }
 
+    @keyframes swapOpac {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
     img#logicPic {
         width: 90%;
         border-radius: 10px;
-        opacity: 1;
+        opacity: 1; 
+    }
+
+    img#logicAn {
+        display: none;
     }
 
     img#logicPic:hover {
         animation: bilddrehen 6s forwards ease;
         animation-delay: 2s;
     }
+
 
     div#logicGate:hover {
         width: 50%;
