@@ -160,7 +160,7 @@
                                                     </span>
                                                 </span>
                                             </span>
-                                        <span>
+                                        </span>
                                     </div>
                                 </td>
                         </tr>
