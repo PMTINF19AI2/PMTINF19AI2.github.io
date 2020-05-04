@@ -411,8 +411,9 @@
     }
 
     img#logicPic:hover {
-        animation: bilddrehen 6s forwards ease;
-        animation-delay: 2s;
+        /*animation: bilddrehen 6s forwards ease;
+        animation-delay: 2s;*/
+        animation: none;
     }
 
 
