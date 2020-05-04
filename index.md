@@ -35,7 +35,6 @@
             </table>
         </nav>
     </div>
-
     <article>
         <div class="sidebar">
             <a href="" target="_blank"><img src="images/instagram-logo.png" class="sidebar" alt="instagram" /></a>
