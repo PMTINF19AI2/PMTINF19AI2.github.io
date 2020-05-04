@@ -6,6 +6,7 @@ const navSlide = () => {
     const suchButton = document.querySelector('#searchIcon');
     const suchFeld = document.querySelector('#searchDiv');
     const logoTop = document.querySelector('img.logo');
+    const logicPic = doucment.querySelector('#logicPic');
 
     dropdown.addEventListener('click',()=>{
         nav.classList.toggle('nav-active');
@@ -27,21 +28,19 @@ const navSlide = () => {
         suchFeld.style.display = 'block';
         suchFeld.style.width = '100%';
         logoTop.style.marginTop = '0px';
-    })
+    });
 
-}
+    logicPic.addEventListener('mouseover', ()=> {
+        document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
+    });
 
-function changeImage(a) {
-    document.getElementById("img").src=a;
+    logicPic.addEventListener('mouseout', ()=> {
+        document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d2.png");
+    });
+
 }
 
 navSlide();
 
 
-function glowingOn() {
-    document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d_glowing.png");
-}
 
-function glowingOff() {
-    document.getElementById("logicPic").setAttribute("src", "images/logicBlock-Logo3d2.png");
-}
