@@ -8,39 +8,7 @@
 
 @media all {
 
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    .scene,
-    canvas {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-
-    body {
-        margin: 0% 0% 0% 0%;
-        width: 100%;
-        color: white;
-    }
-
-    img.animationRestone {
-        width: 100px;
-        height: 100px;
-        position: relative;
-        animation-name: redstone;
-        animation-duration: 5s;
-        animation-direction: alternate;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        float: left;
-        margin: 10% 100% 0 0;
-    }
-
+    /*Animationen*/
 
     @keyframes redstone {
         0% {
@@ -61,6 +29,9 @@
             height: 10%;
             transform: rotate(360deg);
         }
+
+
+
     }
 
     @keyframes shake {
@@ -94,9 +65,72 @@
         }
     }
 
+    @keyframes bilddrehen {
+        
+        0%, 50%, 100% {
+            transform: rotate3d(0,1,1,0);
+            margin-left: 0px;
+        }
+        
+        25% {
+            transform: rotate3d(0,1,1, 30deg);
+            margin-left: -30px;
+        }
 
+        50% {
+            transform: rotate3d(0,1,1, -30deg);
+            margin-left: 30px;
+        } 
+    }
 
-    /*Header*/
+    /*Allgemein*/
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .scene,
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        margin: 0% 0% 0% 0%;
+        width: 100%;
+        color: white;
+    }
+
+    img.animationRestone {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: redstone;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        float: left;
+        margin: 10% 100% 0 0;
+    }
+
+    h1 {
+        margin-bottom: 0.5rem;
+        font-family: MCButton; /*"Cabin Sketch", cursive;*/
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Cabin Sketch', cursive;
+    }
+
+    /*Navbar*/
 
     ul.nav-links {
         list-style-type: none;
@@ -119,24 +153,24 @@
         border-right: 1px solid #bbb
     }
 
-        li.header:last-child {
-            border-right: none;
-            float: right;
-        }
+    li.header:last-child {
+        border-right: none;
+        float: right;
+    }
 
-        li.header a {
-            display: flex;
-            justify-content: space-around;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            letter-spacing: 1.5px;
-        }
+    li.header a {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+    }
 
-            li.header a:hover:not(#active) {
-                background-color: #111;
-            }
+    li.header a:hover:not(#active) {
+        background-color: #111;
+    }
 
     li#active {
         width: 15%;
@@ -145,6 +179,8 @@
     li.suchfeld {
         float: right;
     }
+
+    /* Suche */
 
     div#searchDiv {
         display: none;
@@ -163,10 +199,10 @@
         width: 160px;
     }
 
-        input#suchbegriff::placeholder {
-            color: rgba(255,255,255,0.3);
-            text-shadow: none;
-        }
+    input#suchbegriff::placeholder {
+        color: rgba(255,255,255,0.3);
+        text-shadow: none;
+    }
 
     input.mcButton {
         height: 30px;
@@ -192,24 +228,26 @@
         margin-bottom: 5px;
     }
 
-        input.mcButton span {
-            position: relative;
-            line-height: 40px;
-            bottom: 3px;
-        }
+    input.mcButton span {
+        position: relative;
+        line-height: 40px;
+        bottom: 3px;
+    }
 
-        input.mcButton:hover {
-            border-bottom: 4px solid #59639A;
-            border-right: 2px solid #59639A;
-            border-left: 2px solid #BDC6FF;
-            border-top: 2px solid #BDC6FF;
-            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
-            color: #FFFFA0;
-        }
+    input.mcButton:hover {
+        border-bottom: 4px solid #59639A;
+        border-right: 2px solid #59639A;
+        border-left: 2px solid #BDC6FF;
+        border-top: 2px solid #BDC6FF;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+        color: #FFFFA0;
+    }
 
     #active {
         background-color: #4CAF50;
     }
+
+    /* Header */
 
     div.header {
         background-image: url(images/headerHintergrund.png);
@@ -281,13 +319,13 @@
         margin-bottom: 7px;
     }
 
-        img.sidebar:hover {
-            opacity: 0.5;
-        }
+    img.sidebar:hover {
+        opacity: 0.5;
+    }
 
 
 
-    /*Content-Größe*/
+    /*Content*/
 
     article {
         float: left;
@@ -348,19 +386,38 @@
         font-size: 25px;
     }
 
+    p.seitenüberschrift {
+        font-size: 70px;
+        font-weight: bold;
+        font-family: 'Comic Sans MS';
+        text-align: center;
+    }
+
     p.unterüberschrift {
         font-size: 30px;
         padding: 20px 100px;
     }
 
-    /*Logik-Gatter-Hub*/
+    /*Logik-Gatter*/
 
     div#logicGate {
         margin: 5% 5% 5% 10%;
         transition: width 1.5s, height 1.5s;
     }
 
+    div#logicGate:hover {
+        width: 50%;
+        height: 70%;
+    }
 
+    div#logicGate:hover ~ div#logicInvis {
+        display: block;
+        position: relative;
+        animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+    }
 
     div#logicInvis {
         display: none;
@@ -379,33 +436,6 @@
         display: none;
     }
 
-    @keyframes bilddrehen {
-        
-        0%, 50%, 100% {
-            transform: rotate3d(0,1,1,0);
-            margin-left: 0px;
-        }
-        
-        25% {
-            transform: rotate3d(0,1,1, 30deg);
-            margin-left: -30px;
-        }
-
-        50% {
-            transform: rotate3d(0,1,1, -30deg);
-            margin-left: 30px;
-        } 
-    }
-
-    @keyframes swapOpac {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-
     img#logicPic {
         width: 90%;
         border-radius: 10px;
@@ -413,43 +443,31 @@
         display: block;
     }
 
-    .logicOpac {
-        animation: swapOpac 0.1s forwards linear; 
-    }
-
-    .logicVOpac {
-        animation: swapOpac 0.1s backwards linear;
-    }
-
-
     img#logicPic:hover {
         /*animation: bilddrehen 6s forwards ease;
         animation-delay: 2s;*/
         animation: none;
     }
 
-
-    div#logicGate:hover {
-        width: 50%;
-        height: 70%;
-    }
-
-        div#logicGate:hover ~ div#logicInvis {
-            display: block;
-            position: relative;
-            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
-
-
     /*Tisch*/
 
     div#table {
         margin: 5% 5% 5% 10%;
         transition: width 1.5s, height 1.5s;
+    }
+
+    div#table:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+    div#table:hover ~ div#tableInvis {
+        display: block;
+        position: relative;
+        animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
     }
 
     div#tableInvis {
@@ -472,32 +490,30 @@
         opacity: 1;
     }
 
-    div#table:hover {
-        width: 50%;
-        height: 70%;
-    }
-
-        div#table:hover ~ div#tableInvis {
-            display: block;
-            position: relative;
-            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
     img#tablePic:hover {
         opacity: 0.5;
         filter: alpha(opacity=100);
     }
-
-
 
     /*Tutorial-Buch*/
 
     div#tutorial {
         margin: 5% 5% 5% 10%;
         transition: width 1.5s, height 1.5s;
+    }
+
+    div#tutorial:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+    div#tutorial:hover ~ div#tutorialInvis {
+        display: block;
+        position: relative;
+        animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
     }
 
     div#tutorialInvis {
@@ -520,32 +536,30 @@
         opacity: 1;
     }
 
-    div#tutorial:hover {
-        width: 50%;
-        height: 70%;
-    }
-
-        div#tutorial:hover ~ div#tutorialInvis {
-            display: block;
-            position: relative;
-            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
     img#tutorialPic:hover {
         opacity: 0.5;
         filter: alpha(opacity=50);
     }
-
-
 
     /*Test*/
 
     div#test {
         margin: 5% 5% 5% 10%;
         transition: width 1.5s, height 1.5s;
+    }
+
+    div#test:hover {
+        width: 50%;
+        height: 70%;
+    }
+
+    div#test:hover ~ div#testInvis {
+        display: block;
+        position: relative;
+        animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
     }
 
     div#testInvis {
@@ -568,49 +582,10 @@
         opacity: 1;
     }
 
-    div#test:hover {
-        width: 50%;
-        height: 70%;
-    }
-
-        div#test:hover ~ div#testInvis {
-            display: block;
-            position: relative;
-            animation: shake 2s cubic-bezier(.36,.07,.19,.97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-        }
-
     img#testPic:hover {
         opacity: 0.5;
         filter: alpha(opacity=100);
     }
-
-
-
-    /*Allgemein*/
-
-    h1 {
-        margin-bottom: 0.5rem;
-        font-family: MCButton; /*"Cabin Sketch", cursive;*/
-        font-weight: 500;
-        line-height: 1.2;
-    }
-
-    h3 {
-        text-align: center;
-        font-family: 'Cabin Sketch', cursive;
-    }
-
-    p.seitenüberschrift {
-        font-size: 70px;
-        font-weight: bold;
-        font-family: 'Comic Sans MS';
-        text-align: center;
-    }
-
-
 
     /*Footer*/
 
@@ -626,41 +601,6 @@
         width: 20%;
         border-top: solid 3px rgba(0,0,0,0.8);
         padding: 2% 0 0 2%;
-    }
-
-    div.footerMitte {
-        float: left;
-        width: 56%;
-        border-top: solid 3px rgba(0,0,0,0.8);
-        padding-top: 20px;
-    }
-
-    div.icons {
-        float: right;
-        width: 24%;
-        border-top: solid 3px rgba(0,0,0,0.8);
-        padding: 2% 2% 0 0;
-    }
-
-    img.logoFooter {
-        margin-left: 45%;
-        width: 25%;
-    }
-
-    img.footer {
-        width: 15%;
-        float: right;
-        margin-right: 5px;
-    }
-
-        img.footer:hover {
-            opacity: 0.5;
-        }
-
-    ul.footer {
-        padding-left: 0%;
-        list-style-type: none;
-        overflow: hidden;
     }
 
     a.mcButton {
@@ -688,20 +628,57 @@
         padding-top: 5%;
     }
 
-        a.mcButton span {
-            position: relative;
-            line-height: 40px;
-            bottom: 3px;
-        }
+    a.mcButton span {
+        position: relative;
+        line-height: 40px;
+        bottom: 3px;
+    }
 
-        a.mcButton:hover {
-            border-bottom: 4px solid #59639A;
-            border-right: 2px solid #59639A;
-            border-left: 2px solid #BDC6FF;
-            border-top: 2px solid #BDC6FF;
-            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
-            color: #FFFFA0;
-        }
+    a.mcButton:hover {
+        border-bottom: 4px solid #59639A;
+        border-right: 2px solid #59639A;
+        border-left: 2px solid #BDC6FF;
+        border-top: 2px solid #BDC6FF;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+        color: #FFFFA0;
+    }
+
+    div.footerMitte {
+        float: left;
+        width: 56%;
+        border-top: solid 3px rgba(0,0,0,0.8);
+        padding-top: 20px;
+    }
+
+    img.logoFooter {
+        margin-left: 45%;
+        width: 25%;
+    }
+
+    div.icons {
+        float: right;
+        width: 24%;
+        border-top: solid 3px rgba(0,0,0,0.8);
+        padding: 2% 2% 0 0;
+    }
+
+    img.footer {
+        width: 15%;
+        float: right;
+        margin-right: 5px;
+    }
+
+    img.footer:hover {
+        opacity: 0.5;
+    }
+
+    ul.footer {
+        padding-left: 0%;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    /* Forum */
 
     div.forumHeader {
         margin: 1% 2%;
@@ -743,9 +720,9 @@
         width: 4%;
     }
 
-        td.typeForum:hover {
-            background-color: rgba(95, 95, 95, 0.3);
-        }
+    td.typeForum:hover {
+        background-color: rgba(95, 95, 95, 0.3);
+    }
 
     td.nameForum {
         border-top: solid 1px black;
@@ -829,10 +806,15 @@
 }
 
 @media all and (max-width: 850px) {
+    
+    /* Allgemein */
+    
     body {
         overflow-x: hidden;
     }
 
+    /* Header */
+    
     div.header {
         min-height: 12vh;
     }
@@ -851,10 +833,10 @@
         transition: transform 0.5s ease-in;
     }
 
-        .nav-links li {
-            opacity: 0;
-            border-right: none;
-        }
+    .nav-links li {
+        opacity: 0;
+        border-right: none;
+    }
 
     li#active {
         width: 100%;
@@ -916,6 +898,10 @@
         font-size: 15px;
         padding: 20px 30px;
     }
+    
+    p#beschreibung {
+        font-size: 13px;
+    }
 
     @keyframes navLinkFade {
         from {
@@ -954,10 +940,14 @@
         transition: none;
     }
 
-        div#logicGate:hover {
-            width: 100px;
-            height: 100px;
-        }
+    div#logicGate:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    div#logicGate:hover ~ div#logicInvis {
+        animation: none;
+    }
 
     div#logicInvis {
         width: 65%;
@@ -973,11 +963,7 @@
         transform: rotateY(40deg);
     }
 
-        img#logicPic:hover {
-            animation: none;
-        }
-
-    div#logicGate:hover ~ div#logicInvis {
+    img#logicPic:hover {
         animation: none;
     }
 
@@ -990,10 +976,14 @@
         transition: none;
     }
 
-        div#table:hover {
-            width: 100px;
-            height: 100px;
-        }
+    div#table:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    div#table:hover ~ div#tableInvis {
+        animation: none;
+    }
 
     div#tableInvis {
         width: 65%;
@@ -1008,12 +998,8 @@
         height: 70px;
     }
 
-        img#tablePic:hover {
-            opacity: 1;
-        }
-
-    div#table:hover ~ div#tableInvis {
-        animation: none;
+    img#tablePic:hover {
+        opacity: 1;
     }
 
     /*Tutorial*/
@@ -1025,10 +1011,14 @@
         transition: none;
     }
 
-        div#tutorial:hover {
-            width: 100px;
-            height: 100px;
-        }
+    div#tutorial:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    div#tutorial:hover ~ div#tutorialInvis {
+        animation: none;
+    }
 
     div#tutorialInvis {
         width: 65%;;
@@ -1043,12 +1033,8 @@
         height: 70px;
     }
 
-        img#tutorialPic:hover {
-            opacity: 1;
-        }
-
-    div#tutorial:hover ~ div#tutorialInvis {
-        animation: none;
+    img#tutorialPic:hover {
+        opacity: 1;
     }
 
     /*Test*/
@@ -1060,10 +1046,14 @@
         transition: none;
     }
 
-        div#test:hover {
-            width: 100px;
-            height: 100px;
-        }
+    div#test:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    div#test:hover ~ div#testInvis {
+        animation: none;
+    }
 
     div#testInvis {
         width: 65%;
@@ -1078,16 +1068,14 @@
         height: 70px;
     }
 
-        img#testPic:hover {
-            opacity: 1;
-        }
-
-    div#test:hover ~ div#testInvis {
-        animation: none;
+    img#testPic:hover {
+        opacity: 1;
     }
 
-    p#beschreibung {
-        font-size: 13px;
+    /* Footer */
+
+    div.footer div {
+        border: none;
     }
 
     a.mcButton {
@@ -1115,23 +1103,19 @@
         padding-top: 5%;
     }
 
-        a.mcButton span {
-            position: relative;
-            line-height: 40px;
-            bottom: 3px;
-        }
+    a.mcButton span {
+        position: relative;
+        line-height: 40px;
+        bottom: 3px;
+    }
 
-        a.mcButton:hover {
-            border-bottom: 4px solid #59639A;
-            border-right: 2px solid #59639A;
-            border-left: 2px solid #BDC6FF;
-            border-top: 2px solid #BDC6FF;
-            background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
-            color: #FFFFA0;
-        }
-
-    div.footer div {
-        border: none;
+    a.mcButton:hover {
+        border-bottom: 4px solid #59639A;
+        border-right: 2px solid #59639A;
+        border-left: 2px solid #BDC6FF;
+        border-top: 2px solid #BDC6FF;
+        background-image: url('http://charliecowan.co.uk/mcbuttongenerator/button_active_center.png');
+        color: #FFFFA0;
     }
 }
 
@@ -1185,7 +1169,6 @@
         align-content: center;
         padding: 8px 0 7px 0;
     }
-
 
     img.logoFooter {
         margin-left: 0;

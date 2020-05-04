@@ -49,19 +49,14 @@
         <div class="preview">
             <p class="seitenüberschrift" style="font-family: MCButton;">MeinKraft-Logik-Gatter</p>
             <p class="unterüberschrift" style="font-family: MCButton; text-align: center; color: slategray;"><i>hilft dir komplexe Logik-Gatter einfach und kompakt in Minecraft zu bauen</i></p>
-            <div class="hr">
-            </div>
+            <div class="hr"></div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate" >
-                <!--<div class="sketchfab-embed-wrapper">
-                    <iframe title="A 3D model" width="200" height="200" src="https://sketchfab.com/models/  1c283073f3bb414d883383867577522c/embed?camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                </div>-->
-                <!--<model-3d background-color="rgba(0,0,0,0)" src="/models/scene.gltf"></model-3d>-->
-                <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOn();"/>
-                <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOff();">
-                    <source src="videos/animated_glowing_logicBlock2.mp4" type="video/mp4">
-                </video>         
-                    </div>
+                    <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOn();"/>
+                    <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOff();">
+                        <source src="videos/animated_glowing_logicBlock2.mp4" type="video/mp4">
+                    </video>         
+                </div>
                 <div id="logicInvis">
                      <h2 style="font-family: 'Cabin Sketch', cursive;">Das Logik-Gatter</h2>
                      <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
@@ -69,7 +64,6 @@
                         Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe. Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe.
                      </p>
                 </div>
-                <br />
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="table">
@@ -106,7 +100,6 @@
                     </p>
                 </div>
             </div>
-            <br />
             <div>
                 <img src="images/redstone.png" class="animationRestone" />
             </div>
