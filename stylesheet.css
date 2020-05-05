@@ -802,7 +802,15 @@
 }
 
 @media all and (min-width: 3400px) {
-    
+   
+    p.seitenüberschrift {
+        font-size: 300px;
+    }
+
+    p.unterüberschrift {
+        font-size: 100px;
+    }
+   
     p#beschreibung {
         font-size: 100px;
     }
@@ -813,25 +821,13 @@
         font-size: 70px;
     }
 
-    p.seitenüberschrift {
-        font-size: 300px;
-    }
 
-    p.unterüberschrift {
-        font-size: 100px;
-    }
 
 
 
 }
 
 @media all and (min-width: 2800px) {
-    div.preview {
-        background-color: black;
-        background-image: none;
-        margin-top: 10vh;
-    }
-
     div.header {
         min-height: 10vh;
         background-image: url(images/headerHintergrund_groß.png);
@@ -866,11 +862,26 @@
     li.header a{
         height: 80px; 
     }
+    
+    li.header {
+        padding-bottom: 100px;
+    }
+
+    li.header a.active {
+        border-right: 1px solid #bbb;
+    }
 
     input#suchbegriff {
         width: 300px;
         height: 40px;
     }
+    
+    div.preview {
+        background-color: black;
+        background-image: none;
+        margin-top: 10vh;
+    }
+
 
     div.gitHub_Information {
         display: none;
@@ -884,23 +895,11 @@
         background-image: url(images/grasshintergrund_landscape_mittel.png);
     }
 
-    div.gitHub_footer_title > p {
-        font-size: 100px;
-    }
-
-
 
     h2 {
         font-size: 100px;
     }
 
-    li.header {
-        padding-bottom: 100px;
-    }
-
-    li.header a.active {
-        border-right: 1px solid #bbb;
-    }
 
     p#beschreibung {
         font-size: 70px;
@@ -908,12 +907,6 @@
 }
 
 @media all and (min-width: 2600px) and (max-width: 2800px) {
-    div.preview {
-        background-color: black;
-        background-image: none;
-        margin-top: 12vh;
-    }
-
     div.header {
         min-height: 10vh;
         background-image: url(images/headerHintergrund_groß.png);
@@ -952,6 +945,12 @@
     input#suchbegriff {
         width: 300px;
         height: 40px;
+    }
+
+    div.preview {
+        background-color: black;
+        background-image: none;
+        margin-top: 12vh;
     }
 
     div.gitHub_Information {
