@@ -52,7 +52,7 @@
                 <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
                 <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
                 <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
-                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
                 <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
             </ul>
         </div>
@@ -125,7 +125,7 @@
                 <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
                 <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
                 <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
-                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
                 <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
             </ul>
         </div>
