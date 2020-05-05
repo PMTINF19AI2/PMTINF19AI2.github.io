@@ -255,7 +255,7 @@
         width: 100%;
         text-align: center;
         z-index: 1;
-        min-height: 17vh;
+        min-height: 13vh;
     }
 
     .savespace {
@@ -396,7 +396,7 @@
         height: 100%;
         float: left;
         background-image: url("images/previewBackground.jpg");
-        margin: 10% 0 0 10%;
+        margin: 8% 0 0 10%;
         padding-top: 5%;
         box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 20px;
     }
@@ -796,6 +796,143 @@
     }
 }
 
+@media all and (min-width: 2800px) {
+    div.preview {
+        background-color: black;
+        background-image: none;
+        margin-top: 10vh;
+    }
+
+    div.header {
+        min-height: 10vh;
+        background-image: url(images/headerHintergrund_groß.png);
+    }
+    
+    ul.nav-links {
+        margin-left: 100px;
+    }
+
+    img.logo {
+        width: 300%;
+    }
+
+    li.header {
+        height: 80px;
+    }
+
+    li.header > *:not(#searchIcon) {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+    li.header > a.active {
+        background-color: rgb(51,51,51);
+    }
+
+    li#active {
+        background-color: rgb(51,51,51);
+        border-right: solid 1px #bbb;
+    }
+
+    li.header a{
+        height: 80px; 
+    }
+
+    input#suchbegriff {
+        width: 300px;
+        height: 40px;
+    }
+
+    div.gitHub_Information {
+        display: none;
+    }
+
+    div.gitHub_footer {
+        display: flex;
+    }
+
+    ul.gitHub > li > img {
+        width: 150px;
+        margin-left: 70px;
+    }
+}
+
+@media all and (min-width: 2600px) and (max-width: 2800px) {
+    div.preview {
+        background-color: black;
+        background-image: none;
+        margin-top: 12vh;
+    }
+
+    div.header {
+        min-height: 10vh;
+        background-image: url(images/headerHintergrund_groß.png);
+    }
+    
+    ul.nav-links {
+        margin-left: 100px;
+    }
+
+    img.logo {
+        width: 300%;
+    }
+
+    li.header {
+        height: 80px;
+    }
+
+    li.header > *:not(#searchIcon) {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+    li.header > a.active {
+        background-color: rgb(51,51,51);
+    }
+
+    li#active {
+        background-color: rgb(51,51,51);
+        border-right: solid 1px #bbb;
+    }
+
+    li.header a{
+        height: 80px; 
+    }
+
+    input#suchbegriff {
+        width: 300px;
+        height: 40px;
+    }
+
+    div.gitHub_Information {
+        display: none;
+    }
+
+    div.gitHub_footer {
+        display: flex;
+    }
+
+    ul.gitHub > li > img {
+        width: 150px;
+        margin-left: 70px;
+    }
+
+
+}
+
+@media all and (min-width: 2200px) {
+    div.previewWindow {
+        background-image: url(images/grasshintergrund_landscape_mittel.png);
+    }
+}
+
+@media all and (min-width: 1600px) {
+    div.preview {
+        background-color: black;
+        background-image: none;
+    }
+}
+
 @media all and (max-width: 1400px) and (min-width: 850px) {
     .nav-links {
         width: 100%;
@@ -934,13 +1071,10 @@
     }
 
     div.sidebar {
-        margin-top: 12vh;
-        width: 40px;
-    }
-
-    img.sidebar {
-        width: 35px;
-        margin-top: 5px;
+        margin-top: 15%;
+        position: absolute;
+        z-index: 0;
+        margin-left: 10px;
     }
 
     div.gitHub_Information {
@@ -1231,7 +1365,8 @@
     div.preview {
         background-image: none;
         background-color: black;
-        padding-top: 70px;
+        padding-top: 20px;
+        margin-left: 10%;
     }
 
     div.footer div {
@@ -1268,5 +1403,68 @@
         margin: 0;
     }
 
-}    
+    div.sidebar {
+        margin-top: 7%;
+        margin-left: 3%;
+    }
+
+    img.sidebar {
+        margin-bottom: 2px;
+    }
+
+    img.logo {
+        width: 80%;
+        margin-top: 5px;
+    }
+
+    ul.nav-links {
+        width: 100%;
+        top: 0vh;
+        height: 1000%;
+    }
+    
+    li.header {
+        height: 25px;
+    }
+
+    li.header > * {
+        font-size: 15px;
+    }
+
+    li.header > a.active {
+        background-color: rgb(51,51,51);
+    }
+
+    li.header a{
+        height: 25px; 
+    }
+
+    div.header {
+        position: relative;
+    }
+
+    table.header {
+        margin-top: 0;
+    }
+
+    p.seitenüberschrift {
+        font-size: 15px;
+    }
+
+    p.unterüberschrift {
+        font-size: 10px;
+        padding: 10px 10px 0 10px;
+    }
+
+    p#beschreibung {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 8px;
+    }
+}
+
+
+
 

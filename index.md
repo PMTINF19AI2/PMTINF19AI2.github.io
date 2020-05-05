@@ -5,12 +5,13 @@
                 <tr>
                     <td class="logo"><a href="index.html"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></a></td>
                     <td class="savespace"></td>
-                    <td>
+                    <td class="nav-td">
                         <ul class="nav-links">
                             <li class="header" id="active"><a class="active" href="">Home</a></li>
                             <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
                             <li class="header"><a href="">Download</a></li>
                             <li class="header"><a href="wiki_home.html">Wiki</a></li>
+                            <li class="savespace"></li>
                             <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
                         </ul>
                     </td>
