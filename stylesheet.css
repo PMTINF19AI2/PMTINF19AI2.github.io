@@ -328,13 +328,31 @@
         width: 8%;
         position: fixed;
         background: rgba(131,167,71,0.7);
-        margin: 34% 0 0 1%;
-        padding: 1%;
+        margin: 8% 0 0 91%;
+        padding: 1% 0%;
         border-radius: 15px;
         z-index: 1;
+        text-align: center;
     }
 
-    div.gitHub_Information > p {
+    div.gitHub_footer {
+        display: none;
+        justify-content: space-around;
+        width: 100%;
+        background: rgba(131, 167,71,0.7);
+        padding: 2%;
+    }
+
+    div.gitHub_footer div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    div.gitHub_footer_title {
+        margin-top: 22px;
+    }
+
+    div.gitHub_Information > p, div.gitHub_footer_title > p {
         margin-bottom: 10px;
         color: black;
         font-weight: bold;
@@ -342,13 +360,22 @@
         font-family: 'Cabin Sketch', cursive;
     }   
 
-    div.gitHub_Information > p > a, div.gitHub_Information > p > a:visited {
+    div.gitHub_footer_title > p {
+        font-size: 25px;
+    }
+
+    div.gitHub_Information > p > a, div.gitHub_Information > p > a:visited, div.gitHub_footer_title > p > a, div.gitHub_footer_title > p > a:visited {
         text-decoration: none;
         color: black;
     }
 
     ul.gitHub {
         list-style-type: none;
+    }
+
+    ul.gitHub > li {
+        float: left;
+        margin: 10px 20px 0 10px;
     }
 
 
@@ -794,6 +821,7 @@
     div.preview {
         background-image:none;
         background-color: black;
+        padding-top: 12%;
     }
 
     div.footer div {
@@ -806,6 +834,14 @@
 
     a.mcButton {
         height: 35px;
+    }
+
+    div.gitHub_Information {
+        display: none;
+    }
+
+    div.gitHub_footer {
+        display: flex;
     }
 }
 
@@ -905,6 +941,14 @@
     img.sidebar {
         width: 35px;
         margin-top: 5px;
+    }
+
+    div.gitHub_Information {
+        display: none;
+    }
+
+    div.gitHub_footer {
+        display: flex;
     }
 
     div.preview {

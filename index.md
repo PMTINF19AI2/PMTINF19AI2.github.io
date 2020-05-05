@@ -118,6 +118,18 @@
             </div>
         </div>
     </article>
+    <div class="gitHub_footer">
+        <div class="gitHub_footer_title"><p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p></div>
+        <div class="gitHub_footer_body">
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?logo=github&style=social"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?style=social"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?style=social"></li>
+                <li><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2?color=%23FFFFFF&label=Change&style=social"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?style=social"></li>
+            </ul>
+        </div>
+    </div>
     <div class="footer">
         <div class="impressum">
             <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
