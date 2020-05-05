@@ -801,6 +801,30 @@
     }
 }
 
+@media all and (min-width: 3400px) {
+    
+    p#beschreibung {
+        font-size: 100px;
+    }
+    
+    div.impressum > a.mcButton {
+        width: 500px;
+        height: 150px;
+        font-size: 70px;
+    }
+
+    p.seitenüberschrift {
+        font-size: 300px;
+    }
+
+    p.unterüberschrift {
+        font-size: 100px;
+    }
+
+
+
+}
+
 @media all and (min-width: 2800px) {
     div.preview {
         background-color: black;
@@ -947,30 +971,6 @@
         width: 150px;
         margin-left: 70px;
     }
-
-
-}
-
-@media all and (min-width: 3400px) {
-    
-    p#beschreibung {
-        font-size: 100px;
-    }
-    
-    div.impressum > a.mcButton {
-        width: 500px;
-        height: 150px;
-        font-size: 70px;
-    }
-
-    p.seitenüberschrift {
-        font-size: 300px;
-    }
-
-    p.unterüberschrift {
-        font-size: 100px;
-    }
-
 
 
 }
@@ -1213,9 +1213,8 @@
     }
 
     img#logicPic {
-        width: 70px;
+        width: 90%;
         height: 70px;
-        transform: rotateY(40deg);
     }
 
     img#logicPic:hover {
@@ -1513,7 +1512,3 @@
         font-size: 8px;
     }
 }
-
-
-
-
