@@ -929,6 +929,25 @@
     div.previewWindow {
         background-image: url(images/grasshintergrund_landscape_mittel.png);
     }
+
+    div.gitHub_footer_title > p {
+        font-size: 100px;
+    }
+
+    p#beschreibung {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+    
+    div.impressum > a.mcButton {
+        width: 500px;
+        height: 150px;
+        font-size: 70px;
+    }
+
 }
 
 @media all and (min-width: 1600px) {
