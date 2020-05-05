@@ -496,6 +496,7 @@
         border-radius: 10px;
         opacity: 1; 
         display: block;
+        z-index: -1;
     }
 
     img#logicPic:hover {
