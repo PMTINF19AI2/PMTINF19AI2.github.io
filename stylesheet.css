@@ -877,12 +877,7 @@
     }
 
     div.gitHub_footer {
-        display: flex;
-    }
-
-    ul.gitHub > li > img {
-        width: 150px;
-        margin-left: 70px;
+        display: none;
     }
 
     div.previewWindow {
@@ -1008,6 +1003,10 @@
         background-image:none;
         background-color: black;
         padding-top: 12%;
+    }
+
+    div.previewWindow {
+        background-image: url(images/grasshintergrundklein_mittel.png)
     }
 
     div.footer div {
