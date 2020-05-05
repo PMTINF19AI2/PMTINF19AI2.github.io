@@ -180,6 +180,10 @@
         float: right;
     }
 
+    li#randomPage {
+        width: auto;
+    }
+
     /* Suche */
 
     div#searchDiv {
