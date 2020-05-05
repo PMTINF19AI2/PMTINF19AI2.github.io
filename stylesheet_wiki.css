@@ -40,11 +40,13 @@ div.preview_wiki {
     width: 80%;
     height: 100%;
     float: left;
-    background-color: white;
+    background-color: #e6eff4;
     color: black;
     margin: 10% 0 0 10%;
     padding: 5% 20px;
     box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 20px;
+    font-family: "Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+    font-size: 0.875em;
 }
 
 /* Zwischenüberschriften */
@@ -85,6 +87,10 @@ div.tableOfInformation_header {
     font-weight: bold;
     text-align: center;
     font-size: 120%;
+    background-image: url('images/grasshintergrund_landscape_klein.png');
+    height: 30px;
+    padding-top: 5px;
+    color: white;
 }
 
 div.tableOfInformation_pictures {
@@ -143,10 +149,14 @@ table.tableOfInformation_rows {
     margin-top: 30px;
 }
 
-table.tableOfInformation_rows > tbody > tr > th{
+tr.tableOfInformation_information > th{
     text-align: left;
     white-space: nowrap;
     padding: 5px 5px;
+}
+
+tr.tableOfInformation_information > td {
+    width: 100px;
 }
 
 table.tableOfInformation_rows > p {
@@ -211,7 +221,7 @@ table.wikitable {
 
 .wikitable > tr > th, .wikitable > * > tr > th, .wikitable > * > tr > td {
     border: 1px solid #a2a9b1;
-    padding: 0.2em 0.4em;
+    padding: 0.4em 0.4em;
 }
 
 .mcUI {

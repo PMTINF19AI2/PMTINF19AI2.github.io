@@ -46,6 +46,16 @@
             <a href=""><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
             <br /><br />
         </div>
+        <div class="gitHub_Information">
+            <p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p>
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?logo=github&style=social"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?style=social"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?style=social"></li>
+                <li><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2?color=%23FFFFFF&label=Change&style=social"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?style=social"></li>
+            </ul>
+        </div>
         <div class="preview">
             <p class="seitenüberschrift" style="font-family: MCButton;">MeinKraft-Logik-Gatter</p>
             <p class="unterüberschrift" style="font-family: MCButton; text-align: center; color: slategray;"><i>hilft dir komplexe Logik-Gatter einfach und kompakt in Minecraft zu bauen</i></p>
@@ -126,4 +136,3 @@
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </body>
-</html>
