@@ -633,7 +633,7 @@
 
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 800px) {    
     div.preview_wiki {
         padding-top: 70px;
     }
@@ -667,6 +667,10 @@
     .historybox td {
         width: 50%;
     }
+
+    .nav-links li:last-child {
+        margin-top: 25px;
+    }
 }
 
 @media all and (max-width: 600px) {
@@ -684,25 +688,20 @@
 }
 
 @media all and (max-width: 400px) {
-
-    div.tableOfInformation {
-        width: 200px;
-        font-size:70%;
-    }
-    
-    .wikitable {
-        display: flex;
-        max-width: 200px;
-        overflow: auto;
-    }
-}
-
-@media all and (max-width: 400px) {
     
     div.tableOfInformation {
         width: 180px;
         font-size: 50%;
     }
+
+        
+    .wikitable {
+        display: flex;
+        max-width: 200px;
+        overflow: auto;
+    }
+
+
     div.pagename > p.pagename {
         font-size: 20px;
     }
@@ -732,6 +731,10 @@
         width: 15px;
         height: 15px;
     }
+
+
+
+
 }
 
 
