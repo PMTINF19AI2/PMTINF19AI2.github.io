@@ -397,7 +397,7 @@
     
 }
 
-@media all and (min-width: 2500px) {
+@media all and (min-width: 3900px) {
     
     div.preview_wiki {
         margin-top: 150px;
@@ -520,7 +520,7 @@
 }
 
 
-@media all and (min-width: 2000px) {
+@media all and (min-width: 3000px) {
     div.preview_wiki {
         margin-top: 150px;
         font-size: 80px;
@@ -538,15 +538,19 @@
         font-size: 30%;
     }
 
+    tr.tableOfInformation_information > td > p {
+        padding-right: 70px;
+    }
+
 }
 
-@media (max-width: 2500px) and (min-width: 2000px) {
+@media (max-width: 3900px) and (min-width: 3000px) {
     div.pagename h2 {
         font-size: 100%;
     }
     
     div.content {
-        padding-left: 10%;
+        padding-left: 5%;
     }
     
     div.content > ol > *  {
@@ -564,7 +568,7 @@
 
     .mcUI_crafting {
         width: 700px;
-        height: 35vh;
+        height: 21vh;
     }
 
     .mcUI_invSlot {
