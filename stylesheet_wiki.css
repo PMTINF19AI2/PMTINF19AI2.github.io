@@ -39,28 +39,6 @@
     li#active {
         background-color: #333;
     }
-
-    li#randomPage {
-        width: 20%;
-        display: flex;
-        justify-content: space-center;
-    }
-
-    button#randomPage {
-        width: 100%;
-        display: flex;
-        background-color: rgba(0,0,0,0);
-        justify-content: space-center;
-        color: white;
-        text-align: center;
-        padding: 14px 10%;
-        text-decoration: none;
-        letter-spacing: 1.5px;
-        border: none;
-        font-family: MCButton;
-
-    }
-
     /* Content */
     
     div.preview_wiki {
@@ -653,9 +631,6 @@
         font-size: 50%;
     }
 
-    button#randomPage {
-        font-size: 8px;
-    }
 }
 
 @media all and (max-width: 800px) {
@@ -666,10 +641,7 @@
     div.header {
         position: absolute;
     }    
-    
-    button#randomPage {
-        font-size: 8px;
-    }
+
     
     div.tableOfInformation {
         float: left;

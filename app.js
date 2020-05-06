@@ -43,7 +43,7 @@ function randomPage() {
     pages[0] = "index.html";
     pages[1] = "wiki_home.html";
 
-    var x = pages[parseInt(Math.random()*(countPages+1))];
+    var x = pages[parseInt(Math.random()*countPages)];
     console.log(x);
     soundManager.url = '/sounds/dudelduduStröti.mp3';
 
