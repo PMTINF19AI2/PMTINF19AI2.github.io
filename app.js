@@ -58,7 +58,7 @@ function randomPage() {
     });
     setTimeout(function() {
         window.location.replace(x);
-    }, 750);
+    }, 900);
 }
 
 
