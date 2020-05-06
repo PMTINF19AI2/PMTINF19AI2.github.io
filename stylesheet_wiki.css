@@ -1,390 +1,719 @@
+@media all {
+    
 /* Allgemein */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        direction: ltr;
+        tab-size: 4;
+    }
+    
+    table {
+        font-size: 100%;
+        display: table;
+        border-color: gray;
+    }
+    
+    li {
+        margin-bottom: 0.1em;
+    }
+    
+    a {
+        text-decoration: none;
+        background: none;
+        cursor: pointer;
+        color: #124eb1;
+    }
+    
+    a:hover {
+        text-decoration: 1px solid #0b0080;
+        text-decoration-line:  underline;
+    }
+    
+    a:visited {
+        color: #0b0080;
+    }
+    
+    li#active {
+        background-color: #333;
+    }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    direction: ltr;
-    tab-size: 4;
+    /* Content */
+    
+    div.preview_wiki {
+        width: 80%;
+        height: 100%;
+        float: left;
+        background-color: #e6eff4;
+        color: black;
+        margin: 10% 0 0 10%;
+        padding: 5% 20px;
+        box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 20px;
+        font-family: "Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
+        font-size: 0.875em;
+    }
+    
+    /* Zwischenüberschriften */
+    
+    div.pagename {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    div.pagename:not(:first-child) {
+        margin-top: 50px;
+    }
+    
+    div.pagename hr {
+        width: 70%;
+    }
+    
+    div.pagename p.pagename {
+        font-size: 40px;
+    }
+    
+    /* KurzInfosSeite */
+    
+    div.tableOfInformation {
+        display: block;
+        clear: right;
+        margin: 0 0 1em 1em;
+        width: 300px;
+        background-color: white;
+        float: right;
+        border: solid 1px #CCC;
+        padding: 2px;
+        overflow: auto;
+        margin-right: 15px;
+    }
+    
+    div.tableOfInformation_header {
+        font-weight: bold;
+        text-align: center;
+        font-size: 120%;
+        background-image: url('images/grasshintergrund_landscape_klein.png');
+        height: 30px;
+        padding-top: 5px;
+        color: white;
+    }
+    
+    div.tableOfInformation_pictures {
+        display: block;
+        text-align: center;
+        padding: 4px;
+    }
+    
+    div.tableOfInformation_pictures div:not(:first-child) {
+        padding-top: 1em;
+    }
+    
+    span.tableOfInformation_itemSlot {
+        position: relative;
+        display: inline-block;
+        background-color: #8B8B8B no-repeat center center / 32px 32px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        vertical-align: bottom;
+    }
+    
+    .tableOfInformation_itemSlot::before {
+        bottom: -2px;
+        left: -2px;
+    }
+    
+    .tableOfInformation_itemSlot::after {
+        top: -2px;
+        right: -2px;
+    }
+    
+    .tableOfInformation_itemSlot::before, .tableOfInformation_itemSlot::after {
+        content: "";
+        position: absolute;
+        background-color: #8B8B8B;
+        height: 2px;
+        width: 2px;
+        pointer-events: none;
+    }
+    
+     span.tableOfInformation_itemSlot_Pic {
+        background-image: url("test1.png");
+        image-rendering: pixelated;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        display: inline-block;
+        background-repeat: no-repeat;
+    } 
+    
+    table.tableOfInformation_rows {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    tr.tableOfInformation_information > th{
+        text-align: left;
+        white-space: nowrap;
+        padding: 5px 5px;
+    }
+    
+    tr.tableOfInformation_information > td {
+        width: 100px;
+    }
+    
+    table.tableOfInformation_rows > p {
+        margin: 0;
+        line-height: inherit;
+    }
+    
+    /* Kleine Beschreibung */
+    
+    div.description {
+        width: 55%;
+        margin: 15px 0;
+        display: flex;
+    }
+    
+    div.description p.description {
+        font-size: 15px;
+    }
+    
+    /* Inhaltsverzeichnis */
+    
+    div.content {
+        display: inline-block;
+        display: table;
+        zoom: 1;
+        padding: 20px 40px;
+        border: 1px solid #a2a9b1;
+        background-color: #f8f9fa;
+        font-size: 95%;
+        margin-left: 20px;
+        min-width: 30%;
+    }
+    
+    .content .contentTitle {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .content ul {
+        text-align: left;
+        list-style-image: none;
+        margin-left: 0;
+        padding: 0;
+        margin: 0.3em 0;
+    }
+    
+    /* Crafting */
+    
+    table.wikitable {
+        background-color: #f8f9fa;
+        color: #222;
+        margin: 1em 0 1em 1.2em;
+        border: 1px solid #a2a9b1;
+        border-collapse: collapse;
+        width: 600px;
+    }
+    
+    .wikitable > * > tr > th {
+        background-color: #eaecf0;
+        text-align: center;
+    }
+    
+    .wikitable > tr > th, .wikitable > * > tr > th, .wikitable > * > tr > td {
+        border: 1px solid #a2a9b1;
+        padding: 0.4em 0.4em;
+    }
+    
+    .mcUI {
+        display: inline-block;
+        position: relative;
+        background-color: #C6C6C6;
+        border: 2px solid;
+        border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+        padding: 6px;
+        text-align: left;
+        white-space: nowrap;
+        vertical-align: bottom;
+    }
+    
+    .mcUI_crafting {
+        width: 300px;
+        text-align: center;
+    }
+    
+    span.mcUI_crafting_table > * {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .mcUI_crafting_table .mcUI_row {
+        display: block;
+    }
+    
+    .mcUI_invSlot {
+        position: relative;
+        display: inline-block;
+        background-color: #8B8B8B;
+        border: 2px solid;
+        border-color: #373737 #FFF #FFF #373737;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        text-align: left;
+        vertical-align: bottom;
+        image-rendering: pixelated;
+    }
+    
+    .mcUI_invSlot_item {
+        position: relative;
+        display: block;
+        margin: -2px;
+        padding: 2px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .mcUI_arrow {
+        margin-top: 18%;
+    }
+    
+    .mcUI_invSlot_large {
+        margin-top: 100%;
+        padding: 8px;
+    }
+    
+    .mcUI_invSlot::before {
+        bottom: -2px;
+        left: -2px;
+    }
+    
+    .mcUI_invSlot::after {
+        top: -2px;
+        right: -2px;
+    }
+    
+    .mcUI_invSlot::before, .mcUI_invSlot::after {
+        content: "";
+        position: absolute;
+        background-color: #8B8B8B;
+        height: 2px;
+        width: 2px;
+        pointer-events: none;
+    }
+    
+    .sprite {
+        display: inline-block;
+        vertical-align: text-top;
+        height: 16px;
+        width: 16px;
+        background-repeat: no-repeat;
+    }
+    
+    .inv-sprite {
+        image-rendering: pixelated;
+        width: 36px;
+        height: 36px;
+        vertical-align: middle;
+        background-color: #8B8B8B;
+        border: 2px solid;
+        border-color: #373737 #FFF #FFF #373737;
+    }
+    
+    /* Geschichte */
+    
+    table.historybox {
+        overflow: hidden;
+    }
+    
+    .historybox {
+        background: #FFF;
+        border: 1px solid #000;
+        margin: 1em auto 0;
+        width: 100%
+    }
+    
+    .historybox .historybox_top {
+        white-space: nowrap;
+        background-color: #CCC;
+        padding: 0 3px;
+        text-align: center;
+    }
+    
+    .historybox th {
+        background-color: #EEE;
+        padding: 0px 10px;
+        white-space: nowrap;
+        text-align: right;
+    }
+    
+    .historybox td {
+        padding: 0 0 0 2px;
+        width: 100%;
+    }
+    
+    .historybox ul {
+        padding-left: 25px;
+    }
+    
+    .historybox_title {
+        padding: 0 10px;
+        font-size: 110%;
+    }
+    
+    .historybox table:first-child {
+        margin-top: -2px;
+        background: #FFF;
+        margin-left: -4px;
+        margin-right: -2px;
+    }
+    
+    .historybox table:last-child {
+        margin-bottom: -2px;
+    }
+    
+    .historybox_body > .historybox {
+        border: 0px !important;
+    }
+    
+    /* LastChange */
+    
+    span.lastChange {
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .lastChange > p {
+        font-size: 15px;
+        font-style: italic;
+    }
+    
+    
+    
 }
 
-table {
-    font-size: 100%;
-    display: table;
-    border-color: gray;
+@media all and (min-width: 2500px) {
+    
+    div.preview_wiki {
+        margin-top: 150px;
+        font-size: 80px;
+    }
+    
+    div.tableOfInformation {
+        margin-right: 10%;
+        width: 100px;
+    }
+
+    div.tableOfInformation_header {
+        height: 4vh;
+        padding-top: 1vh;
+        background-image: url(images/grasshintergrund_landscape_mittel.png);
+    }
+
+    div.tableOfInformation_itemSlot_item {
+        width: 200px;
+        height: 200px;
+    }
+
+    div.tableOfInformation_header > p {
+        font-size: 150%;
+    }
+    
+    table.tableOfInformation_rows > tbody > *{
+        font-size: 50px;
+    }   
+
+    tr.tableOfInformation_information {
+        height: 4vh;
+    }
+
+    .inv-sprite {
+        width: 100px;
+        height: 100px;
+    }
+
+    .inv-sprite > img  {
+        width: 100px;
+        height: 100px;
+    }
+
+    div.content {
+        margin-top: 30px;
+        padding-left: 3%;
+    }
+
+    div.contentTitle h2 {
+        font-size: 100%;
+    }
+
+    div.description > p.description,
+    div.usageInformation p  {
+        font-size: 80%;
+    }
+
+    .mcUI_crafting {
+        width: 1000px;
+        height: 20%;
+    }
+
+    .wikitable > tbody > tr > th.eingabe {
+        width: 400px;
+    }
+
+    .mcUI_invSlot {
+        border: 4px solid;
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+        margin: 15px;
+    }
+    
+    .mcUI_invSlot_item {
+        margin: -2px;
+        padding: 15px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .mcUI_arrow {
+        margin-top: 25%;
+    }
+
+    span.mcUI_output {
+        margin-top: 18%;
+    }
+
+    .mcUI_invSlot_large {
+        width: 200px;
+        height: 200px;
+    }
+
+    span.lastChange > p {
+        font-size: 50px;
+    }
+    
+    .historybox ul {
+        padding-left: 100px;
+    }
+    
+    .historybox_title {
+        font-size: 80%;
+    }
+
+    .historybox_body {
+        font-size: 70%;
+    }
+    
+    .historybox table:first-child {
+        margin: 0;
+    }
+    
+    .historybox table:last-child {
+        margin-bottom: -0px;
+    }
+
 }
 
-li {
-    margin-bottom: 0.1em;
+
+@media all and (min-width: 2000px) {
+    div.preview_wiki {
+        margin-top: 150px;
+        font-size: 80px;
+    }
+
+    div.pagename p.pagename {
+        font-size: 200%;
+    }
+
+    div.tableOfInformation {
+        width: 30%; 
+    }
+
+    div.tableOfInformation > *{
+        font-size: 30%;
+    }
+
 }
 
-a {
-    text-decoration: none;
-    background: none;
-    cursor: pointer;
-    color: #124eb1;
+@media (max-width: 2500px) and (min-width: 2000px) {
+    div.pagename h2 {
+        font-size: 100%;
+    }
+    
+    div.content {
+        padding-left: 10%;
+    }
+    
+    div.content > ol > *  {
+        font-size: 70%;
+    }
+
+    div.description > p.description, 
+    div.usageInformation p  {
+        font-size: 60%;
+    }
+
+    table.wikitable {
+        font-size: 70%;
+    }
+
+    .mcUI_crafting {
+        width: 700px;
+        height: 35vh;
+    }
+
+    .mcUI_invSlot {
+        border: 4px solid;
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+        margin: 7px;
+    }
+    
+    .mcUI_invSlot_item {
+        margin: -2px;
+        padding: 8px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .mcUI_arrow {
+        margin-top: 21%;
+    }
+
+    span.mcUI_output {
+        margin-top: 15%;
+    }
+
+    .mcUI_invSlot_large {
+        width: 120px;
+        height: 120px;
+    }
+
+    .historybox ul {
+        padding-left: 100px;
+    }
+    
+    .historybox_title {
+        font-size: 50%;
+    }
+
+    .historybox_body {
+        font-size: 40%;
+    }
+    
+    .historybox table:first-child {
+        margin: 0;
+    }
+    
+    .historybox table:last-child {
+        margin-bottom: -0px;
+    }
+
 }
 
-a:hover {
-    text-decoration: 1px solid #0b0080;
-    text-decoration-line:  underline;
+@media all and (max-width: 1800px) {
+    ul.nav-links li {
+        width: 14%;
+    }
 }
 
-a:visited {
-    color: #0b0080;
+@media all and (max-width: 1400px) {
+    ul.nav-links li {
+        font-size: 50%;
+    }
 }
 
-/* Content */
+@media all and (max-width: 800px) {
+    .mcUI_crafting {
+        width: 100%;
+    }
 
-div.preview_wiki {
-    width: 80%;
-    height: 100%;
-    float: left;
-    background-color: #e6eff4;
-    color: black;
-    margin: 10% 0 0 10%;
-    padding: 5% 20px;
-    box-shadow: rgba(0,0,0,0.7) 0px 0px 20px 20px;
-    font-family: "Liberation Sans",Arial,Helvetica,FreeSans,sans-serif;
-    font-size: 0.875em;
+    .historybox {
+        display: inline-block;
+    }
+
+    .wikitable {
+        display: inline;
+    }
+
+    .historybox td {
+        width: 50%;
+    }
 }
 
-/* Zwischenüberschriften */
+@media all and (max-width: 600px) {
+    .wikitable {
+        display: flex;
+        max-width: 300px;
+        overflow: auto;
+    }
 
-div.pagename {
-    display: inline-block;
-    width: 100%;
+    div.description {
+        display: inline;
+    }
+
+    div.content {
+        margin-top: 20px;
+    }
 }
 
-div.pagename:not(:first-child) {
-    margin-top: 50px;
+@media all and (max-width: 400px) {
+
+    div.tableOfInformation {
+        width: 200px;
+        font-size:70%
+    }
+    
+    .wikitable {
+        display: flex;
+        max-width: 200px;
+        overflow: auto;
+    }
 }
 
-div.pagename hr {
-    width: 70%;
+@media all and (max-width: 400px) {
+    div.tableOfInformation {
+        width: 180px;
+        font-size: 50%;
+    }
+    div.pagename > p.pagename {
+        font-size: 20px;
+    }
+
+    div.description > p.description,
+    div.content > ol, 
+    div.usageInformation > p,
+    table.historybox  {
+        font-size: 10px;
+    }
+
+    div.contentTitle > h2 {
+        font-size: 13px;
+    }
+
+    span.lastChange > p {
+        font-size: 5px;
+    }
+
+    span.inv-sprite {
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    span.inv-sprite > img {
+        width: 15px;
+        height: 15px;
+    }
 }
 
-div.pagename p.pagename {
-    font-size: 40px;
 }
 
-/* KurzInfosSeite */
-
-div.tableOfInformation {
-    display: block;
-    clear: right;
-    margin: 0 0 1em 1em;
-    width: 300px;
-    background-color: white;
-    float: right;
-    border: solid 1px #CCC;
-    padding: 2px;
-    overflow: auto;
-    margin-right: 15px;
-}
-
-div.tableOfInformation_header {
-    font-weight: bold;
-    text-align: center;
-    font-size: 120%;
-    background-image: url('images/grasshintergrund_landscape_klein.png');
-    height: 30px;
-    padding-top: 5px;
-    color: white;
-}
-
-div.tableOfInformation_pictures {
-    display: block;
-    text-align: center;
-    padding: 4px;
-}
-
-div.tableOfInformation_pictures div:not(:first-child) {
-    padding-top: 1em;
-}
-
-span.tableOfInformation_itemSlot {
-    position: relative;
-    display: inline-block;
-    background-color: #8B8B8B no-repeat center center / 32px 32px;
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-    line-height: 1;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.tableOfInformation_itemSlot::before {
-    bottom: -2px;
-    left: -2px;
-}
-
-.tableOfInformation_itemSlot::after {
-    top: -2px;
-    right: -2px;
-}
-
-.tableOfInformation_itemSlot::before, .tableOfInformation_itemSlot::after {
-    content: "";
-    position: absolute;
-    background-color: #8B8B8B;
-    height: 2px;
-    width: 2px;
-    pointer-events: none;
-}
-
- span.tableOfInformation_itemSlot_Pic {
-    background-image: url("test1.png");
-    image-rendering: pixelated;
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    display: inline-block;
-    background-repeat: no-repeat;
-} 
-
-table.tableOfInformation_rows {
-    width: 100%;
-    margin-top: 30px;
-}
-
-tr.tableOfInformation_information > th{
-    text-align: left;
-    white-space: nowrap;
-    padding: 5px 5px;
-}
-
-tr.tableOfInformation_information > td {
-    width: 100px;
-}
-
-table.tableOfInformation_rows > p {
-    margin: 0;
-    line-height: inherit;
-}
-
-/* Kleine Beschreibung */
-
-div.description {
-    width: 55%;
-    margin: 15px 0;
-    display: flex;
-}
-
-div.description p.description {
-    font-size: 15px;
-}
-
-/* Inhaltsverzeichnis */
-
-div.content {
-    display: inline-block;
-    display: table;
-    zoom: 1;
-    padding: 20px 40px;
-    border: 1px solid #a2a9b1;
-    background-color: #f8f9fa;
-    font-size: 95%;
-    margin-left: 20px;
-    min-width: 30%;
-}
-
-.content .contentTitle {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.content ul {
-    text-align: left;
-    list-style-image: none;
-    margin-left: 0;
-    padding: 0;
-    margin: 0.3em 0;
-}
-
-/* Crafting */
-
-table.wikitable {
-    background-color: #f8f9fa;
-    color: #222;
-    margin: 1em 0 1em 1.2em;
-    border: 1px solid #a2a9b1;
-    border-collapse: collapse;
-    width: 600px;
-}
-
-.wikitable > * > tr > th {
-    background-color: #eaecf0;
-    text-align: center;
-}
-
-.wikitable > tr > th, .wikitable > * > tr > th, .wikitable > * > tr > td {
-    border: 1px solid #a2a9b1;
-    padding: 0.4em 0.4em;
-}
-
-.mcUI {
-    display: inline-block;
-    position: relative;
-    background-color: #C6C6C6;
-    border: 2px solid;
-    border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
-    padding: 6px;
-    text-align: left;
-    white-space: nowrap;
-    vertical-align: bottom;
-}
-
-.mcUI_crafting {
-    width: 300px;
-    text-align: center;
-}
-
-span.mcUI_crafting_table > * {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.mcUI_crafting_table .mcUI_row {
-    display: block;
-}
-
-.mcUI_invSlot {
-    position: relative;
-    display: inline-block;
-    background-color: #8B8B8B;
-    border: 2px solid;
-    border-color: #373737 #FFF #FFF #373737;
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
-    text-align: left;
-    vertical-align: bottom;
-    image-rendering: pixelated;
-}
-
-.mcUI_invSlot_item {
-    position: relative;
-    display: block;
-    margin: -2px;
-    padding: 2px;
-    width: 32px;
-    height: 32px;
-}
-
-.mcUI_arrow {
-    margin-top: 18%;
-}
-
-.mcUI_invSlot_large {
-    margin-top: 100%;
-    padding: 8px;
-}
-
-.mcUI_invSlot::before {
-    bottom: -2px;
-    left: -2px;
-}
-
-.mcUI_invSlot::after {
-    top: -2px;
-    right: -2px;
-}
-
-.mcUI_invSlot::before, .mcUI_invSlot::after {
-    content: "";
-    position: absolute;
-    background-color: #8B8B8B;
-    height: 2px;
-    width: 2px;
-    pointer-events: none;
-}
-
-.sprite {
-    display: inline-block;
-    vertical-align: text-top;
-    height: 16px;
-    width: 16px;
-    background-repeat: no-repeat;
-}
-
-.inv-sprite {
-    image-rendering: pixelated;
-    width: 36px;
-    height: 36px;
-    vertical-align: middle;
-    background-color: #8B8B8B;
-    border: 2px solid;
-    border-color: #373737 #FFF #FFF #373737;
-}
-
-/* Geschichte */
-
-table.historybox {
-    overflow: hidden;
-}
-
-.historybox {
-    background: #FFF;
-    border: 1px solid #000;
-    margin: 1em auto 0;
-    width: 100%
-}
-
-.historybox .historybox_top {
-    white-space: nowrap;
-    background-color: #CCC;
-    padding: 0 3px;
-    text-align: center;
-}
-
-.historybox th {
-    background-color: #EEE;
-    padding: 0px 10px;
-    white-space: nowrap;
-    text-align: right;
-}
-
-.historybox td {
-    padding: 0 0 0 2px;
-    width: 100%;
-}
-
-.historybox ul {
-    padding-left: 25px;
-}
-
-.historybox_title {
-    padding: 0 10px;
-    font-size: 110%;
-}
-
-.historybox table:first-child {
-    margin-top: -2px;
-    background: #FFF;
-    margin-left: -4px;
-    margin-right: -2px;
-}
-
-.historybox table:last-child {
-    margin-bottom: -2px;
-}
-
-.historybox_body > .historybox {
-    border: 0px !important;
-}
-
-/* LastChange */
-
-span.lastChange {
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.lastChange > p {
-    font-size: 15px;
-    font-style: italic;
-}
 
 
