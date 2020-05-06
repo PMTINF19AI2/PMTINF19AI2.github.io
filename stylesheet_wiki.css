@@ -630,6 +630,15 @@
 }
 
 @media all and (max-width: 800px) {
+    div.header {
+        position: absolute;
+    }
+    
+    div.tableOfInformation {
+        float: left;
+    }
+
+    
     .mcUI_crafting {
         width: 100%;
     }
@@ -654,20 +663,18 @@
         overflow: auto;
     }
 
-    div.description {
-        display: inline;
-    }
-
     div.content {
         margin-top: 20px;
     }
+
+
 }
 
 @media all and (max-width: 400px) {
 
     div.tableOfInformation {
         width: 200px;
-        font-size:70%
+        font-size:70%;
     }
     
     .wikitable {
@@ -678,6 +685,7 @@
 }
 
 @media all and (max-width: 400px) {
+    
     div.tableOfInformation {
         width: 180px;
         font-size: 50%;
