@@ -32,7 +32,34 @@ const navSlide = () => {
 
 }
 
+function randomPage() {
+    var countPages = 2;
+    const link = document.querySelector('#randomPage');
+    const container = document.querySelector('li#randomPage');
 
+    var pages = new Array(countPages);
+
+    //page-declaration
+    pages[0] = "index.html";
+    pages[1] = "wiki_home.html";
+
+    var x = pages[parseInt(Math.random()*(countPages+1))];
+    console.log(x);
+    soundManager.url = '/sounds/dudelduduStröti.mp3';
+
+    soundManager.onready(function() {
+        soundManager.createSound({
+            id: 'mySound',
+            url: '/sounds/dudelduduStröti.mp3'
+        });
+
+        // ...and play it
+        soundManager.play('mySound');
+    });
+    setTimeout(function() {
+        window.location.replace(x);
+    }, 750);
+}
 
 
 function glowingOn() {
