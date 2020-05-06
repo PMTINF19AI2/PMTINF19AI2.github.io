@@ -638,6 +638,10 @@
         float: left;
     }
 
+    div.sidebar {
+        margin-top: 15%;
+    }
+
     
     .mcUI_crafting {
         width: 100%;
