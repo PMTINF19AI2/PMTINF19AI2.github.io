@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <link rel="stylesheet" href="stylesheet_wiki.css" type="text/css">
+    <link rel="stylesheet" href="logicBlockHub.css" type="text/css">
     <script src="https://kit.fontawesome.com/bf141cf2a1.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
@@ -21,7 +22,7 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>MineKraft-Logik-Gatter</title>
+    <title>Logik-Gatter-Hub</title>
   </head>
 <body>
     <div class="header">
@@ -32,11 +33,11 @@
                     <td class="savespace"></td>
                     <td>
                         <ul class="nav-links">
-                            <li class="header"><a class="active" href="index.html">Home</a></li>
+                            <li class="header"><a href="index.html">Home</a></li>
                             <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
                             <li class="header"><a href="">Download</a></li>
-                            <li class="header" id="active"><a href="wiki_home.html">Wiki</a></li>
-                            <li class="header" id="random"><a id="randomPage" onclick="randomPage();" >Random Page</a></li> <!--Test -->
+                            <li class="header" id="active"><a class="active" href="wiki_home.html">Wiki</a></li>
+                            <li class="header" id="randomPage"><a id="randomPage" onclick="randomPage();" >Random Page</a></li> <!--Test -->
                             <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
                         </ul>
                     </td>
@@ -84,12 +85,12 @@
         </div>
         <div class="preview_wiki">
             <div class="pagename">
-                <p class="pagename">Itemname</p>
+                <p class="pagename">Logik-Gatter-Hub</p>
                 <hr />
             </div>
             <div class="basicInformation">
                 <div class="tableOfInformation">
-                    <div class="tableOfInformation_header"><p>Itemname</p></div>
+                    <div class="tableOfInformation_header"><p>Logik-Gatter-Hub</p></div>
                     <div class="tableOfInformation_pictures">
                         <div><img src="images/logicBlock-Logo3d_glowing.png" width="50%"></div>
                         <div class="tableOfInformation_itemSlots">
@@ -102,21 +103,20 @@
                     </div>
                     <table class="tableOfInformation_rows" cellspacing="1" cellpadding="4">    
                         <tbody>
-                            <tr class="tableOfInformation_information">     <th>Kategorie:</th>         <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Transparenz</th>        <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p>Value</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>Value</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Kategorie:</th>         <td><p>Redstone</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Transparenz</th>        <td><p>False</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>?</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>False</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>False</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p><a href="https://minecraft-de.gamepedia.com/Spitzhacke">Spitzhacke</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>64</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="logicGate_wiki">Logik-Gatter-Hub</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="description">
-                    <p class="description">List here information about the page / about the item
-                    Give some basic information about the look and the usage of the item.</p>
+                    <p class="description">Der Logik-Gatter-Hub erweitert die Möglichekeiten komplexe Redstone-Schaltungen in der virtellen Minecraft-Welt nachzubauen. Der Block kann mit Hilfe von <a href="inputCard_wiki.html">Input-</a>, <a href="outputCard_wiki.html">Output-</a> und <a href="gateCards_wiki.html">Logik-Gatter-Upgrades</a> modifiziert werden. Anhand von Prädikatenlogischen Formeln berechnet der Computer je nach Input den Output und gibt ein Redstone-Signal aus.</a></p>
                 </div>
                 <div id="content" class="content">
                     <div class="contentTitle">
@@ -125,6 +125,7 @@
                     <ol>
                         <li><a href="#Herstellung">Herstellung</a></li>
                         <li><a href="#Verwendung">Verwendung</a></li>
+                        <li><a href="#GUI">Benutzeroberfläche</a></li>
                         <li><a href="#Geschichte">Geschichte</a></li>
                     </ol>
                 </div>
@@ -182,9 +183,29 @@
                 <hr />
             </div>
             <div class="usageInformation">
-                <p>Give somemore Information about the usability of the item</p>
-                <p>Include more Crafting-GUIs for presenting what can be made with this item</p>
-                <p>If there are specials about this item, they can also be included in this section. Just give it a heading smaller than h2 and another paragraph.</p>
+                <p>Der Logik-Gatter-Hub-Block kann in Restone-Schaltungen implementieren werden, um komplexe Schaltungen kompremieren zu können. Anhand von prädikatenlogischen Formeln kann die Ausgabe bei jeweiliger Eingabe berechnet werden. 
+                Der Block wirkt nicht wie ein Repeater. Er gibt immer das stärkste Eingangsignal aus.</p>
+            </div>
+            <div class="pagename">
+                <h2 id="Benutzeroberfläche">Benutzeroberfläche</h2>
+                <hr />
+            </div>
+            <div class="gui">
+                <p>In der Benutzeroberfläche des Logik-Gatter-Hub können mit Hilfe der <a href="inputCard_wiki.html">Input-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="logicGate_wiki.html">Logik-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
+                <img src="images/logicblockgui.png" class="logicGateHub_gui">
+                <p>Anhand der Textur lässt sich auch von außen erkennen, welche Seiten Inputs bzw. Outputs sind und um welchen Logik-Block es sich handelt.</p>
+                <table class="textures">
+                        <tr class="textures"><th class="texturesTable">Textur</th>         <th class="logicTable">Logik</th>      <th class="plFormel2I">Prädikatenlogische Formeln (2 Inputs)</th>      <th class="plFormel3I">Prädikatenlogische Formeln (3 Inputs)</th></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_KREIS.png"></td><td>Standardlogik</td>  <td>-</td><td>-</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_GO.png"><td>GO-Gatter</td><td>F = A</td><td>nur ein Input möglich</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_AND.png"></td><td>UND-Gatter</td><td>F = A &wedge; B</td><td>F = A &wedge; (B &wedge; C)</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_OR.png"></td><td>ODER-Gatter</td><td>F = A &vee; B</td><td>F = A &vee; (B &vee; C)</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_XOR.png"></td><td>ENTWEDER-ODER-Gatter</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td><td>F = ((A &wedge; (B &wedge; C)) &vee; ((A &wedge; (&not; B &wedge; &not; C))) &vee; ((&not; A &wedge; (B &wedge; &not; C)) &vee; (&not; A &wedge; &not; B &wedge; C)))))</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NOT.png"><td>NICHT-Gatter</td><td>F = &not; A</td><td>nur ein Input möglich</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NAND.png"><td>NICHT-UND-Gatter</td><td>F = &not; (A &wedge; B)</td><td>F = &not; (A &wedge; (B &wedge; C)</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NOR.png"><td>NICHT-ODER-Gatter</td><td>F = &not; (A &vee; B)</td><td>F = &not; (A &vee; (B &vee; C)</td></tr>
+                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_XNOR.png"><td>NICHT-ENTWEDER-ODER-Gatter</td><td>F = (&not; ((&not; A &wedge; B) &vee; (&not; B &wedge; A)))</td><td>F = (&not; ((A &wedge; (B &wedge; C)) &vee; ((A &wedge; (&not; B &wedge; &not; C))) &vee; ((&not; A &wedge; (B &wedge; &not; C)) &vee; (&not; A &wedge; &not; B &wedge; C))))))</td></tr>
+                </table>
             </div>
             <div class="pagename">
                 <h2 id="Geschichte">Geschichte</h2>
@@ -257,7 +278,7 @@
                     </tr>
                 </tbody>
             </table>
-            <span class="lastChange"><p>Diese Seite wurde zuletzt am 05.Mai.2020 um 01.23Uhr bearbeitet.</p></span>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 08.Mai.2020 um 12.34Uhr bearbeitet.</p></span>
         </div>
     </article>
     <div class="gitHub_footer">
