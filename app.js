@@ -33,16 +33,16 @@ const navSlide = () => {
 }
 
 function randomPage() {
-    var countPages = 3;
+    var countPages = 4;
     const link = document.querySelector('#randomPage');
     const container = document.querySelector('li#randomPage');
-
     var pages = new Array(countPages);
 
     //page-declaration
-    pages[0] = "index.html";
-    pages[1] = "wiki_home.html";
-    pages[2] = "logicGate_wiki.html";
+    pages[0] = "logicGate_wiki.html";
+    pages[1] = "card_wiki.html";
+    pages[2] = "inputCard_wiki.html";
+    pages[3] = "outputCard_wiki.html";
 
     var x = pages[parseInt(Math.random()*countPages)];
     console.log(x);
