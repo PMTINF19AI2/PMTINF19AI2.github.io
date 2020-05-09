@@ -95,7 +95,7 @@
                         <div class="tableOfInformation_itemSlots">
                             <span class="tableOfInformation_itemSlot">
                                 <span class="tableOfInformation_itemSlot_item">
-                                    <span class="sprite inv-sprite"><img src="images/Wiki/input_item.png" width = "80%" style="padding-top: 3px;"></span>
+                                    <span class="sprite inv-sprite"><a href="" id="Input-Erweiterungskarte" onmouseover="showName(this.id);" onmouseout="hideName()"><img src="images/Wiki/input_item.png" width = "80%"></a></span>
                                 </span>
                             </span>
                         </div>
@@ -145,26 +145,26 @@
                                                 <span class="mcUI_row">
                                                     <span class="mcUI_invSlot"></span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone-Fackel"><img src="images/Wiki/redstone_torch.png" width= "32px" style="margin-top: -2px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone-Fackel" id="Redstone-Fackel" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/redstone_torch.png" width= "32px" style="margin-top: -2px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot"></span>
                                                 </span>
                                                 <span class="mcUI_row">
                                                     <span class="mcUI_invSlot"></span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="card_wiki.html"><img src="images/Wiki/card.png" width= "20px" style="margin: 6px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="card_wiki.html" id="Erweiterungskarte" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/card.png" width= "20px" style="margin: 6px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot"></span>
                                                 </span>
                                                 <span class="mcUI_row">
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Eisenbarren"><img src="images/Wiki/iron_ingot.png" width= "25px" style="margin: 4px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Eisenbarren" id="Eisenbarren" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/iron_ingot.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Eisenbarren"><img src="images/Wiki/iron_ingot.png" width= "25px" style="margin: 4px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Eisenbarren" id="Eisenbarren" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/iron_ingot.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                 </span>
                                             </span>
@@ -175,7 +175,7 @@
                                             <span class="mcUI_output">
                                                 <span class="mcUI_invSlot_large mcUI_invSlot">
                                                     <span class="mcUI_invSlot_item">
-                                                        <span class="mcUI_invSlot_item"><a href="inputCard_wiki.html"><img src="images/Wiki/input_item.png" width= "20px"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="inputCard_wiki.html" id="Input-Erweiterungskarte" onmouseover="showName(this.id);" onmouseout="hideName();"><img src="images/Wiki/input_item.png" width= "20px"></a></span>
                                                         <span class="mcUI_invSlot_stacksize">3</span>
                                                     </span>
                                                 </span>
@@ -304,8 +304,10 @@
             </ul>
         </div>
     </div>
+    <p class="mausanzeige" id="mausanzeige">test</p>
     <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="soundmanager2.js"></script>
+    <script src="hoverNames.js"></script>
 </body>
 </html>

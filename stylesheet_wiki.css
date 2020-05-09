@@ -1,3 +1,11 @@
+@font-face {
+    /*font-family: 'Minecraft';
+    src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot');
+    src: url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.eot?#iefix') format('embedded-opentype'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.woff') format('woff'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.ttf') format('truetype'), url('http://charliecowan.co.uk/mcbuttongenerator/fonts/mcfont.svg#svgFontName') format('svg');*/
+    font-family: 'MCButton';
+    src: url('F77MinecraftRegular-0VYv.ttf');
+}
+
 @media all {
     
 /* Allgemein */
@@ -414,12 +422,16 @@
     }
     
     .mausanzeige {
-        width: 100px; 
-        height: 10vh;
+        min-width: 200px; 
+        height: 4vh;
         position: absolute;
-        background-color: gray;
+        background-color: rgb(1, 1, 34);
         border: 1px solid black;
+        border-radius: 2px;
+        text-align: center;
         display: none;
+        padding: 5px;
+        font-family: MCButton;
     }
     
 }
