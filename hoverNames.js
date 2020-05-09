@@ -1,10 +1,10 @@
-function showName (idOfItem) {
+function showName (e, idOfItem) {
     const material = document.getElementById(idOfItem);
     const container = document.getElementsByClassName('.mausanzeige');
     $(".mausanzeige").text(idOfItem);
     $('.mausanzeige').css('display', 'block');
-    $('.mausanzeige').css('top', window.event.screenY + document.body.scrollTop + 220 + "px");
-    $('.mausanzeige').css('left', window.event.screenX + document.body.scrollLeft + "px");
+    $('.mausanzeige').css('top', e.pageY + "px");
+    $('.mausanzeige').css('left', e.pageX + 20 +"px");
 }
 
 

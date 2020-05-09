@@ -176,6 +176,10 @@
         width: 15%;
     }
 
+    li#random {
+        width: 15%;
+    }
+
     li.suchfeld {
         float: right;
     }

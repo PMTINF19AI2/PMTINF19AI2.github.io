@@ -39,13 +39,12 @@ function randomPage() {
     var pages = new Array(countPages);
 
     //page-declaration
-    pages[0] = "logicGate_wiki.html";
-    pages[1] = "card_wiki.html";
-    pages[2] = "inputCard_wiki.html";
-    pages[3] = "outputCard_wiki.html";
+    pages[0] = "/logicGate_wiki.html";
+    pages[1] = "/card_wiki.html";
+    pages[2] = "/inputCard_wiki.html";
+    pages[3] = "/outputCard_wiki.html";
 
     var x = pages[parseInt(Math.random()*countPages)];
-    console.log(x);
     soundManager.url = '/sounds/dudelduduStröti.mp3';
 
     soundManager.onready(function() {
@@ -58,7 +57,11 @@ function randomPage() {
         soundManager.play('mySound');
     });
     setTimeout(function() {
-        window.location.replace(x);
+        if (x != window.location.pathname) {
+            window.location.replace(x);
+        } else {
+            randomPage();
+        }
     }, 900);
 }
 

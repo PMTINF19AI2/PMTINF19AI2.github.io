@@ -423,7 +423,7 @@
     
     .mausanzeige {
         min-width: 200px; 
-        height: 4vh;
+        height: 3vh;
         position: absolute;
         background-color: rgb(1, 1, 34);
         border: 1px solid black;
@@ -432,6 +432,9 @@
         display: none;
         padding: 5px;
         font-family: MCButton;
+        top: 0;
+        left: 0;
+        z-index: 5;
     }
     
 }
