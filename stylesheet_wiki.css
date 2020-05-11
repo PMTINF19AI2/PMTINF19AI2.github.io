@@ -409,6 +409,23 @@
         border: 0px !important;
     }
     
+    /*Preise*/
+
+    table.prices {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    td.price_td,
+    th.price_td {
+        text-align: left;
+    }
+
+    table.prices > tbody > tr > th > img:not(:first-child){
+        width: 50%;
+    }
+
+
     /* LastChange */
     
     span.lastChange {

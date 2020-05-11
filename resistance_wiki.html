@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet_wiki.css" type="text/css">
+    <script src="https://kit.fontawesome.com/bf141cf2a1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Widerstand</title>
+  </head>
+<body>
+    <div class="header">
+        <nav>
+            <table class="header" style="font-family: 'Cabin Sketch', cursive;">
+                <tr>
+                    <td class="logo"><a href="index.html"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></a></td>
+                    <td class="savespace"></td>
+                    <td>
+                        <ul class="nav-links">
+                            <li class="header"><a href="index.html">Home</a></li>
+                            <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
+                            <li class="header"><a href="">Download</a></li>
+                            <li class="header" id="active"><a class="active" href="wiki_home.html">Wiki</a></li>
+                            <li class="header" id="random"><a id="randomPage" onclick="randomPage();" >Random Page</a></li> <!--Test -->
+                            <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="searchDiv">
+                            <form id="search" method="get" action="ForumHub.html" >
+                                <input type="search" name="q" id="suchbegriff" placeholder="Suchbegriff" class="mcButton" style="text-shadow: none;" />
+                                <input type="submit" Value="Search" class="mcButton" />
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    <article>
+        <div class="sidebar">
+            <a href="" target="_blank"><img src="images/instagram-logo.png" class="sidebar" alt="instagram" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 1px; width: 80%; margin-left:10%" />
+            <a href="" target="_blank"><img src="images/twitter-logo.png" class="sidebar" alt="twitter" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="sidebar" alt="github" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="mailto:silas.wessely@gmx.de"><img src="images/email-logo.png" class="sidebar" alt="email" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href=""><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
+            <br /><br />
+        </div>
+        <div class="gitHub_Information">
+            <p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p>
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+            </ul>
+        </div>
+        <div class="preview_wiki">
+            <div class="pagename">
+                <p class="pagename">Widerstand</p>
+                <hr />
+            </div>
+            <div class="basicInformation">
+                <div class="tableOfInformation">
+                    <div class="tableOfInformation_header"><p>Widerstand</p></div>
+                    <div class="tableOfInformation_pictures">
+                        <div><img src="images/Wiki/texture_resistance_item.png" width="40%"></div>
+                        <div class="tableOfInformation_itemSlots">
+                            <span class="tableOfInformation_itemSlot">
+                                <span class="tableOfInformation_itemSlot_item">
+                                    <span class="sprite inv-sprite"><a href="" id="Widerstand" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_resistance_item.png" width = "80%"></a></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="tableOfInformation_rows" cellspacing="1" cellpadding="4">    
+                        <tbody>
+                            <tr class="tableOfInformation_information">     <th>Kategorie:</th>         <td><p>Redstone</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Transparenz</th>        <td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>0</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>nicht platzierbar</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>64</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="resistance_wiki.html">Widerstand</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="description">
+                    <p class="description">Ein Widerstand wird benötigt, um die Logik auf den <a href="card_wiki.html">Erweiterungskarten</a> zu speichern.</p>
+                </div>
+                <div id="content" class="content">
+                    <div class="contentTitle">
+                        <h2>Inhaltsverzeichnis</h2>
+                    </div>
+                    <ol>
+                        <li><a href="#Herstellung">Herstellung</a></li>
+                        <li><a href="#Geschichte">Geschichte</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="pagename">
+                <h2 id="Herstellung">Herstellung</h2>
+                <hr />
+            </div>
+            <div class="craftingInformation">
+                <table class="wikitable">
+                    <tbody>
+                        <tr>    <th>Name</th>       <th>Zutaten</th>                            <th class="eingabe">Eingabe&nbsp;» Ausgabe</th>     </tr>
+                        <tr>    <th>Widerstand</th>   <td align="center">6x <a href="https://minecraft-de.gamepedia.com/Redstone">Redstone</a><br>x <a href="https://minecraft-de.gamepedia.com/Redstone-Fackel">Redstone-Fackel</a></td>   
+                                <td>
+                                    <div class="mcUI_crafting">
+                                        <span class="mcUI mcUI_crafting_table">
+                                            <span class="mcUI_input">
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone-Fackel" id="Redstone-Fackel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone_torch.png" width="25px" style="margin: 4px 4px;"></a></span>
+                                                    </span> 
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                </span>
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                </span>
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot"></span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="mcUI_arrow">
+                                                <img src="images/arrow.png" width="32px" height="32px">
+                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-10-10v7h-14v6h14v7z"/></svg> -->
+                                            </span>
+                                            <span class="mcUI_output">
+                                                <span class="mcUI_invSlot_large mcUI_invSlot">
+                                                    <span class="mcUI_invSlot_item">
+                                                        <span class="mcUI_invSlot_item"><a href="resistance_wiki.html" id="Widerstand" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_resistance_item.png" width= "20px"></a></span>
+                                                        <span class="mcUI_invSlot_stacksize">4</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                    </div>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagename">
+                <h2 id="Geschichte">Geschichte</h2>
+                <hr />
+            </div>
+            <table class="historybox">
+                <tbody>
+                    <tr>    
+                        <th class="historybox_top">
+                            <span class="historybox_title">
+                                <a href="#">Versionsgeschichte der Java-Edition</a>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="historybox_body">
+                                <table class="historyInformation historybox_history">
+                                    <tbody>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.15</a></th>
+                                            <td class="historybox_list">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion1</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1. Änderung</li>
+                                                                    <li>2. Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion2</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion3</a></th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                    <li>3.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.14 (Unterversion)</a></th>
+                                            <td class="historybox_list">
+                                                <ul>
+                                                    <li>1.Änderung</li>
+                                                    <li>2.Änderung</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 09.Mai.2020 um 02.16Uhr bearbeitet.</p></span>
+        </div>
+    </article>
+    <div class="gitHub_footer">
+        <div class="gitHub_footer_title"><p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p></div>
+        <div class="gitHub_footer_body">
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="impressum">
+            <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
+        </div>
+        <div class="footerMitte">
+            <img src="images/logo.png" class="logoFooter" alt="logo" />
+        </div>
+        <div class="icons">
+            <ul class="footer">
+                <li class="footer"><a href="" target="_blank"><img src="images/instagram-logo.png" class="footer" alt="instagram" /></a></li>
+                <li class="footer"><a href="" target="_blank"><img src="images/twitter-logo.png" class="footer" alt="twitter" /></a></li>
+                <li class="footer"><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="footer" alt="github" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="mausanzeige" id="mausanzeige">test</p>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="soundmanager2.js"></script>
+    <script src="hoverNames.js"></script>
+</body>
+</body>
+</html>

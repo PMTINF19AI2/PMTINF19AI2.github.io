@@ -33,7 +33,7 @@ const navSlide = () => {
 }
 
 function randomPage() {
-    var countPages = 4;
+    var countPages = 9;
     const link = document.querySelector('#randomPage');
     const container = document.querySelector('li#randomPage');
     var pages = new Array(countPages);
@@ -43,6 +43,11 @@ function randomPage() {
     pages[1] = "/card_wiki.html";
     pages[2] = "/inputCard_wiki.html";
     pages[3] = "/outputCard_wiki.html";
+    pages[4] = "/workbench_wiki.html";
+    pages[5] = "/pin_wiki.html";
+    pages[6] = "/cable_wiki.html";
+    pages[7] = "/resistance_wiki.html";
+    pages[8] = "/sd_card_wiki.html";
 
     var x = pages[parseInt(Math.random()*countPages)];
     soundManager.url = '/sounds/dudelduduStröti.mp3';
@@ -66,24 +71,43 @@ function randomPage() {
 }
 
 
-function glowingOn() {
+function glowingOnLogic() {
     setTimeout(function() {
         $( '#logicPic' ).fadeTo("400", 0);
         $('#logicPic').css('display','none');
         $( '#logicVideo' ).fadeTo("400", 1);
         $('#logicVideo').css('display', 'inline');
         $('#logicGate').css('padding', '0');
-        
     }, 1500);
 }
 
-function glowingOff() {
+function glowingOffLogic() {
     setTimeout(function() {
         $( '#logicVideo' ).fadeTo("400", 0);
         $('#logicVideo').css("display",'none');
         $( '#logicPic' ).fadeTo("400", 1);
         $('#logicPic').css("display", 'inline');
         $('#logicGate').css('padding', '5% 0');
+    }, 2000);
+}
+
+function glowingOnFlip() {
+    setTimeout(function() {
+        $( '#flipflopPic' ).fadeTo("400", 0);
+        $('#flipflopPic').css('display','none');
+        $( '#flipflopVideo' ).fadeTo("400", 1);
+        $('#flipflopVideo').css('display', 'inline');
+        $('#flipflop').css('padding', '0');
+    }, 1500);
+}
+
+function glowingOffFlip() {
+    setTimeout(function() {
+        $( '#flipflopVideo' ).fadeTo("400", 0);
+        $('#flipflopVideo').css("display",'none');
+        $( '#flipflopPic' ).fadeTo("400", 1);
+        $('#flipflopPic').css("display", 'inline');
+        $('#flipflop').css('padding', '5% 0');
     }, 2000);
 }
 
