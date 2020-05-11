@@ -64,8 +64,8 @@
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="logicGate" >
-                <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOn();"/>
-                <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOff();">
+                <img src="images/logicBlock-Logo3d2.png" alt="Logik-Gatter" id="logicPic" onmouseover="glowingOnLogic();"/>
+                <video width="100%" height="100%" id="logicVideo" autoplay autoload muted loop onmouseout="glowingOffLogic();">
                     <source src="videos/animated_glowing_logicBlock2.mp4" type="video/mp4">
                 </video>         
                     </div>
@@ -79,10 +79,13 @@
                 <br />
             </div>
             <div class="seitenbreite">
-                <div class="previewWindow" id="table">
-                    <img src="images/logic-gate.jpg" alt="Tisch" id="tablePic" />
+                <div class="previewWindow" id="flipflop">
+                    <img src="images/flipflopBlock_3d.png" alt="Logik-Gatter" id="flipflopPic" onmouseover="glowingOnFlip();"/>
+                    <video width="100%" height="100%" id="flipflopVideo" autoplay autoload muted loop onmouseout="glowingOffFlip();">
+                        <source src="videos/animated_flipflop.mp4" type="video/mp4">
+                    </video> 
                 </div>
-                <div id="tableInvis">
+                <div id="flipflopInvis">
                     <h2 style="font-family: 'Cabin Sketch', cursive;">Bau dir deine passende Schaltung</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
                         Das ist der Tisch, auf dem man die Logik-Plug-Ins erstellen kann. Je nach Gatter werden verschiedene Materialien benötigt.
