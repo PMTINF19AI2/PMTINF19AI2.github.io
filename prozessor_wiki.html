@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <link rel="stylesheet" href="stylesheet_wiki.css" type="text/css">
-    <link rel="stylesheet" href="logicBlockHub.css" type="text/css">
     <script src="https://kit.fontawesome.com/bf141cf2a1.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
@@ -22,7 +21,7 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Logik-Gatter-Hub</title>
+    <title>Prozessor</title>
   </head>
 <body>
     <div class="header">
@@ -85,18 +84,18 @@
         </div>
         <div class="preview_wiki">
             <div class="pagename">
-                <p class="pagename">Logik-Gatter-Hub</p>
+                <p class="pagename">Prozessor</p>
                 <hr />
             </div>
             <div class="basicInformation">
                 <div class="tableOfInformation">
-                    <div class="tableOfInformation_header"><p>Logik-Gatter-Hub</p></div>
+                    <div class="tableOfInformation_header"><p>Prozessor</p></div>
                     <div class="tableOfInformation_pictures">
-                        <div><img src="images/logicBlock-Logo3d_glowing.png" width="50%"></div>
+                        <div><img src="images/Wiki/prozessor_duenn.png" width="40%"></div>
                         <div class="tableOfInformation_itemSlots">
                             <span class="tableOfInformation_itemSlot">
                                 <span class="tableOfInformation_itemSlot_item">
-                                    <span class="sprite inv-sprite"><img src="images/logicBlock-Logo3d_glowing_klein.png"></span>
+                                    <span class="sprite inv-sprite"><a href="" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/prozessor_duenn.png" width = "80%"></a></span>
                                 </span>
                             </span>
                         </div>
@@ -108,15 +107,15 @@
                             <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>0</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Nein</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Nein</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p><a href="https://minecraft-de.gamepedia.com/Spitzhacke">Spitzhacke</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>nicht platzierbar</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>64</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="logicGate_wiki">Logik-Gatter-Hub</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="pin_wiki.html">Pin</a></p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="description">
-                    <p class="description">Der Logik-Gatter-Hub erweitert die Möglichekeiten komplexe Redstone-Schaltungen in der virtellen Minecraft-Welt nachzubauen. Der Block kann mit Hilfe von <a href="inputCard_wiki.html">Input-</a>, <a href="outputCard_wiki.html">Output-</a> und <a href="gateCards_wiki.html">Logik-Gatter-Upgrades</a> modifiziert werden. Anhand von Prädikatenlogischen Formeln berechnet der Computer je nach Input den Output und gibt ein Redstone-Signal aus.</a></p>
+                    <p class="description">Der Prozessor wird benötigt, um die Logik-Gatter und Flip-Flops herzustellen.</p>
                 </div>
                 <div id="content" class="content">
                     <div class="contentTitle">
@@ -124,8 +123,6 @@
                     </div>
                     <ol>
                         <li><a href="#Herstellung">Herstellung</a></li>
-                        <li><a href="#Verwendung">Verwendung</a></li>
-                        <li><a href="#GUI">Benutzeroberfläche</a></li>
                         <li><a href="#Geschichte">Geschichte</a></li>
                     </ol>
                 </div>
@@ -138,44 +135,42 @@
                 <table class="wikitable">
                     <tbody>
                         <tr>    <th>Name</th>       <th>Zutaten</th>                            <th class="eingabe">Eingabe&nbsp;» Ausgabe</th>     </tr>
-                        <tr>    <th>Itemname</th>   <td align="center">Liste der Zutaten</td>   
+                        <tr>    <th>Prozessor</th>   <td align="center">4x <a href="cable_wiki.html">Kabel</a><br>4x <a href="pin_wiki.html">Pin</a><br>1x <a href="sd_card_wiki.html">Speicher</a></td>   
                                 <td>
                                     <div class="mcUI_crafting">
                                         <span class="mcUI mcUI_crafting_table">
                                             <span class="mcUI_input">
                                                 <span class="mcUI_row">
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 13%;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName();"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
-                                                    </span>
+                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
+                                                    </span> 
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 13%;"></a></span>
-                                                    </span>
-                                                </span>
-                                                <span class="mcUI_row">
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName();"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item">
-                                                            <span class="mcUI_invSlot_item"><a href="prozessor_wiki.html" id="Prozessor" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/prozessor_duenn.png" width= "32px" style="margin-left: 10%;"></a></span>
-                                                        </span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Redstone" id="Redstone" onmousemove="showName(event, this.id);" onmouseout="hideName();"><img src="images/Wiki/redstone.png" width= "32px"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                 </span>
                                                 <span class="mcUI_row">
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Stufe" id="Steinstufe" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/stone_slab.png" width= "25px" style="margin: 4px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Stufe" id="Steinstufe" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/stone_slab.png" width= "25px" style="margin: 4px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="sd_card_wiki.html" id="Speicher" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_save_item.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                     <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="https://minecraft-de.gamepedia.com/Stufe" id="Steinstufe" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/stone_slab.png" width= "25px" style="margin: 4px;"></a></span>
+                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
+                                                    </span>
+                                                </span>
+                                                <span class="mcUI_row">
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
+                                                    </span>
+                                                    <span class="mcUI_invSlot">
+                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
                                                     </span>
                                                 </span>
                                             </span>
@@ -186,7 +181,8 @@
                                             <span class="mcUI_output">
                                                 <span class="mcUI_invSlot_large mcUI_invSlot">
                                                     <span class="mcUI_invSlot_item">
-                                                        <span style="background-image: url('test1.png'); background-position: -992px -1664px;"></span>
+                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "30px" style="margin: -6px;"></a></span>
+                                                        <span class="mcUI_invSlot_stacksize">4</span>
                                                     </span>
                                                 </span>
                                             </span>
@@ -194,34 +190,6 @@
                                 </td>
                         </tr>
                     </tbody>
-                </table>
-            </div>
-            <div class="pagename">
-                <h2 id="Verwendung">Verwendung</h2>
-                <hr />
-            </div>
-            <div class="usageInformation">
-                <p>Der Logik-Gatter-Hub-Block kann in Restone-Schaltungen implementiert werden, um komplexe Schaltungen zu kompremieren. Anhand von prädikatenlogischen Formeln kann die Ausgabe bei jeweiliger Eingabe berechnet werden. Der Block wirkt nicht wie ein Repeater. Er gibt immer das stärkste Eingangsignal aus.</p>
-            </div>
-            <div class="pagename">
-                <h2 id="Benutzeroberfläche">Benutzeroberfläche</h2>
-                <hr />
-            </div>
-            <div class="gui">
-                <p>In der Benutzeroberfläche des Logik-Gatter-Hub kann man mit Hilfe der <a href="inputCard_wiki.html">Input-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="logicGate_wiki.html">Logik-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
-                <img src="images/logicblockgui.png" class="logicGateHub_gui">
-                <p>Anhand der Textur lässt sich auch von außen erkennen, welche Seiten Inputs bzw. Outputs sind und um welchen Logik-Block es sich handelt.</p>
-                <table class="textures" style="overflow-x: scroll;">
-                        <tr class="textures"><th class="texturesTable">Textur</th>         <th class="logicTable">Logik</th>      <th class="plFormel2I">Prädikatenlogische Formeln (2 Inputs)</th>      <th class="plFormel3I">Prädikatenlogische Formeln (3 Inputs)</th></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_KREIS.png"></td><td>Standardlogik</td>  <td>-</td><td>-</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_GO.png"><td>GO-Gatter</td><td>F = A</td><td>nur ein Input möglich</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_AND.png"></td><td>UND-Gatter</td><td>F = A &wedge; B</td><td>F = A &wedge; (B &wedge; C)</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_OR.png"></td><td>ODER-Gatter</td><td>F = A &vee; B</td><td>F = A &vee; (B &vee; C)</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_XOR.png"></td><td>ENTWEDER-ODER-Gatter</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td><td>F = ((A &wedge; (B &wedge; C)) &vee; ((A &wedge; (&not; B &wedge; &not; C))) &vee; ((&not; A &wedge; (B &wedge; &not; C)) &vee; (&not; A &wedge; &not; B &wedge; C)))))</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NOT.png"><td>NICHT-Gatter</td><td>F = &not; A</td><td>nur ein Input möglich</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NAND.png"><td>NICHT-UND-Gatter</td><td>F = &not; (A &wedge; B)</td><td>F = &not; (A &wedge; (B &wedge; C)</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_NOR.png"><td>NICHT-ODER-Gatter</td><td>F = &not; (A &vee; B)</td><td>F = &not; (A &vee; (B &vee; C)</td></tr>
-                        <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_XNOR.png"><td>NICHT-ENTWEDER-ODER-Gatter</td><td>F = (&not; ((&not; A &wedge; B) &vee; (&not; B &wedge; A)))</td><td>F = (&not; ((A &wedge; (B &wedge; C)) &vee; ((A &wedge; (&not; B &wedge; &not; C))) &vee; ((&not; A &wedge; (B &wedge; &not; C)) &vee; (&not; A &wedge; &not; B &wedge; C))))))</td></tr>
                 </table>
             </div>
             <div class="pagename">
@@ -295,7 +263,7 @@
                     </tr>
                 </tbody>
             </table>
-            <span class="lastChange"><p>Diese Seite wurde zuletzt am 08.Mai.2020 um 12.34Uhr bearbeitet.</p></span>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 09.Mai.2020 um 02.16Uhr bearbeitet.</p></span>
         </div>
     </article>
     <div class="gitHub_footer">
@@ -325,8 +293,11 @@
             </ul>
         </div>
     </div>
-    <script src="app.js"></script>
+    <p class="mausanzeige" id="mausanzeige">test</p>
+    <script src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="soundmanager2.js"></script>
+    <script src="hoverNames.js"></script>
+</body>
 </body>
 </html>

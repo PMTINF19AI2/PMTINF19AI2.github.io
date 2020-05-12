@@ -456,13 +456,15 @@
 
 
 
-    table.overview > tbody > tr > th {
+    table.overview > tbody > tr > th,
+    table.overview2 > tbody > tr > th {
         text-align: left;
         padding: 20px 0;
         font-size: 30px;
     }
 
-    table.overview > tbody > tr > td > div{
+    table.overview > tbody > tr > td > div,
+    table.overview2 > tbody > tr > td > div {
         height: 30vh;
         width: 30vh;
         border-radius: 10px;
@@ -474,7 +476,8 @@
 
 
 
-    table.overview > tbody > tr > td.row2 > div {
+    table.overview > tbody > tr > td.row2 > div,
+    table.overview2 > tbody > tr > td.row2 > div {
         height: 15vh;
         width: 15vh;
         margin: 5px;
@@ -482,6 +485,10 @@
 
     .hvr-float-shadow:hover {
         background-color: rgba(99, 98, 98, 0.15);
+    }
+
+    .overview2 {
+        display: none;
     }
 
 }
@@ -720,7 +727,6 @@
     ul.nav-links li {
         font-size: 50%;
     }
-
 }
 
 @media all and (max-width: 800px) {    
@@ -760,6 +766,16 @@
 
     .nav-links li:last-child {
         margin-top: 25px;
+    }
+
+    
+    
+    .overview2 {
+        display: block;
+    }
+
+    .overview {
+        display: none;
     }
 }
 

@@ -33,7 +33,7 @@ const navSlide = () => {
 }
 
 function randomPage() {
-    var countPages = 9;
+    var countPages = 13;
     const link = document.querySelector('#randomPage');
     const container = document.querySelector('li#randomPage');
     var pages = new Array(countPages);
@@ -48,6 +48,10 @@ function randomPage() {
     pages[6] = "/cable_wiki.html";
     pages[7] = "/resistance_wiki.html";
     pages[8] = "/sd_card_wiki.html";
+    pages[9] = "/prozessor_wiki.html";
+    pages[10] = "/setCard_wiki.html";
+    pages[11] = "/resetCard_wiki.html";
+    pages[12] = "/clockCard_wiki.html";
 
     var x = pages[parseInt(Math.random()*countPages)];
     soundManager.url = '/sounds/dudelduduStröti.mp3';
