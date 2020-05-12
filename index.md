@@ -72,8 +72,7 @@
                 <div id="logicInvis">
                      <h2 style="font-family: 'Cabin Sketch', cursive;">Das Logik-Gatter</h2>
                      <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
-                        Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe. Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe.
-                        Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe. Das Logik-Gatter berechnet mit Hilfe von Logikchips die Redstone-Ausgabe.
+                        Der Logik-Gatter-Hub kompremiert komplexe Logik-Schaltungen auf die Größe eines Blocks. Mit Hilfe von Erweiterungskarten kann man Inputs und Outputs einstellen. Außerdem ermöglich eine Logik-Erweiterungskarte dem Block eine Logik zu übergeben, die je nach Input einen Output berechnet.
                      </p>
                 </div>
                 <br />
@@ -88,8 +87,7 @@
                 <div id="flipflopInvis">
                     <h2 style="font-family: 'Cabin Sketch', cursive;">Bau dir deine passende Schaltung</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
-                        Das ist der Tisch, auf dem man die Logik-Plug-Ins erstellen kann. Je nach Gatter werden verschiedene Materialien benötigt.
-                        Außerdem können Input- und Output-Chips erstellt werden, um die Gatter zu konfigurieren.
+                        Das Flip-Flop-Hub implementiert die möglichkeit Redstonesigale in einem Block zu speichern. Diese können über einen Set-Input gesetzt werden, über einen Reset-Input zurückgesetzt werden und die Clock taktet den Flip-Flop-Hub, sodass bei einem bestimmen Zustand ein Output ausgegeben wird.
                     </p>
                 </div>
             </div>
@@ -98,10 +96,10 @@
                     <img src="images/logic-gate.jpg" alt="Tutorial" id="tutorialPic" />
                 </div>
                 <div id="tutorialInvis">
-                    <h2 style="font-family: 'Cabin Sketch', cursive;">Mit eingebautem Tutorial</h2>
+                    <h2 style="font-family: 'Cabin Sketch', cursive;">Workbench</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
-                        Wenn du eine Welt generierst, wirst du ein Buch erhalten in dem alle Logik-Gatter erklärt werden und alle Rezepete aufgelistet sind.
-                        Dieses Buch unterstützt dich bei deinen Anfängen in der neuen Redstone-Welt.
+                        <b>Bau dir deine eigene Schaltung</b><br />
+                        In der Workbench werden aus Kabeln, Pins, Speicherkarten und Widerständen Logik- und Flip-Flop-Erweiterungskarten erstellt. 
                     </p>
                 </div>
             </div>
