@@ -85,7 +85,7 @@
                     </video> 
                 </div>
                 <div id="flipflopInvis">
-                    <h2 style="font-family: 'Cabin Sketch', cursive;">Bau dir deine passende Schaltung</h2>
+                    <h2 style="font-family: 'Cabin Sketch', cursive;">Der Flip-Flop-Block</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
                         Das Flip-Flop-Hub implementiert die möglichkeit Redstonesigale in einem Block zu speichern. Diese können über einen Set-Input gesetzt werden, über einen Reset-Input zurückgesetzt werden und die Clock taktet den Flip-Flop-Hub, sodass bei einem bestimmen Zustand ein Output ausgegeben wird.
                     </p>
