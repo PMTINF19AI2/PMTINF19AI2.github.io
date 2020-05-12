@@ -490,6 +490,41 @@
     .overview2 {
         display: none;
     }
+    div.gui > img.logicGateHub_gui {
+        width: 20%;
+        margin: 30px 0;
+    }
+    
+    table.textures {
+        clear: right;
+        margin: 20px 0 1em 1em;
+        width: 90%;
+        background-color: white;
+        border: solid 1px #CCC;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    tr.textures > th.texturesTable, 
+    tr.textures > th.logicTable, 
+    tr.textures > th.plFormel2I,
+    tr.textures > th.plFormel3I {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    
+    th.plFormel2I {
+        width: 30%;
+    }
+    
+    th.plFormel3I {
+        width: 50%;
+    }
+    
+    table.textures > tbody > tr > td > img {
+        width: 50px;
+        border: 1px solid #a2a9b1;
+    }
 
 }
 
@@ -727,6 +762,11 @@
     ul.nav-links li {
         font-size: 50%;
     }
+
+
+    div.gui > img.logicGateHub_gui {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 800px) {    
@@ -768,8 +808,6 @@
         margin-top: 25px;
     }
 
-    
-    
     .overview2 {
         display: block;
     }
@@ -777,6 +815,7 @@
     .overview {
         display: none;
     }
+
 }
 
 @media all and (max-width: 600px) {
@@ -815,7 +854,8 @@
     div.description > p.description,
     div.content > ol, 
     div.usageInformation > p,
-    table.historybox  {
+    table.historybox,
+    div.gui > p  {
         font-size: 10px;
     }
 
