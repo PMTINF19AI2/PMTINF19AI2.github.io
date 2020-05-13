@@ -21,7 +21,7 @@
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>Prozessor</title>
+    <title>Logik-Gatter-Erweiterungskarte</title>
   </head>
 <body>
     <div class="header">
@@ -84,18 +84,21 @@
         </div>
         <div class="preview_wiki">
             <div class="pagename">
-                <p class="pagename">Prozessor</p>
+                <p class="pagename">Logik-Gatter-Erweiterungskarte</p>
                 <hr />
             </div>
             <div class="basicInformation">
                 <div class="tableOfInformation">
-                    <div class="tableOfInformation_header"><p>Prozessor</p></div>
+                    <div class="tableOfInformation_header"><p>Logik-Gatter-Erweiterungskarte</p></div>
                     <div class="tableOfInformation_pictures">
-                        <div><img src="images/Wiki/prozessor_duenn.png" width="40%"></div>
+                        <div><video width="40%"  autoplay autoload muted loop>
+                                <source src="videos/logik_gatter_video.mp4" type="video/mp4">
+                            </video>
+                        </div>
                         <div class="tableOfInformation_itemSlots">
                             <span class="tableOfInformation_itemSlot">
                                 <span class="tableOfInformation_itemSlot_item">
-                                    <span class="sprite inv-sprite"><a href="" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/prozessor_duenn.png" width = "80%"></a></span>
+                                    <span class="sprite inv-sprite"><a href="gate_logic_wiki.html" id="Logik-Gatter-Erweiterungskarte" onmousemove="showName(event, this.id);" onmouseout="hideName()"><video width="100%"  autoplay autoload muted loop> <source src="videos/logik_gatter_video.mp4" type="video/mp4"></video></a></span>
                                 </span>
                             </span>
                         </div>
@@ -108,14 +111,15 @@
                             <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Nein</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Nein</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>nicht platzierbar</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>64</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="pin_wiki.html">Pin</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>16</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="gate_logic_wiki.html">Logik-Gatter-Erweiterungskarte</a></p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="description">
-                    <p class="description">Der Prozessor wird benötigt, um die Logik-Gatter und Flip-Flops herzustellen.</p>
+                    <p class="description">Auf Logik-Gatter-Erweiterungskarten werden Daten gespeichert, die vom Logik-Gatter-Hub ausgelesen werden. <br>
+                    In der Workbench können Erweiterungskarten mit Pins, Kabeln, Speicherkarten und Widerständen zu den Logik-Gatter-Erweiterungskarten erweitert werden.</p>
                 </div>
                 <div id="content" class="content">
                     <div class="contentTitle">
@@ -123,6 +127,8 @@
                     </div>
                     <ol>
                         <li><a href="#Herstellung">Herstellung</a></li>
+                        <li><a href="#Verwendung">Verwendung</a></li>
+                        <li><a href="#Galerie">Galerie</a></li>
                         <li><a href="#Geschichte">Geschichte</a></li>
                     </ol>
                 </div>
@@ -132,65 +138,72 @@
                 <hr />
             </div>
             <div class="craftingInformation">
-                <table class="wikitable">
+                <p>Zur Herstellung öffnet der Spieler mit Rechts-Klick die Workbench. Dort kann ausgewählt werden, welche Gatter Logik auf der Erweiterungskarte gespeichert werden. In der GUI der Workbench wird angezeigt, welche Materialien eingelegt werden müssen. Nach dem einlgen kann der Spieler die Logik-Gatter-Erweiterungskarte herausnehmen. Im folgenden werden alle Kosten aufgelistet: </p>
+                <table class="historybox" id="rezepte">
                     <tbody>
-                        <tr>    <th>Name</th>       <th>Zutaten</th>                            <th class="eingabe">Eingabe&nbsp;» Ausgabe</th>     </tr>
-                        <tr>    <th>Prozessor</th>   <td align="center">4x <a href="cable_wiki.html">Kabel</a><br>4x <a href="pin_wiki.html">Pin</a><br>1x <a href="sd_card_wiki.html">Speicher</a></td>   
-                                <td>
-                                    <div class="mcUI_crafting">
-                                        <span class="mcUI mcUI_crafting_table">
-                                            <span class="mcUI_input">
-                                                <span class="mcUI_row">
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span> 
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                </span>
-                                                <span class="mcUI_row">
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="sd_card_wiki.html" id="Speicher" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_save_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                </span>
-                                                <span class="mcUI_row">
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="cable_wiki.html" id="Kabel" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_cable_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                    <span class="mcUI_invSlot">
-                                                        <span class="mcUI_invSlot_item"><a href="pin_wiki.html" id="Pin" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/texture_pin_item.png" width= "25px" style="margin: 4px;"></a></span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span class="mcUI_arrow">
-                                                <img src="images/arrow.png" width="32px" height="32px">
-                                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-10-10v7h-14v6h14v7z"/></svg> -->
-                                            </span>
-                                            <span class="mcUI_output">
-                                                <span class="mcUI_invSlot_large mcUI_invSlot">
-                                                    <span class="mcUI_invSlot_item">
-                                                        <span class="mcUI_invSlot_item"><a href=prozessor_wiki.html" id="Prozessor" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/prozessor_duenn.png" width= "30px" style="margin: -6px;"></a></span>
-                                                        <span class="mcUI_invSlot_stacksize">4</span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                    </div>
-                                </td>
+                        <tr>
+                            <th class="rezepte">Logik-Gatter-Erweiterungskarte</th>
+                            <th class="rezepte">Logik</th>
+                            <th class="rezepte">Rezept</th>
+                            <th class="rezepte">Logik-Gatter-Block</th>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_and_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">UND-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_and.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_and.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_or_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">ODER-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_or.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_or.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_xor_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">ENTWEDER-ODER-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_xor.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_xor.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_not_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">NICHT-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_not.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_not.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_nand_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">NICHT-UND-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_nand.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_nand.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_nor_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">NICHT-ODER-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_nor.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_nor.png"></td>
+                        </tr>
+                        <tr>
+                            <td class="lg_card"><img src="images/Wiki/texture_xnor_gate_item.png" id="UND-Gatter-Erweiterungskarte" onmousemove="showName();" onmouseout="hideNime();"></td>
+                            <td class="lg_name">NICHT-ENTWEDER-ODER-Gatter</td>
+                            <td class="lg_rezept"><img src="images/Wiki/rezept_xnor.png"></td>
+                            <td class="lg_bild"><img src="images/Wiki/logicBlock_xnor.png"></td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="pagename">
+                <h2 id="Verwendung">Verwendung</h2>
+                <hr />
+            </div>
+            <div class="usageInformation">
+                <p>Der Spieler kann durch einen Rechts-Klick auf den <a href="logigGate_wiki.html">Logik-Gatter-Hub</a> das GUI öffnen. Dort kann auf der rechten Seite eine Logik-Gatter-Erweiterungskarte eingelegt werden. Je nach Einlage ändert sich die Rechnerlogik im Block und die Textur des PC auf dem Block. Eine Übersicht über die Formeln der Logik gibt es <a href="logicGate_wiki.html">hier</a>.</p>
+            </div>
+            <div class="pagename">
+                <h2 id="Galerie">Galerie</h2>
+                <hr />
+            </div>
+            <div class="galery">
             </div>
             <div class="pagename">
                 <h2 id="Geschichte">Geschichte</h2>
@@ -263,7 +276,7 @@
                     </tr>
                 </tbody>
             </table>
-            <span class="lastChange"><p>Diese Seite wurde zuletzt am 09.Mai.2020 um 02.16Uhr bearbeitet.</p></span>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 13.Mai.2020 um 01.42Uhr bearbeitet.</p></span>
         </div>
     </article>
     <div class="gitHub_footer">
@@ -298,6 +311,5 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="soundmanager2.js"></script>
     <script src="hoverNames.js"></script>
-</body>
 </body>
 </html>

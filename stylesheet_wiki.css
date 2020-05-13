@@ -471,7 +471,7 @@
         margin: 15px;
         border: 1px solid #3f3f3f;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
 
@@ -524,6 +524,45 @@
     table.textures > tbody > tr > td > img {
         width: 50px;
         border: 1px solid #a2a9b1;
+    }
+
+    table#rezepte {
+        overflow: scroll;
+    }
+
+    th.rezepte {
+        padding: 10px;
+        text-align: center;
+    }
+
+    td.lg_card,
+    td.lg_name,
+    td.lg_rezept, 
+    td.lg_bild {
+        text-align: center;
+    }
+
+    td.lg_card {
+        width: 5%;
+    }
+    
+    td.lg_name {
+        width: 20%;
+    }
+
+    td.lg_rezept {
+        width: 40%;
+        padding: 0 20px;
+    }
+    td.lg_rezept > img {
+        border-radius: 20px;
+    }
+    td.lg_bild {
+        width: 20%;
+    }
+    td.lg_bild > img {
+        width: 50%;
+        border-radius: 20px;
     }
 
 }
