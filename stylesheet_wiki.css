@@ -816,6 +816,10 @@
         display: none;
     }
 
+    .mausanzeige {
+        display: none;
+    }
+
 }
 
 @media all and (max-width: 600px) {
