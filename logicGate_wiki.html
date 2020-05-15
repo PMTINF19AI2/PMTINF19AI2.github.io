@@ -69,7 +69,7 @@
             <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
             <a href="mailto:silas.wessely@gmx.de"><img src="images/email-logo.png" class="sidebar" alt="email" /></a>
             <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
-            <a href=""><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
+            <a href="impressum_wiki.html"><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
             <br /><br />
         </div>
         <div class="gitHub_Information">
@@ -115,7 +115,7 @@
                     </table>
                 </div>
                 <div class="description">
-                    <p class="description">Der Logik-Gatter-Hub erweitert die Möglichekeiten komplexe Redstone-Schaltungen in der virtellen Minecraft-Welt nachzubauen. Der Block kann mit Hilfe von <a href="inputCard_wiki.html">Input-</a>, <a href="outputCard_wiki.html">Output-</a> und <a href="gateCards_wiki.html">Logik-Gatter-Upgrades</a> modifiziert werden. Anhand von Prädikatenlogischen Formeln berechnet der Computer je nach Input den Output und gibt ein Redstone-Signal aus.</a></p>
+                    <p class="description">Der Logik-Gatter-Hub erweitert die Möglichekeiten komplexe Redstone-Schaltungen in der virtellen Minecraft-Welt nachzubauen. Der Block kann mit Hilfe von <a href="inputCard_wiki.html">Input-</a>, <a href="outputCard_wiki.html">Output-</a> und <a href="gateCards_wiki.html">Logik-Gatter-Upgrades</a> modifiziert werden. Anhand von Aussagenlogischen Formeln berechnet der Computer je nach Input den Output und gibt ein Redstone-Signal aus.</a></p>
                 </div>
                 <div id="content" class="content">
                     <div class="contentTitle">
@@ -137,7 +137,7 @@
                 <table class="wikitable">
                     <tbody>
                         <tr>    <th>Name</th>       <th>Zutaten</th>                            <th class="eingabe">Eingabe&nbsp;» Ausgabe</th>     </tr>
-                        <tr>    <th>Itemname</th>   <td align="center">Liste der Zutaten</td>   
+                        <tr>    <th>Itemname</th>   <td align="center">2x <a href="cable_wiki.html">Kabel</a><br> 3x <a href="https://minecraft-de.gamepedia.com/Redstone">Redstone</a><br>1x <a href="prozessor_wiki.html">Prozessor</a><br>3x <a href="https://minecraft-de.gamepedia.com/Stufe">Steinstufen</a></td>   
                                 <td>
                                     <div class="mcUI_crafting">
                                         <span class="mcUI mcUI_crafting_table">
@@ -185,7 +185,7 @@
                                             <span class="mcUI_output">
                                                 <span class="mcUI_invSlot_large mcUI_invSlot">
                                                     <span class="mcUI_invSlot_item">
-                                                        <span style="background-image: url('test1.png'); background-position: -992px -1664px;"></span>
+                                                        <span class="mcUI_invSlot_item"><a href="logicGate_wiki.html" id="Logic-Gatter-Hub" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/logicBlock-Logo3d_glowing_klein.png" width= "20px"></a></span>
                                                     </span>
                                                 </span>
                                             </span>
@@ -200,18 +200,18 @@
                 <hr />
             </div>
             <div class="usageInformation">
-                <p>Der Logik-Gatter-Hub-Block kann in Restone-Schaltungen implementiert werden, um komplexe Schaltungen zu kompremieren. Anhand von prädikatenlogischen Formeln kann die Ausgabe bei jeweiliger Eingabe berechnet werden. Der Block wirkt nicht wie ein Repeater. Er gibt immer das stärkste Eingangsignal aus.</p>
+                <p>Der Logik-Gatter-Hub-Block kann in Restone-Schaltungen implementiert werden, um komplexe Schaltungen zu kompremieren. Anhand von aussagenlogischen Formeln kann die Ausgabe bei jeweiliger Eingabe berechnet werden. Der Block wirkt nicht wie ein Repeater. Er gibt immer das stärkste Eingangsignal aus.</p>
             </div>
             <div class="pagename">
                 <h2 id="Benutzeroberfläche">Benutzeroberfläche</h2>
                 <hr />
             </div>
             <div class="gui">
-                <p>In der Benutzeroberfläche des Logik-Gatter-Hub kann man mit Hilfe der <a href="inputCard_wiki.html">Input-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="logicGate_wiki.html">Logik-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
+                <p>In der Benutzeroberfläche des Logik-Gatter-Hub kann man mit Hilfe der <a href="inputCard_wiki.html">Input-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="gate_logic_wiki.html">Logik-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
                 <img src="images/logicblockgui.png" class="logicGateHub_gui">
                 <p>Anhand der Textur lässt sich auch von außen erkennen, welche Seiten Inputs bzw. Outputs sind und um welchen Logik-Block es sich handelt.</p>
                 <table class="textures">
-                        <tr class="textures"><th class="texturesTable">Textur</th>         <th class="logicTable">Logik</th>      <th class="plFormel2I">Prädikatenlogische Formeln (2 Inputs)</th>      <th class="plFormel3I">Prädikatenlogische Formeln (3 Inputs)</th></tr>
+                        <tr class="textures"><th class="texturesTable">Textur</th>         <th class="logicTable">Logik</th>      <th class="plFormel2I">Aussagenlogische Formeln (2 Inputs)</th>      <th class="plFormel3I">Aussagenlogische Formeln (3 Inputs)</th></tr>
                         <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_KREIS.png"></td><td>Standardlogik</td>  <td>-</td><td>-</td></tr>
                         <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_GO.png"><td>GO-Gatter</td><td>F = A</td><td>nur ein Input möglich</td></tr>
                         <tr><td><img src="images/gate_top_pc/texture_logicBlock_PC_oben_AND.png"></td><td>UND-Gatter</td><td>F = A &wedge; B</td><td>F = A &wedge; (B &wedge; C)</td></tr>

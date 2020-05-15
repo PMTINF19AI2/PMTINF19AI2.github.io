@@ -440,7 +440,7 @@
     
     .mausanzeige {
         min-width: 80px; 
-        height: 4vh;
+        height: auto;
         position: absolute;
         background-color: rgb(113, 113, 151);
         border: 1.5px solid black;
@@ -453,6 +453,7 @@
         left: 0;
         z-index: 0;
     }
+
 
 
 
@@ -563,6 +564,30 @@
     td.lg_bild > img {
         width: 50%;
         border-radius: 20px;
+    }
+
+    h4 {
+        margin-top: 2%;
+    }
+
+    table.formelexplain {
+        margin: 2% 0 5% 0;
+    }
+
+    td.formelsign {
+        width: 20%;
+        text-align: center;
+    }
+
+    td.meaning,
+    th.meaning {
+        padding: 0.5%;
+        width: 70%;
+        text-align: left;
+    }
+
+    ol.listInputs {
+        margin: 2% 0 0 20px;
     }
 
 }
@@ -806,6 +831,10 @@
     div.gui > img.logicGateHub_gui {
         width: 100%;
     }
+
+    .mausanzeige {
+        font-size: 5px;
+    }
 }
 
 @media all and (max-width: 800px) {    
@@ -858,6 +887,7 @@
     .mausanzeige {
         display: none;
     }
+
 
 }
 

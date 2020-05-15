@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet_wiki.css" type="text/css">
+    <script src="https://kit.fontawesome.com/bf141cf2a1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Codebench</title>
+  </head>
+<body>
+    <div class="header">
+        <nav>
+            <table class="header" style="font-family: 'Cabin Sketch', cursive;">
+                <tr>
+                    <td class="logo"><a href="index.html"><img src="images/logo_ohneText.png" class="logo" alt="logo" /></a></td>
+                    <td class="savespace"></td>
+                    <td>
+                        <ul class="nav-links">
+                            <li class="header"><a href="index.html">Home</a></li>
+                            <li class="header"><a href="http://meinkraft-logik-gatter.xobor.de/">Forum</a></li>
+                            <li class="header"><a href="">Download</a></li>
+                            <li class="header" id="active"><a class="active" href="wiki_home.html">Wiki</a></li>
+                            <li class="header" id="random"><a id="randomPage" onclick="randomPage();" >Random Page</a></li> <!--Test -->
+                            <li class="header"><img src="images/lupe.png" class="suchfeld" alt="searchButton" id="searchIcon" /></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="searchDiv">
+                            <form id="search" method="get" action="ForumHub.html" >
+                                <input type="search" name="q" id="suchbegriff" placeholder="Suchbegriff" class="mcButton" style="text-shadow: none;" />
+                                <input type="submit" Value="Search" class="mcButton" />
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    <article>
+        <div class="sidebar">
+            <a href="" target="_blank"><img src="images/instagram-logo.png" class="sidebar" alt="instagram" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 1px; width: 80%; margin-left:10%" />
+            <a href="" target="_blank"><img src="images/twitter-logo.png" class="sidebar" alt="twitter" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="sidebar" alt="github" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="mailto:silas.wessely@gmx.de"><img src="images/email-logo.png" class="sidebar" alt="email" /></a>
+            <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
+            <a href="impressum_wiki.html"><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
+            <br /><br />
+        </div>
+        <div class="gitHub_Information">
+            <p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p>
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+            </ul>
+        </div>
+        <div class="preview_wiki">
+            <div class="pagename">
+                <p class="pagename">Codebench</p>
+                <hr />
+            </div>
+            <div class="basicInformation">
+                <div class="tableOfInformation">
+                    <div class="tableOfInformation_header"><p>Codebench</p></div>
+                    <div class="tableOfInformation_pictures">
+                        <div><img src="images/Wiki/codebench_model.png" width="40%"></div>
+                        <div class="tableOfInformation_itemSlots">
+                            <span class="tableOfInformation_itemSlot">
+                                <span class="tableOfInformation_itemSlot_item">
+                                    <span class="sprite inv-sprite"><a href="codebench_wiki.html" id="Codebench" onmousemove="showName(event, this.id);" onmouseout="hideName()"><img src="images/Wiki/codebench_model.png" width = "80%" style="margin-top: 20%;"></a></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <table class="tableOfInformation_rows" cellspacing="1" cellpadding="4">    
+                        <tbody>
+                            <tr class="tableOfInformation_information">     <th>Kategorie:</th>         <td><p>Logik-Gatter</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Transparenz</th>        <td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>0</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Nein</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p><a href="https://minecraft-de.gamepedia.com/Spitzhacke">Spitzhacke</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>16</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="codebench_wiki.html">Codebench</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="description">
+                    <p class="description">Mit der Codebench werden Custom-Erweiterungskarten eingeführt. Auf diesen Karten können alle logischen Schaltungen gespeichert werden.
+                        Anhand einer Formel kann man in der Benutzeroberfläche der Codebench eingeben, welche Logik auf der Karte gespeichert werden soll. 
+                    </p>
+                </div>
+                <div id="content" class="content">
+                    <div class="contentTitle">
+                        <h2>Inhaltsverzeichnis</h2>
+                    </div>
+                    <ol>
+                        <li><a href="#Herstellung">Herstellung</a></li>
+                        <li><a href="#Verwendung">Verwendung</a></li>
+                        <li><a href="#Benutzeroberfläche">Benutzeroberfläche</a></li>
+                        <li><a href="#Geschichte">Geschichte</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="pagename">
+                <h2 id="Herstellung">Herstellung</h2>
+                <hr />
+            </div>
+            <div class="craftingInformation">
+                <p>Der Spieler erhält die Codebench, in dem er den <a href="codeBlock_wiki.html">Code-Block</a> in der Hand hält und mit einem Rechts-Klick auf den <a href="tisch_wiki.html">Tisch</a> drückt.</p>
+                <video width="60%" height="60%" autoplay autoload muted loop style="margin-top: 5%; border-radius: 10px;">
+                    <source src="videos/codebench_place_animation.mp4" type="video/mp4">
+                </video> 
+            </div>
+            <div class="pagename">
+                <h2 id="Verwendung">Verwendung</h2>
+                <hr />
+            </div>
+            <div class="usageInformation">
+                <p>Der Spieler öffnet durch einen Rechts-Klick die Benutzeroberfläche der Codebench. Dort kann er im Textfeld eine Formel eingeben, die er auf die Custom-Erweiterungskarte speichern möchte.
+                    Weiter unten befindet sich eine Erklärung ein Beispiel für eine Formel. Mit einem Klick auf "Check" prüft die Codebench, ob die eingegebene Formel korrekt ist und falls das der Fall ist, wird sie auf der Custom-Erweiterungskarte gespeichert.
+                    Diese Karte kann dann vom Logik-Gatter-Hub ausgelesen. Die einzigen Begrenzungen für Schaltungen sind die Anzahl der Ein- und Ausgänge. Es sind maximal drei Eingänge und ein Ausgang einstellbar. Dies sollte bei der Formel beachtet werden. 
+                </p>
+                <p>
+                    <h4>Erklärung zur Erstellung einer Formel</h4>
+                    <table class="formelexplain">
+                        <tbody>
+                            <tr>    <th class="formelsign">Formelzeichen</th>      <th class="meaning">Bedeutung</th></tr>
+                            <tr>    <td class="formelsign">(, )</td>               <td class="meaning">Die Klammern unterteilen die Formel in kleinere Formeln. Es gelten selbe Gesetze wie in einer normalen Rechnung</td></tr>
+                            <tr>    <td class="formelsign">&</td>                  <td class="meaning">Das Kaufmännische UND ist gleich dem logischen UND &\wedge;. Es gibt True aus, wenn alle Eingänge True sind</td></tr>
+                            <tr>    <td class="formelsign">|</td>                  <td class="meaning">Der senkrechte Strich ist gleich dem logischen ODER &\vee;. Es gibt True aus, wenn mindestens ein Eingang True ist</td></tr>
+                            <tr>    <td class="formelsign">!</td>                  <td class="meaning">Das Ausrufezeichen ist gleich dem logischen NOT &\not;. Es verneint (invertiert) den Eingang.</td></tr>
+                            <tr>    <td class="formelsign">F</td>                  <td class="meaning">Das F ist gleich False.</td></tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Beispiel: <b>(!(A&(B&C))),(!(A&B)),F</b> <br>
+                        Diese Formel ist berechnet den Output eines NICHT-UND-Gatters.
+                        Generell sind die Formeln in drei Teile aufgeteilt. Man gibt eine Formel für 3 Eingänge, für 2 Eingänge und für einen Eingang ein und trennt diese jeweils mit einem Komma.
+                        Wichtig dabei ist es die Reihenfolge zu beachten. 
+                        <ol class="listInputs">
+                            <li>3 Eingänge  (Bsp.: !(A&(B&C)))</li>
+                            <li>2 Eingänge  (Bsp.: !(A&B))</li>
+                            <li>1 Eingang   (Bsp.: F)</li>
+                        </ol>
+                    </p>
+                </p>
+            </div>
+            <div class="pagename">
+                <h2 id="Benutzeroberfläche">Benutzeroberfläche</h2>
+                <hr />
+            </div>
+            <div class="gui">
+                <img src="images/Wiki/codebench_gui.png">
+            </div>
+            <div class="pagename">
+                <h2 id="Geschichte">Geschichte</h2>
+                <hr />
+            </div>
+            <table class="historybox">
+                <tbody>
+                    <tr>    
+                        <th class="historybox_top">
+                            <span class="historybox_title">
+                                <a href="#">Versionsgeschichte der Java-Edition</a>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="historybox_body">
+                                <table class="historyInformation historybox_history">
+                                    <tbody>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.15</a></th>
+                                            <td class="historybox_list">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion1</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1. Änderung</li>
+                                                                    <li>2. Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion2</a></th>
+                                                            <td class="historybox_list">
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="historybox_group"><a href="#">Unterversion3</a></th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>1.Änderung</li>
+                                                                    <li>2.Änderung</li>
+                                                                    <li>3.Änderung</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="historybox_group"><a href="#">Vollversion 1.14 (Unterversion)</a></th>
+                                            <td class="historybox_list">
+                                                <ul>
+                                                    <li>1.Änderung</li>
+                                                    <li>2.Änderung</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="lastChange"><p>Diese Seite wurde zuletzt am 09.Mai.2020 um 02.16Uhr bearbeitet.</p></span>
+        </div>
+    </article>
+    <div class="gitHub_footer">
+        <div class="gitHub_footer_title"><p><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank">GitHub-Projekt</a></p></div>
+        <div class="gitHub_footer_body">
+            <ul class="gitHub">
+                <li><img alt="GitHub forks" src="https://img.shields.io/github/forks/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub stars" src="https://img.shields.io/github/stars/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+                <li><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/Gnuhry/PM_TINF19AI2/development?label=commit"></li>
+                <li><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gnuhry/PM_TINF19AI2?color=%54602d"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="impressum">
+            <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
+        </div>
+        <div class="footerMitte">
+            <img src="images/logo.png" class="logoFooter" alt="logo" />
+        </div>
+        <div class="icons">
+            <ul class="footer">
+                <li class="footer"><a href="" target="_blank"><img src="images/instagram-logo.png" class="footer" alt="instagram" /></a></li>
+                <li class="footer"><a href="" target="_blank"><img src="images/twitter-logo.png" class="footer" alt="twitter" /></a></li>
+                <li class="footer"><a href="https://github.com/Gnuhry/PM_TINF19AI2" target="_blank"><img src="https://seeklogo.net/wp-content/uploads/2015/09/github-mark-logo-200x200.png" class="footer" alt="github" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="mausanzeige" id="mausanzeige">test</p>
+    <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="soundmanager2.js"></script>
+    <script src="hoverNames.js"></script>
+</body>
+</body>
+</html>

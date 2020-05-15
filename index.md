@@ -1,4 +1,4 @@
-<body>
+body>
     <div class="header">
         <nav>
             <table class="header" style="font-family: 'Cabin Sketch', cursive;">
@@ -44,7 +44,7 @@
             <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
             <a href="mailto:silas.wessely@gmx.de"><img src="images/email-logo.png" class="sidebar" alt="email" /></a>
             <br /><hr style="border: solid #555555 1.25px; height: 0.5px; width: 80%; margin-left:10%" />
-            <a href=""><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
+            <a href="impressum_wiki.html"><img src="https://img.icons8.com/ios/500/info.png" class="sidebar" alt="impressum" /></a>
             <br /><br />
         </div>
         <div class="gitHub_Information">
@@ -93,7 +93,10 @@
             </div>
             <div class="seitenbreite">
                 <div class="previewWindow" id="tutorial">
-                    <img src="images/logic-gate.jpg" alt="Tutorial" id="tutorialPic" />
+                    <img src="images/Wiki/workbench_model.png" alt="Logik-Gatter" id="tutorialPic" onmouseover="glowingOnWork();"/>
+                    <video width="100%" height="100%" id="tutotialVideo" autoplay autoload muted loop onmouseout="glowingOffWork();">
+                        <source src="videos/animated_workbench.mp4" type="video/mp4">
+                    </video> 
                 </div>
                 <div id="tutorialInvis">
                     <h2 style="font-family: 'Cabin Sketch', cursive;">Workbench</h2>
@@ -105,12 +108,16 @@
             </div>
             <div class="seitenbreite2">
                 <div class="previewWindow" id="test">
-                    <img src="images/logic-gate.jpg" alt="Test" id="testPic" />
+                    <img src="images/Wiki/codebench_model.png" alt="Logik-Gatter" id="testPic" onmouseover="glowingOnCode();"/>
+                    <video width="100%" height="100%" id="testVideo" autoplay autoload muted loop onmouseout="glowingOffCode();">
+                        <source src="videos/animated_codebench.mp4" type="video/mp4">
+                    </video> 
                 </div>
                 <div id="testInvis">
                     <h2 style="font-family: 'Cabin Sketch', cursive;">Test</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
-                        In diesem Block steht noch nicht fest, was erscheinen wird.
+                        In der Codebench kann man anhand einer aussagenlogischen Formel auf einer Custom-Erweiterungskarte eine Logik speichern, die vom Logik-Gatter-Hub ausgelesen werden kann.
+                        Die Logik ist dabei nur durch  drei Eingänge und einen Ausgang begrenzt.
                     </p>
                 </div>
             </div>
@@ -134,7 +141,7 @@
     </div>
     <div class="footer">
         <div class="impressum">
-            <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
+            <a style="text-align: center;" href="impressum_wiki.html" class="mcButton">Impressum</a>
         </div>
         <div class="footerMitte">
             <img src="images/logo.png" class="logoFooter" alt="logo" />
