@@ -1,4 +1,4 @@
-body>
+<body>
     <div class="header">
         <nav>
             <table class="header" style="font-family: 'Cabin Sketch', cursive;">
