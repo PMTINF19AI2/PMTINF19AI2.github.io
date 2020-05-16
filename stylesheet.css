@@ -646,8 +646,8 @@
     }
 
     img#testPic {
-        width: 50%;
-        height: 20vh;
+        width: 70%;
+        height: auto;
         border-radius: 10px;
         opacity: 1;
         margin-left: 15%;

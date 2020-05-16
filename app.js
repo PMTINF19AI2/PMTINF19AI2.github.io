@@ -79,10 +79,10 @@ function glowingOnLogic() {
     setTimeout(function() {
         $( '#logicPic' ).fadeTo("400", 0);
         $('#logicPic').css('display','none');
-        $('#logicGate').css('background-image','none');
         $( '#logicVideo' ).fadeTo("400", 1);
         $('#logicVideo').css('display', 'inline');
         $('#logicGate').css('padding', '0');
+        $('#logicGate').css('background-image','none');
     }, 1500);
 }
 
@@ -90,10 +90,10 @@ function glowingOffLogic() {
     setTimeout(function() {
         $( '#logicVideo' ).fadeTo("400", 0);
         $('#logicVideo').css("display",'none');
-        $('#logicGate').css('background-image','url(images/grasshintergrundklein.png)');
         $( '#logicPic' ).fadeTo("400", 1);
         $('#logicPic').css("display", 'inline');
         $('#logicGate').css('padding', '5% 0');
+        $('#logicGate').css('background-image','url(images/grasshintergrundklein.png)');
     }, 2000);
 }
 
@@ -101,8 +101,8 @@ function glowingOnFlip() {
     setTimeout(function() {
         $( '#flipflopPic' ).fadeTo("400", 0);
         $('#flipflopPic').css('display','none');
-        $('#flipflop').css('background-image','none');
         $( '#flipflopVideo' ).fadeTo("400", 1);
+        $('#flipflop').css('background-image','none');
         $('#flipflopVideo').css('display', 'inline');
         $('#flipflop').css('padding', '0');
     }, 1500);
@@ -112,8 +112,8 @@ function glowingOffFlip() {
     setTimeout(function() {
         $( '#flipflopVideo' ).fadeTo("400", 0);
         $('#flipflopVideo').css("display",'none');
-        $('#flipflop').css('background-image','url(images/grasshintergrundklein.png)');
         $( '#flipflopPic' ).fadeTo("400", 1);
+        $('#flipflop').css('background-image','url(images/grasshintergrundklein.png)');
         $('#flipflopPic').css("display", 'inline');
         $('#flipflop').css('padding', '5% 0');
     }, 2000);
@@ -124,8 +124,8 @@ function glowingOnWork() {
         $( '#tutorialPic' ).fadeTo("400", 0);
         $('#tutorialPic').css('display','none');
         $('#tutorial').css("padding",'0%');
-        $('#tutorial').css('background-image','none');
         $( '#tutotialVideo' ).fadeTo("400", 1);
+        $('#tutorial').css('background-image','none');
         $('#tutotialVideo').css('display', 'inline');
         $('#tutotial').css('padding', '0');
     }, 1500);
@@ -136,8 +136,8 @@ function glowingOffWork() {
         $( '#tutotialVideo' ).fadeTo("400", 0);
         $('#tutotialVideo').css("display",'none');
         $('#tutorial').css("padding",'5%');
-        $('#tutorial').css('background-image','url(images/grasshintergrundklein.png)');
         $( '#tutorialPic' ).fadeTo("400", 1);
+        $('#tutorial').css('background-image','url(images/grasshintergrundklein.png)');
         $('#tutorialPic').css("display", 'inline');
         $('#tutotial').css('padding', '5% 0');
     }, 2000);
@@ -148,8 +148,8 @@ function glowingOnCode() {
         $( '#testPic' ).fadeTo("400", 0);
         $('#testPic').css('display','none');
         $('#test').css("padding",'0%');
-        $('#test').css('background-image','none');
         $( '#testVideo' ).fadeTo("400", 1);
+        $('#test').css('background-image','none');
         $('#testVideo').css('display', 'inline');
         $('#test').css('padding', '0');
     }, 1500);
@@ -160,8 +160,8 @@ function glowingOffCode() {
         $( '#testVideo' ).fadeTo("400", 0);
         $('#testVideo').css("display",'none');
         $('#test').css("padding",'5%');
-        $('#test').css('background-image','url(images/grasshintergrundklein.png)');
         $( '#testPic' ).fadeTo("400", 1);
+        $('#test').css('background-image','url(images/grasshintergrundklein.png)');
         $('#testPic').css("display", 'inline');
         $('#test').css('padding', '5% 0');
     }, 2000);
