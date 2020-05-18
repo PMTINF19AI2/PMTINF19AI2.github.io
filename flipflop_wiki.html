@@ -107,9 +107,9 @@
                             <tr class="tableOfInformation_information">     <th>Lichtstärke</th>        <td><p>0</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Entflammbarkeit</th>    <td><p>Nein</p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>ExplosionsResistenz</th><td><p>Nein</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p><a href="https://minecraft-de.gamepedia.com/Spitzhacke">Spitzhacke</p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Abbauwerkzeug</th>      <td><p>Jedes Werkzeug</td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Stapelbar</th>          <td><p>64</p></td>      </tr>
-                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="logicGate_wiki">Logik-Gatter-Hub</a></p></td>      </tr>
+                            <tr class="tableOfInformation_information">     <th>Drop</th>               <td><p><a href="flipflop_wiki.html">Flip-Flop-Hub</a></p></td>      </tr>
                             <tr class="tableOfInformation_information">     <th>Veröffentlichung</th>   <td><p>1.14.4</p></td>      </tr>
                         </tbody>
                     </table>
@@ -207,31 +207,31 @@
                 <hr />
             </div>
             <div class="gui">
-                <p>In der Benutzeroberfläche des Flip-Flop-Hub kann man mit Hilfe der <a href="setCard_wiki.html">Set-Karten</a>, <a href="resetCard_wiki.html">Reset-Karten</a>, <a href="clock_wiki.html">Clock-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="flip_flop_wiki.html">Flip-Flop-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
+                <p>In der Benutzeroberfläche des Flip-Flop-Hubs kann man mit Hilfe der <a href="setCard_wiki.html">Set-Karten</a>, <a href="resetCard_wiki.html">Reset-Karten</a>, <a href="clock_wiki.html">Clock-Karten</a> und <a href="outputCard_wiki.html">Output-Karten</a> die Ein- und Ausgänge des Gatters modifizieren. Dazu legt man die jeweilige Karte in den der Himmelsrichtung zugeordneten Slot, die mit N, O, S und W markiert sind. Um die Logik des Blocks umzustellen, legt man ein <a href="flip_flop_wiki.html">Flip-Flop-Upgrade</a> in den Logik Slot auf der rechten Seite.</p>
                 <img src="images/Wiki/flipflop_gui.png" class="logicGateHub_gui">
                 <p>Anhand der Textur lässt sich auch von außen erkennen, welche Seiten Inputs bzw. Outputs sind und um welchen Flip-Flop-Block es sich handelt.</p>
                 <table class="textures">
                         <tr class="textures"><th class="texturesTable">Textur</th>         <th class="logicTable">Logik</th>      <th class="plFormel2I">Aussagenlogische Formeln</th></tr>
-                        <tr><td><img src="images/wiki/texture_rs_ff_ohneclock_item.png"></td><td>RS-Flip-Flop-OhneClock</td>  <td>-</td></tr>
-                        <tr><td><img src="images/wiki/texture_rs_ff_positiv_item.png"><td>RS-Flip-Flop-Positiv</td><td>F = A</td></tr>
-                        <tr><td><img src="images/wiki/texture_rs_ff_negativ_item.png"></td><td>RS-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_rs_ff_pegel_item.png"></td><td>RS-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_rs_ff_masterslave_item.png"></td><td>RS-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
-                        <tr><td><img src="images/wiki/texture_d_ff_ohneclock_item.png"></td><td>D-Flip-Flop-OhneClock</td>  <td>-</td></tr>
-                        <tr><td><img src="images/wiki/texture_d_ff_positiv_item.png"><td>D-Flip-Flop-Positiv</td><td>F = A</td></tr>
-                        <tr><td><img src="images/wiki/texture_d_ff_negativ_item.png"></td><td>D-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_d_ff_pegel_item.png"></td><td>D-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_d_ff_masterslave_item.png"></td><td>D-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
-                        <tr><td><img src="images/wiki/texture_t_ff_ohneclock_item.png"></td><td>T-Flip-Flop-OhneClock</td>  <td>-</td></tr>
-                        <tr><td><img src="images/wiki/texture_t_ff_positiv_item.png"><td>T-Flip-Flop-Positiv</td><td>F = A</td></tr>
-                        <tr><td><img src="images/wiki/texture_t_ff_negativ_item.png"></td><td>T-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_t_ff_pegel_item.png"></td><td>T-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_t_ff_masterslave_item.png"></td><td>T-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
-                        <tr><td><img src="images/wiki/texture_jk_ff_ohneclock_item.png"></td><td>JK-Flip-Flop-OhneClock</td>  <td>-</td></tr>
-                        <tr><td><img src="images/wiki/texture_jk_ff_positiv_item.png"><td>JK-Flip-Flop-Positiv</td><td>F = A</td></tr>
-                        <tr><td><img src="images/wiki/texture_jk_ff_negativ_item.png"></td><td>JK-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_jk_ff_pegel_item.png"></td><td>JK-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
-                        <tr><td><img src="images/wiki/texture_jk_ff_masterslave_item.png"></td><td>JK-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
+                        <tr><td><img src="images/Wiki/texture_rs_ff_ohneclock_item.png"></td><td>RS-Flip-Flop-OhneClock</td>  <td>-</td></tr>
+                        <tr><td><img src="images/Wiki/texture_rs_ff_positiv_item.png"><td>RS-Flip-Flop-Positiv</td><td>F = A</td></tr>
+                        <tr><td><img src="images/Wiki/texture_rs_ff_negativ_item.png"></td><td>RS-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_rs_ff_pegel_item.png"></td><td>RS-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_rs_ff_masterslave_item.png"></td><td>RS-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
+                        <tr><td><img src="images/Wiki/texture_d_ff_ohneclock_item.png"></td><td>D-Flip-Flop-OhneClock</td>  <td>-</td></tr>
+                        <tr><td><img src="images/Wiki/texture_d_ff_positiv_item.png"><td>D-Flip-Flop-Positiv</td><td>F = A</td></tr>
+                        <tr><td><img src="images/Wiki/texture_d_ff_negativ_item.png"></td><td>D-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_d_ff_pegel_item.png"></td><td>D-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_d_ff_masterslave_item.png"></td><td>D-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
+                        <tr><td><img src="images/Wiki/texture_t_ff_ohneclock_item.png"></td><td>T-Flip-Flop-OhneClock</td>  <td>-</td></tr>
+                        <tr><td><img src="images/Wiki/texture_t_ff_positiv_item.png"><td>T-Flip-Flop-Positiv</td><td>F = A</td></tr>
+                        <tr><td><img src="images/Wiki/texture_t_ff_negativ_item.png"></td><td>T-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_t_ff_pegel_item.png"></td><td>T-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_t_ff_masterslave_item.png"></td><td>T-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
+                        <tr><td><img src="images/Wiki/texture_jk_ff_ohneclock_item.png"></td><td>JK-Flip-Flop-OhneClock</td>  <td>-</td></tr>
+                        <tr><td><img src="images/Wiki/texture_jk_ff_positiv_item.png"><td>JK-Flip-Flop-Positiv</td><td>F = A</td></tr>
+                        <tr><td><img src="images/Wiki/texture_jk_ff_negativ_item.png"></td><td>JK-Flip-Flop-Negativ</td><td>F = A &wedge; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_jk_ff_pegel_item.png"></td><td>JK-Flip-Flop-Pegel</td><td>F = A &vee; B</td></tr>
+                        <tr><td><img src="images/Wiki/texture_jk_ff_masterslave_item.png"></td><td>JK-Flip-Flop-Master-Slave</td><td>F = ((&not; A &wedge; B) &vee; (&not; B &wedge; A))</td></tr>
                 </table>
             </div>
             <div class="pagename">
@@ -322,7 +322,7 @@
     </div>
     <div class="footer">
         <div class="impressum">
-            <a style="text-align: center;" href="#" class="mcButton">Impressum</a>
+            <a style="text-align: center;" href="impressum_wiki.html" class="mcButton">Impressum</a>
         </div>
         <div class="footerMitte">
             <img src="images/logo.png" class="logoFooter" alt="logo" />

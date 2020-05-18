@@ -23,10 +23,14 @@ const navSlide = () => {
     });
 
     suchButton.addEventListener('click', () => {
-        nav.classList.toggle('navLinks-active');
-        suchFeld.style.display = 'block';
-        suchFeld.style.width = '100%';
-        logoTop.style.marginTop = '0px';
+        if (suchFeld.style.display == "block") {
+            suchFeld.style.display == "none";
+        } else {
+            nav.classList.toggle('navLinks-active');
+            suchFeld.style.display = 'block';
+            suchFeld.style.width = '100%';
+            logoTop.style.marginTop = '0px';
+        }
     });
 
 

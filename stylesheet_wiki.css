@@ -322,7 +322,7 @@
         font-weight: bold !important;
         color: rgb(204, 204, 204) !important;
         text-shadow: 2px 2px 0 #3f3f3f;
-        z-index: 2;
+        z-index: 0;
     }
 
     .sprite {
