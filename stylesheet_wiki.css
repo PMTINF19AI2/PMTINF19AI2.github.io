@@ -356,7 +356,7 @@
     /* Geschichte */
     
     table.historybox {
-        overflow: hidden;
+        overflow: scroll;
     }
     
     .historybox {
@@ -414,6 +414,7 @@
     table.prices {
         text-align: center;
         padding-top: 10px;
+        overflow: scroll;
     }
 
     td.price_td,
