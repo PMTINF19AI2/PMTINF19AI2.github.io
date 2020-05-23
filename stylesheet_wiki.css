@@ -601,6 +601,36 @@
 
     }
 
+    div.toprightcornerinfo {
+        position: relative;
+        margin: 0.5em 0 1.3em 1.4em;
+        width: auto;
+        background-color: transparent;
+        clear: right;
+        float: right;
+    }
+
+    div.cornerinfoinner {
+        border: solid 1px #c8ccd1;
+        padding: 3px;
+        background-color: #f8f9fa;
+        font-size: 94%;
+        text-align: center;
+        overflow: hidden
+    }
+
+    img.cornerinfoimage {
+        background-color: #fff;
+        border: 1px solid #c8ccd1;
+    }
+
+    div.cornerinfocaption {
+        border: 0;
+        line-height: 1.4em;
+        padding: 3px;
+        font-size: 94%;
+    }
+
 }
 
 @media all and (min-width: 3900px) {
