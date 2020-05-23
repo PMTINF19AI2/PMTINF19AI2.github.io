@@ -591,6 +591,16 @@
         margin: 2% 0 0 20px;
     }
 
+    table.sortable {
+        width: 97%;
+    }
+
+    img#Errungenschaften2 {
+        width: 200%;
+        border-radius: 10px;
+
+    }
+
 }
 
 @media all and (min-width: 3900px) {

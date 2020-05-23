@@ -815,6 +815,11 @@
         border-bottom-right-radius: 15px;
         width: 18%;
     }
+
+    div.center {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 3400px) {
