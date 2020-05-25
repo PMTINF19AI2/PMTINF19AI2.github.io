@@ -114,7 +114,7 @@
                     </video> 
                 </div>
                 <div id="testInvis">
-                    <h2 style="font-family: 'Cabin Sketch', cursive;">Test</h2>
+                    <h2 style="font-family: 'Cabin Sketch', cursive;">Codebench</h2>
                     <p id="beschreibung" style="font-family: 'Amatic SC', cursive;">
                         In der Codebench kann man anhand einer aussagenlogischen Formel auf einer Custom-Erweiterungskarte eine Logik speichern, die vom Logik-Gatter-Hub ausgelesen werden kann.
                         Die Logik ist dabei nur durch  drei Eingänge und einen Ausgang begrenzt.
